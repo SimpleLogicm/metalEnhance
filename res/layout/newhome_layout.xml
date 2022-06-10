@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/mainlayout"
+    android:layout_height="match_parent"
+    tools:context="com.msimplelogic.activities.MainActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginTop="50dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearMian"
+        android:layout_width="match_parent"
+        android:background="?attr/fulllayoutbg"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/hedder_theame"
+            android:layout_width="match_parent"
+            android:src="@drawable/light_hedder"
+            android:scaleType="fitXY"
+            android:layout_height="70dp">
+
+        </ImageView>
+
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ScrollView
+                android:id="@+id/scroll_lout"
+                android:scrollbars="none"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/bottom_lout">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:clipToPadding="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.cardview.widget.CardView
+                            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            card_view:cardBackgroundColor="?attr/cardbackground"
+                            android:clickable="true"
+                            android:id="@+id/Visit_retailer_card"
+                            android:layout_width="130dp"
+                            android:layout_height="135dp"
+                            card_view:cardCornerRadius="5dp"
+                            card_view:cardElevation="@dimen/common_10_dp"
+                            android:layout_margin="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/order"
+                                    android:layout_width="90dp"
+                                    android:layout_height="90dp"
+                                    android:src="@drawable/visitretailer_home"
+                                    android:padding="10dp"/>
+
+                                <TextView
+                                    android:textColor="?attr/textcolor"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textSize="@dimen/home_text_size"
+                                    android:layout_marginTop="10dp"
+                                    android:text="@string/VISIT_REPORT"/>
+
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/Visit_distributor_card"
+                            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            card_view:cardBackgroundColor="?attr/cardbackground"
+                            android:layout_width="130dp"
+                            android:visibility="visible"
+                            android:clickable="true"
+                            android:layout_height="135dp"
+                            card_view:cardCornerRadius="5dp"
+                            card_view:cardElevation="@dimen/common_10_dp"
+                            android:layout_margin="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="15dp"
+                                    android:layout_marginLeft="35dp"
+                                    android:src="@drawable/beta_icon" />
+
+                                <ImageView
+                                    android:id="@+id/syncmdata"
+                                    android:layout_width="90dp"
+                                    android:layout_height="80dp"
+                                    android:src="@drawable/visitdistributor_home"
+                                    android:padding="5dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="?attr/textcolor"
+                                    android:textStyle="bold"
+                                    android:textSize="@dimen/home_text_size"
+                                    android:layout_marginTop="5dp"
+                                    android:text="@string/VISIT_DISTRIBUTOR"/>
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:clipToPadding="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/day_sceduler_card"
+                            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            card_view:cardBackgroundColor="?attr/cardbackground"
+                            android:layout_width="130dp"
+                            android:layout_height="135dp"
+                            card_view:cardCornerRadius="5dp"
+                            card_view:cardElevation="@dimen/common_10_dp"
+                            android:layout_margin="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/add_retailernew"
+                                    android:layout_width="90dp"
+                                    android:layout_height="90dp"
+                                    android:src="@drawable/dayscheduler_home"
+                                    android:padding="10dp"/>
+
+                                <TextView
+                                    android:textColor="?attr/textcolor"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textSize="@dimen/home_text_size"
+                                    android:layout_marginTop="10dp"
+                                    android:text="@string/DAY_SCHEDULER"/>
+
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:id="@+id/target_card"
+                            card_view:cardBackgroundColor="?attr/cardbackground"
+                            android:layout_width="130dp"
+                            android:layout_height="135dp"
+                            card_view:cardCornerRadius="5dp"
+                            card_view:cardElevation="@dimen/common_10_dp"
+                            android:layout_margin="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/target"
+                                    android:layout_width="90dp"
+                                    android:layout_height="90dp"
+                                    android:padding="10dp"
+                                    android:src="@drawable/target_home" />
+
+                                <TextView
+                                    android:textColor="?attr/textcolor"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:text="@string/TARGET"
+                                    android:textSize="@dimen/home_text_size"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:clipToPadding="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.cardview.widget.CardView
+                            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:id="@+id/calender_card"
+                            card_view:cardBackgroundColor="?attr/cardbackground"
+                            android:layout_width="130dp"
+                            android:layout_height="135dp"
+                            card_view:cardCornerRadius="5dp"
+                            card_view:cardElevation="@dimen/common_10_dp"
+                            android:layout_margin="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/calendar"
+                                    android:layout_width="90dp"
+                                    android:layout_height="90dp"
+                                    android:padding="10dp"
+                                    android:src="@drawable/activityplanner_home" />
+                                <TextView
+                                    android:textColor="?attr/textcolor"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textSize="@dimen/home_text_size"
+                                    android:layout_marginTop="10dp"
+                                    android:text="@string/ACTIVITY_PLANNER"/>
+
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:id="@+id/expenses_card"
+                            card_view:cardBackgroundColor="?attr/cardbackground"
+                            android:layout_width="130dp"
+                            android:layout_height="135dp"
+                            card_view:cardCornerRadius="5dp"
+                            card_view:cardElevation="@dimen/common_10_dp"
+                            android:layout_margin="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/expenses"
+                                    android:layout_width="90dp"
+                                    android:layout_height="90dp"
+                                    android:padding="10dp"
+                                    android:src="@drawable/expenses_home" />
+
+                                <TextView
+                                    android:textColor="?attr/textcolor"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:text="@string/EXPENSES"
+                                    android:textSize="@dimen/home_text_size"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:clipToPadding="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.cardview.widget.CardView
+                            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:id="@+id/pricing_card"
+                            card_view:cardBackgroundColor="?attr/cardbackground"
+                            android:layout_width="130dp"
+                            android:layout_height="135dp"
+                            card_view:cardCornerRadius="5dp"
+                            card_view:cardElevation="@dimen/common_10_dp"
+                            android:layout_margin="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/pricing"
+                                    android:layout_width="90dp"
+                                    android:layout_height="90dp"
+                                    android:padding="10dp"
+                                    android:src="@drawable/pricestock_home" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textSize="@dimen/home_text_size"
+                                    android:textColor="?attr/textcolor"
+                                    android:layout_marginTop="10dp"
+                                    android:text="@string/PRICE_AND_STOCK"/>
+
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:id="@+id/marketing_data_card"
+                            card_view:cardBackgroundColor="?attr/cardbackground"
+                            android:layout_width="130dp"
+                            android:layout_height="135dp"
+                            card_view:cardCornerRadius="5dp"
+                            card_view:cardElevation="@dimen/common_10_dp"
+                            android:layout_margin="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/marketing_data"
+                                    android:layout_width="90dp"
+                                    android:layout_height="90dp"
+                                    android:padding="10dp"
+                                    android:src="@drawable/marketing_home" />
+
+                                <TextView
+                                    android:textColor="?attr/textcolor"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:text="@string/MARKETING"
+                                    android:textSize="@dimen/home_text_size"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:clipToPadding="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/Visit_log_card"
+                            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            card_view:cardBackgroundColor="?attr/cardbackground"
+                            android:layout_width="130dp"
+                            android:layout_height="135dp"
+                            card_view:cardCornerRadius="5dp"
+                            card_view:cardElevation="@dimen/common_10_dp"
+                            android:layout_margin="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/Vistlogimg"
+                                    android:layout_width="90dp"
+                                    android:layout_height="90dp"
+                                    android:padding="10dp"
+                                    android:src="@drawable/visitlogs" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textSize="@dimen/home_text_size"
+                                    android:textColor="?attr/textcolor"
+                                    android:layout_marginTop="10dp"
+                                    android:text="@string/Visitlog"/>
+
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:visibility="invisible"
+                            card_view:cardBackgroundColor="?attr/cardbackground"
+                            android:layout_width="130dp"
+                            android:layout_height="135dp"
+                            card_view:cardCornerRadius="5dp"
+                            card_view:cardElevation="@dimen/common_10_dp"
+                            android:layout_margin="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </ScrollView>
+            <RelativeLayout
+                android:id="@+id/bottom_lout"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="?attr/cardbackground"
+                android:layout_alignParentBottom="true"
+                >
+
+                <ImageView
+                    android:id="@+id/img_myact"
+                    android:layout_width="@dimen/common_60_dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/myactivities_img"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_alignParentLeft="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/textcolor"
+                    android:textSize="12dp"
+                    android:layout_below="@+id/img_myact"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="7dp"
+                    android:text="@string/My_Activities" />
+
+                <LinearLayout
+                    android:id="@+id/Addcust"
+                    android:layout_toRightOf="@+id/img_myact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_cust"
+                        android:layout_width="@dimen/common_60_dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/add_cust"
+                        android:layout_marginTop="5dp"
+                        android:layout_alignParentLeft="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="?attr/textcolor"
+                        android:textSize="12dp"
+                        android:gravity="center"
+                        android:layout_marginTop="3dp"
+                        android:text="@string/Add_Customer" />
+
+                </LinearLayout>
+
+
+
+                <ImageView
+                    android:id="@+id/img_more"
+                    android:layout_width="@dimen/common_60_dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/thrdot_img"
+                    android:layout_marginTop="5dp"
+                    android:layout_alignParentRight="true"/>
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/textcolor"
+                    android:textSize="12dp"
+                    android:layout_below="@+id/img_more"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:text="@string/More" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

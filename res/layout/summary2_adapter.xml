@@ -1,0 +1,301 @@
+<androidx.cardview.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardElevation="8dp"
+    card_view:cardBackgroundColor="#faf8f8"
+    card_view:cardCornerRadius="8dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="10dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+     <LinearLayout
+        android:id="@+id/dfgnew"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+         android:visibility="gone"
+        
+        android:layout_marginTop="32dp">
+
+         <RelativeLayout
+             android:id="@+id/mainmenu_btn"
+             android:layout_width="20dp"
+             android:layout_height="match_parent"
+             android:layout_marginRight="2dp"
+             android:layout_marginTop="2dp"
+             android:layout_weight="1.00" >
+
+             <TextView
+                 android:id="@+id/month_grpby"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="@string/Product_Category"
+                 android:textColor="#ffffff"
+                 android:gravity="center"
+                 android:textSize="13dp"
+                 android:textStyle="bold"
+                 android:layout_alignParentLeft="true"
+                 android:layout_alignParentStart="true"
+                 android:layout_alignParentRight="true"
+                 android:layout_alignParentEnd="true"
+                 android:layout_alignParentBottom="true"
+                 android:layout_alignParentTop="true" />
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:layout_width="20dp"
+             android:layout_height="match_parent"
+             android:layout_marginLeft="2dp"
+             android:layout_marginTop="2dp"
+             android:layout_weight="1.00" >
+
+             <TextView
+                 android:id="@+id/target_grpby1"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="@string/Targett"
+                 android:textColor="#ffffff"
+                 android:gravity="center"
+                 android:textSize="13dp"
+                 android:textStyle="bold"
+                 android:layout_alignParentLeft="true"
+                 android:layout_alignParentStart="true"
+                 android:layout_alignParentRight="true"
+                 android:layout_alignParentEnd="true"
+                 android:layout_alignParentBottom="true"
+                 android:layout_alignParentTop="true" />
+
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:id="@+id/saleupdate_btn"
+             android:layout_width="20dp"
+             android:layout_height="match_parent"
+             android:layout_marginLeft="2dp"
+             android:layout_marginTop="2dp"
+             android:layout_weight="1.00"
+             >
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="@string/Achieved"
+                 android:textColor="#ffffff"
+                 android:gravity="center"
+                 android:textSize="13dp"
+                 android:textStyle="bold"
+                 android:layout_alignParentLeft="true"
+                 android:layout_alignParentStart="true"
+                 android:layout_alignParentRight="true"
+                 android:layout_alignParentEnd="true"
+                 android:id="@+id/achievd_grpby2"
+                 android:layout_alignParentTop="true"
+                 android:layout_alignParentBottom="true" />
+
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:id="@+id/salehistory_btn"
+             android:layout_width="20dp"
+             android:layout_height="match_parent"
+             android:layout_marginLeft="2dp"
+             android:layout_marginTop="2dp"
+             android:layout_weight="1.00" >
+
+             <TextView
+                 android:id="@+id/age_grpby2"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="@string/Percentage"
+                 android:textColor="#ffffff"
+                 android:gravity="center"
+                 android:textSize="13dp"
+                 android:textStyle="bold"
+                 android:layout_alignParentLeft="true"
+                 android:layout_alignParentStart="true"
+                 android:layout_alignParentRight="true"
+                 android:layout_alignParentEnd="true"
+                 android:layout_alignParentTop="true"
+                 android:layout_alignParentBottom="true" />
+         </RelativeLayout>
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_viewtarget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_header2"
+            android:layout_marginTop="5dp"
+            card_view:cardCornerRadius="16dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_margin="@dimen/common_5_dp"
+                android:layout_marginRight="@dimen/common_10_dp">
+
+                <TextView
+                    android:id="@+id/prdcatg_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#696969"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/prdcatg_more"
+                    android:layout_marginTop="@dimen/common_5_dp"
+                    android:weightSum="105">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="35">
+
+                        <ImageView
+                            android:id="@+id/img_target"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="4dp"
+                            android:src="@drawable/target_adapter" />
+
+                        <TextView
+                            android:id="@+id/txt_target"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/img_target"
+                            android:text="@string/Targett"
+                            android:textColor="#17619A"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/target_grpby"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_toRightOf="@+id/img_target"
+                            android:gravity="center|left"
+                            android:text="0"
+                            android:textColor="#696969"
+                            android:textSize="12dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="35">
+
+                        <ImageView
+                            android:id="@+id/img_achived"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="4dp"
+                            android:src="@drawable/achieved_adapter" />
+
+                        <TextView
+                            android:id="@+id/txt_achived"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/img_achived"
+                            android:text="@string/Achieved"
+                            android:textColor="#17619A"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/achievd_grpby"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_toRightOf="@+id/img_achived"
+                            android:gravity="center|left"
+                            android:text="0"
+                            android:textColor="#696969"
+                            android:textSize="12dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="35">
+
+                        <ImageView
+                            android:id="@+id/img_percent"
+                            android:layout_width="22dp"
+                            android:layout_height="25dp"
+                            android:layout_marginTop="4dp"
+                            android:src="@drawable/percent_adapter" />
+
+                        <TextView
+                            android:id="@+id/txt_percent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/img_percent"
+                            android:text="@string/Percentage"
+                            android:textColor="#17619A"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/age_grpby"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_toRightOf="@+id/img_percent"
+                            android:gravity="center|left"
+                            android:text="0"
+                            android:textColor="#696969"
+                            android:textSize="12dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/product_header2"
+            android:padding="6dp"
+            android:layout_height="wrap_content"
+            android:background="#3084D0"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/month_top"
+                android:textAlignment="center"
+                android:textColor="#f9f5f5"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:text="" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

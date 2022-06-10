@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/drecycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_above="@+id/dtxttotalPreview" />
+
+    <TextView
+        android:id="@+id/dtxttotalPreview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/thumbnail"
+        android:gravity="center"
+        android:paddingLeft="@dimen/album_title_padding"
+        android:paddingRight="@dimen/album_title_padding"
+        android:paddingTop="7dp"
+        android:layout_marginBottom="5dp"
+        android:text=""
+        android:layout_above="@+id/linearLayout3"
+        android:textColor="@color/album_title"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="3dp"
+        android:id="@+id/linearLayout3">
+
+
+        <Button
+            android:id="@+id/d_update"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="9dp"
+            android:text="Update"
+            android:visibility="gone"
+            android:background="#414042"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/d_delivered"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="9dp"
+            android:text="@string/Delivered"
+            android:background="#414042"
+            android:textColor="#FFFFFF"
+
+            />
+
+        <Button
+            android:id="@+id/d_cancel"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="@string/Cancel"
+            android:background="#414042"
+            android:textColor="#FFFFFF" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

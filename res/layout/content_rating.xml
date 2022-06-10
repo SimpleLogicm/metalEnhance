@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/metal_bg_all"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".kotlinFiles.CustomerRating"
+    tools:showIn="@layout/activity_ratingview">
+
+    <LinearLayout
+        android:id="@+id/linearMian"
+        android:layout_width="match_parent"
+        android:background="?attr/fulllayoutbg"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/hedder_theame"
+            android:layout_width="match_parent"
+            android:src="@drawable/light_hedder"
+            android:scaleType="fitXY"
+            android:layout_height="70dp">
+
+        </ImageView>
+
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:id="@+id/rv"
+    android:padding="@dimen/common_10_dp"
+    android:layout_height="wrap_content">
+
+</androidx.recyclerview.widget.RecyclerView>
+
+
+
+    </LinearLayout>
+</RelativeLayout>

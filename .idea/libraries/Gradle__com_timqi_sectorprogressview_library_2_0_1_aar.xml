@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.timqi.sectorprogressview:library:2.0.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fa381e57dbae90a91ca39b7ac33e96ef/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fa381e57dbae90a91ca39b7ac33e96ef/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fa381e57dbae90a91ca39b7ac33e96ef/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:id="@+id/containerPreview"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/common_50_dp"
+
+   >
+
+    <LinearLayout
+        android:id="@+id/linearMian"
+        android:layout_width="match_parent"
+        android:background="?attr/fulllayoutbg"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/hedder_theame"
+            android:layout_width="match_parent"
+            android:src="@drawable/light_hedder"
+            android:scaleType="fitXY"
+            android:layout_height="70dp">
+
+        </ImageView>
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/common_10_dp"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <androidx.cardview.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:id="@+id/swipe_card"
+                    android:layout_width="match_parent"
+                    card_view:cardBackgroundColor="?attr/cardbackground"
+                    android:layout_height="300dp"
+                    card_view:cardCornerRadius="20dp"
+                    android:layout_below="@+id/search_variants"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+
+                        >
+                        <com.msimplelogic.swipelistview.SwipeListView
+                            android:id="@+id/example_lv_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            swipe:swipeFrontView="@+id/swipelist_frontview"
+                            swipe:swipeBackView="@+id/swipelist_backview"
+                            swipe:swipeCloseAllItemsWhenMoveList="true"
+                            swipe:swipeMode="both"
+                            android:scrollbars="vertical"
+
+                            android:divider="@color/colorPrimary"
+                            />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/buttonPreviewAddMOre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#1784D3"
+                    android:fontFamily="sans-serif"
+                    android:layout_below="@+id/swipe_card"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="@dimen/common_15_dp"
+                    android:layout_marginTop="@dimen/common_20_dp"
+                    android:text="@string/PAdd_More"/>
+
+                <TextView
+                    android:id="@+id/buttonPreviewHome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#D25252"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/swipe_card"
+                    android:layout_marginTop="@dimen/common_20_dp"
+                    android:text="@string/Cancel_Order"/>
+
+                <RelativeLayout
+                    android:id="@+id/total_checkout_lout"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="@dimen/common_20_dp"
+                    android:layout_below="@+id/buttonPreviewAddMOre">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        swipe:cardBackgroundColor="?attr/preview_card"
+                        app:cardCornerRadius="20dp"
+
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:padding="@dimen/common_5_dp"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/txttotalPreview"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginTop="0dp"
+                                android:fontFamily="sans-serif"
+                                android:gravity="center"
+                                android:textSize="13dp"
+                                android:textColor="#ffffff"
+                                android:textStyle="bold"
+                                android:visibility="invisible"
+                                android:text="" />
+
+                            <TextView
+                                android:id="@+id/txttotalPreview2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginTop="0dp"
+                                android:fontFamily="sans-serif"
+                                android:gravity="center"
+                                android:textSize="13dp"
+                                android:textColor="#ffffff"
+                                android:textStyle="bold"
+
+                                android:text="@string/Total_Amount" />
+
+                            <TextView
+                                android:id="@+id/txttotalPreview1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text=""
+                                android:gravity="center"
+                                android:textColor="#ffffff"
+                                android:layout_toRightOf="@+id/txttotalPreview2"/>
+
+                            <TextView
+                                android:id="@+id/view_desabled_totalamt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="4574767"
+                                android:visibility="gone"
+                                android:gravity="center"
+                                android:textColor="#ffffff"
+                                android:layout_toRightOf="@+id/txttotalPreview1"
+                                />
+
+                            <View
+                                android:id="@+id/view_line"
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="#ffffff"
+                                android:layout_marginLeft="@dimen/common_5_dp"
+                                android:layout_marginRight="@dimen/common_5_dp"
+                                android:layout_toRightOf="@+id/view_desabled_totalamt"></View>
+
+                            <ImageView
+                                android:id="@+id/buttonPreviewCheckout"
+                                android:layout_width="20dp"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/checkout_img"
+                                android:layout_marginRight="@dimen/common_30_dp"
+                                />
+
+                            <TextView
+                                android:id="@+id/txt_checkout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:textSize="13dp"
+                                android:textColor="#ffffff"
+                                android:textStyle="bold"
+                                android:gravity="center|right"
+                                android:layout_toLeftOf="@+id/buttonPreviewCheckout"
+                                android:layout_marginRight="@dimen/common_5_dp"
+                                android:layout_toRightOf="@+id/view_line"
+                                android:text="@string/PCheckout"/>
+
+                        </RelativeLayout>
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txt_knowmoredeal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/filter_short_text_color"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/common_10_dp"
+                    android:layout_below="@+id/total_checkout_lout"
+                    android:text="@string/Know_More_Deals"/>
+
+                <LinearLayout
+                    android:id="@+id/list_moredeal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/txt_knowmoredeal"
+                    android:orientation="vertical">
+
+                    <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+                        android:id="@+id/knowmoredeal_listview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/layout"
+                        app:shimmer_demo_angle="0"
+                        app:shimmer_demo_child_count="10"
+                        app:shimmer_demo_grid_child_count="2"
+                        app:shimmer_demo_layout_manager_type="linear_vertical" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/viewmoredeal_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/list_moredeal"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:text="View More Deals ->"
+                    android:textColor="#2F78AB"
+                    android:textSize="@dimen/common_15_dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

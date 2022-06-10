@@ -1,0 +1,32 @@
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:targetApi="25">
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/advertisement"
+        android:shortcutId="shortcut_name"
+        android:shortcutDisabledMessage="@string/advertisement"
+        android:shortcutLongLabel="@string/advertisement"
+        android:shortcutShortLabel="@string/advertisement">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.msimplelogic.activities.kotlinFiles.Video_Main_List"
+            android:targetPackage="com.msimplelogic.activities">
+        </intent>
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/newlaunch"
+        android:shortcutId="shortcut_name2"
+        android:shortcutDisabledMessage="@string/new_launch"
+        android:shortcutLongLabel="@string/new_launch"
+        android:shortcutShortLabel="@string/new_launch">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.msimplelogic.activities.kotlinFiles.Image_Gellary"
+            android:targetPackage="com.msimplelogic.activities">
+        </intent>
+
+    </shortcut>
+</shortcuts>

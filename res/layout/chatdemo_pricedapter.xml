@@ -1,0 +1,102 @@
+<androidx.cardview.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardBackgroundColor="#EFF6FF"
+    card_view:cardCornerRadius="5dp"
+    android:layout_margin="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        >
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:padding="5dp"
+            android:text=""
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:textColor="@android:color/black"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/txtRP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RP : "
+            android:gravity="center_vertical"
+            android:textSize="13dp"
+            android:layout_below="@id/username"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/messageRP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="13dp"
+            android:layout_below="@id/username"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/txtName"
+            android:layout_marginTop="7dp"
+            />
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MRP : "
+            android:gravity="center_vertical"
+            android:textSize="13dp"
+            android:layout_below="@id/messageRP"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="13dp"
+            android:layout_below="@id/messageRP"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/txtName"
+            android:layout_marginTop="7dp"
+            />
+
+        <TextView
+            android:id="@+id/seperator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:visibility="gone"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/message"
+            android:layout_below="@id/username"/>
+
+        <TextView
+            android:id="@+id/txtmrp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:visibility="gone"
+            android:textSize="13dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/txtSurname"
+            android:layout_below="@id/username"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

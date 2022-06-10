@@ -1,0 +1,15 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\NEW_METAL\metalenhance\LibAndroidCrop\AndroidManifest.xml:1:1-7:12
+INJECTED from E:\NEW_METAL\metalenhance\LibAndroidCrop\AndroidManifest.xml:1:1-7:12
+INJECTED from E:\NEW_METAL\metalenhance\LibAndroidCrop\AndroidManifest.xml:1:1-7:12
+	package
+		ADDED from E:\NEW_METAL\metalenhance\LibAndroidCrop\AndroidManifest.xml:2:5-42
+		INJECTED from E:\NEW_METAL\metalenhance\LibAndroidCrop\AndroidManifest.xml
+		INJECTED from E:\NEW_METAL\metalenhance\LibAndroidCrop\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\NEW_METAL\metalenhance\LibAndroidCrop\AndroidManifest.xml:1:11-69
+application
+ADDED from E:\NEW_METAL\metalenhance\LibAndroidCrop\AndroidManifest.xml:4:5-5:38
+	android:allowBackup
+		ADDED from E:\NEW_METAL\metalenhance\LibAndroidCrop\AndroidManifest.xml:5:9-35

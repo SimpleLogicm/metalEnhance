@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_product__search"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+
+    <LinearLayout
+        android:id="@+id/containerNewOrder"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:id="@+id/spnCategory"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="Select Category"
+            android:textColor="@color/black"
+            android:inputType="textPersonName"
+            android:paddingTop="0dp" />
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:id="@+id/spnProduct"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:hint="Select Product"
+            android:inputType="textPersonName"
+            android:paddingTop="0dp" />
+
+        <AutoCompleteTextView
+            android:id="@+id/Product_Variant"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:inputType="textMultiLine"
+            android:completionThreshold="1"
+            android:imeOptions="actionDone"
+            android:textColor="#111111"
+            android:ems="10"
+            android:textSize="15dp"
+            android:drawableRight="@drawable/search_icon"
+            android:hint="Search Variant"
+            android:paddingTop="20dp" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="241dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:inputType="textMultiLine"
+            android:textSize="16dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:visibility="gone"
+            android:layout_marginTop="20dp"
+
+            android:id="@+id/txt_data" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="241dp"
+                android:layout_height="40dp"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="none"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:id="@+id/fromdate"
+                android:hint="Select From Date"
+                />
+
+            <EditText
+                android:layout_width="241dp"
+                android:paddingLeft="10dp"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="none"
+                android:layout_height="40dp"
+                android:id="@+id/todate"
+                android:hint="Select To Date"
+                />
+        </LinearLayout>
+
+        <Button
+            android:text="OK"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:background="#075B97"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:id="@+id/button_prdsearch" />
+
+    </LinearLayout>
+</RelativeLayout>

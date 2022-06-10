@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/metal_bg_all"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.msimplelogic.activities.Schedule1"
+    tools:showIn="@layout/schedule1_main"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+    </ImageView>
+
+
+     <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="#c3c3c3"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="admin" />
+    </RelativeLayout>
+
+         <LinearLayout
+             android:id="@+id/lout_schedule_header"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#c3c3c3"
+        android:layout_gravity="center" >
+                      
+                     <RelativeLayout
+                        android:id="@+id/rlout_me_revoicit"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:background="#d3d3d3"
+                        android:layout_weight="1.00" >
+
+                         <TextView
+                             android:id="@+id/textView1fhfgh"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_alignParentLeft="true"
+                             android:layout_alignParentRight="true"
+                             android:layout_centerVertical="true"
+                             android:gravity="center"
+                             android:text="@string/AProduct"
+                             android:textColor="#111111"
+                             android:textSize="15dp" />
+
+                    </RelativeLayout>
+                    
+                     <RelativeLayout
+                         android:id="@+id/rlout_me_revoicithfhfg"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:background="#d3d3d3"
+                        android:layout_weight="1.00" >
+
+                         <TextView
+                             android:id="@+id/textView1h"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_alignParentLeft="true"
+                             android:layout_alignParentRight="true"
+                             android:layout_centerVertical="true"
+                             android:gravity="center"
+                             android:text="@string/Quantity_Ordered"
+                             android:textColor="#111111"
+                             android:textSize="15dp" />
+
+                    </RelativeLayout>
+                    
+                     <RelativeLayout
+                         android:id="@+id/rlout_me_revoicitfgh"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:background="#d3d3d3"
+                        android:layout_weight="1.00" >
+
+                         <TextView
+                             android:id="@+id/textView1fgh"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_alignParentLeft="true"
+                             android:layout_alignParentRight="true"
+                             android:layout_centerVertical="true"
+                             android:text="@string/Quantity_Delivered"
+                             android:gravity="center"
+                             android:textColor="#111111"
+                             android:textSize="15dp" />
+
+                    </RelativeLayout>
+    </LinearLayout>
+    
+         
+       <LinearLayout
+        android:id="@+id/lout_schedule"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center" >
+                     
+                <ListView
+				      android:id="@+id/DProduct_List"
+                      android:layout_margin="2dp"
+				      android:background="#ffffff"
+				      android:adjustViewBounds="true"
+				      android:layout_width="wrap_content"
+				      android:layout_height="130dp" >
+			   	   </ListView>
+                      
+                     <!--<RelativeLayout
+                        android:id="@+id/rlout_me_revoicit"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.00" >
+
+                         <TextView
+                             android:id="@+id/textView1"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_alignParentLeft="true"
+                             android:layout_alignParentRight="true"
+                             android:layout_centerVertical="true"
+                             android:gravity="center"
+                             android:text="AP 15 RHYTHM"
+                             android:textColor="#111111"
+                             android:textStyle="bold"
+                             android:textSize="15dp" />
+
+                    </RelativeLayout>
+                    
+                     <RelativeLayout
+                        android:id="@+id/rlout_me_revoicit"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="1.00" >
+
+                         <TextView
+                             android:id="@+id/textView1"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_alignParentLeft="true"
+                             android:layout_alignParentRight="true"
+                             android:layout_centerVertical="true"
+                             android:gravity="center"
+                             android:text="10"
+                             android:textColor="#111111"
+                             android:textStyle="bold"
+                             android:textSize="15dp" />
+
+                    </RelativeLayout>
+                    
+                     <RelativeLayout
+                        android:id="@+id/rlout_me_revoicit"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="1.00" >
+
+                         <TextView
+                             android:id="@+id/textView1"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_alignParentLeft="true"
+                             android:layout_alignParentRight="true"
+                             android:layout_centerVertical="true"
+                             android:text="10"
+                             android:gravity="center"
+                             android:textColor="#111111"
+                             android:textStyle="bold"
+                             android:textSize="15dp" />
+
+                    </RelativeLayout> -->
+    </LinearLayout>
+
+         <!--  <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:background="#d3d3d3" >
+         </RelativeLayout>
+         -->
+         <!--  <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_gravity="center" >
+                     
+             		<ListView
+				      android:id="@+id/C_list"
+				      android:layout_marginTop="15dp"
+				      android:visibility="gone"
+				      android:gravity="center"
+				      android:background="#ffffff"
+				      android:adjustViewBounds="true"
+				      android:layout_width="match_parent"
+				      android:layout_height="220dp" >
+			   	   </ListView>
+                      
+                     <RelativeLayout
+                        android:id="@+id/rlout_me_revoicit"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+              
+                        android:layout_weight="1.00" >
+
+                         <TextView
+                             android:id="@+id/textView1"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_alignParentLeft="true"
+                             android:layout_alignParentRight="true"
+                             android:layout_centerVertical="true"
+                             android:gravity="center"
+                             android:text="STRAWBERRY"
+                             android:textColor="#111111"
+                             android:textStyle="bold"
+                             android:textSize="15dp" />
+
+                    </RelativeLayout>
+                    
+                     <RelativeLayout
+                        android:id="@+id/rlout_me_revoicit"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="1.00" >
+
+                         <TextView
+                             android:id="@+id/textView1"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_alignParentLeft="true"
+                             android:layout_alignParentRight="true"
+                             android:layout_centerVertical="true"
+                             android:gravity="center"
+                             android:text="30"
+                             android:textColor="#111111"
+                             android:textStyle="bold"
+                             android:textSize="15dp" />
+
+                    </RelativeLayout>
+                    
+                     <RelativeLayout
+                        android:id="@+id/rlout_me_revoicit"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                     
+                        android:layout_weight="1.00" >
+
+                         <TextView
+                             android:id="@+id/textView1"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_alignParentLeft="true"
+                             android:layout_alignParentRight="true"
+                             android:layout_centerVertical="true"
+                             android:text="10"
+                             android:gravity="center"
+                             android:textColor="#111111"
+                             android:textStyle="bold"
+                             android:textSize="15dp" />
+
+                    </RelativeLayout> 
+    </LinearLayout> -->
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:background="#d3d3d3" >
+         </RelativeLayout>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="@dimen/common_4_dp"
+            android:layout_margin="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/common_10_dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/common_0_dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtName"
+                            style="@style/signuptext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="@string/Dispatch"
+                            android:textColor="@color/shedulelist_shopname"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/DISP_DATE"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/common_5_dp"
+                            android:fontFamily="@font/work_sans"
+                            android:text=""
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/common_0_dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtSurname"
+                            style="@style/signuptext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="@string/Estimated_Arrival"
+                            android:textColor="@color/shedulelist_shopname"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/EST_DATE"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/common_5_dp"
+                            android:fontFamily="@font/work_sans"
+                            android:gravity="right"
+                            android:text=""
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtSurname2"
+                    style="@style/welcometext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/Mode_of_Payments"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/D_CASH"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text=""
+                    android:fontFamily="@font/work_sans"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/txtSurname3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Credit_Limits"
+                    android:gravity="center_vertical"
+                    android:textSize="15dp"
+                    style="@style/welcometext"
+                    android:layout_marginTop="10dp"
+                   />
+
+                <TextView
+                    android:id="@+id/DC_LIMIT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:fontFamily="@font/work_sans"
+                    android:textSize="14dp"
+                    android:layout_marginTop="5dp"
+                />
+
+                <TextView
+                    android:id="@+id/txtSurname4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Previous_Outstanding"
+                    android:textSize="15dp"
+                    style="@style/welcometext"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/PRE_OUTSTANDING"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:fontFamily="@font/work_sans"
+                    android:textSize="14dp"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txtSurname5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Current_Order"
+                    android:gravity="center_vertical"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"
+                    style="@style/welcometext"
+                    />
+
+                <TextView
+                    android:id="@+id/DCU_ORDER"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/work_sans"
+                    android:text=""
+                    android:textSize="14dp"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txtSurname6"
+                    style="@style/welcometext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_10_dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/Amount_Overdues"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/DU_AMOUNT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_5_dp"
+                    android:fontFamily="@font/work_sans"
+                    android:text=""
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="Comment"
+        android:ems="10">
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/but_invoice"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#545454"
+                android:visibility="gone"
+                android:text="@string/Back_button"
+                android:textColor="#FFFFFF" />
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

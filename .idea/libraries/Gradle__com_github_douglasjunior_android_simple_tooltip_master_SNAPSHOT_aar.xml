@@ -1,0 +1,23 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.douglasjunior:android-simple-tooltip:master-SNAPSHOT@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/78b63507fd8930b8ec68566842c52e0f/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/78b63507fd8930b8ec68566842c52e0f/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/78b63507fd8930b8ec68566842c52e0f/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4f6b4a67c2097c5657bd2aa178e7576c/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4f6b4a67c2097c5657bd2aa178e7576c/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4f6b4a67c2097c5657bd2aa178e7576c/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/82a94760361c0f1f17d64e8938cfbe6f/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/82a94760361c0f1f17d64e8938cfbe6f/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/82a94760361c0f1f17d64e8938cfbe6f/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.douglasjunior/android-simple-tooltip/master-SNAPSHOT/9e276d43ac609722ceb28f46f1ac001d8479e985/android-simple-tooltip-master-SNAPSHOT-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.douglasjunior/android-simple-tooltip/master-SNAPSHOT/b62948afa2c3f42e2d0bb8e921563655307f83ef/android-simple-tooltip-master-SNAPSHOT-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.douglasjunior/android-simple-tooltip/master-SNAPSHOT/85e30d3e3f8ea006f51c81fca5ceff09732abea3/android-simple-tooltip-master-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.douglasjunior/android-simple-tooltip/master-SNAPSHOT/beaeb2090e25cc79efa18e1688456541c5a369aa/android-simple-tooltip-master-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

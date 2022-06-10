@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="75dip"
+
+
+    >
+
+
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="?attr/cardbackground"
+        android:id="@+id/childButtonnew"
+        android:layout_margin="@dimen/common_10_dp"
+        app:cardCornerRadius="@dimen/common_10_dp"
+        app:cardElevation="@dimen/common_4_dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/common_10_dp"
+            android:layout_marginTop="@dimen/common_5_dp"
+            android:layout_marginBottom="@dimen/common_5_dp"
+            android:layout_weight="1.3"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/work_sans"
+                android:textSize="16sp"
+                android:textColor="?attr/hint_text_color"
+                android:text="@string/CUSTOMER">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/childTextViewnew"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:fontFamily="@font/work_sans"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="#0C4EA2"
+                android:textSize="14sp"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/common_5_dp"
+            android:layout_marginRight="@dimen/common_10_dp"
+            android:layout_marginBottom="@dimen/common_5_dp"
+            android:layout_weight="0.7"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_location_blue"
+                android:fontFamily="@font/work_sans"
+                android:textColor="?attr/hint_text_color"
+                android:text="@string/Distance">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/distance"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:fontFamily="@font/work_sans"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text=""
+                android:textColor="?attr/filter_short_text_color"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+        <Button
+
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:text="@string/View"
+            android:textSize="12dp"
+            android:visibility="gone" />
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

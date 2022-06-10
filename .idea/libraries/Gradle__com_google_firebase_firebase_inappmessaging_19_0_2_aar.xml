@@ -1,0 +1,24 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.firebase:firebase-inappmessaging:19.0.2@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f5a09fcbe1d0825125a68a55dbd2ebf8/jetified-firebase-inappmessaging-19.0.2/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7de92e2d149ce44080d7213ebfa23831/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7de92e2d149ce44080d7213ebfa23831/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7de92e2d149ce44080d7213ebfa23831/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/80d43b28367d2ece7ed47dc380a42a0c/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/80d43b28367d2ece7ed47dc380a42a0c/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/80d43b28367d2ece7ed47dc380a42a0c/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ed1d195cb0e0bce0813068ec79d7205a/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ed1d195cb0e0bce0813068ec79d7205a/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ed1d195cb0e0bce0813068ec79d7205a/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/caa246d7fac96ee97d79e484d1ac7a15/transformed/jetified-firebase-inappmessaging-19.0.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7084b370ca9fb07da0bbc763cebaafdc/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7084b370ca9fb07da0bbc763cebaafdc/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7084b370ca9fb07da0bbc763cebaafdc/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.firebase/firebase-inappmessaging/19.0.2/3cf0910752b336d1c7d440fcbd04ea6b1b280373/firebase-inappmessaging-19.0.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

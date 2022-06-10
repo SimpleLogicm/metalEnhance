@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:id="@+id/swipelist_backview"
+        android:tag="back"
+        android:layout_width="fill_parent"
+        android:layout_height="73dp"
+        android:weightSum="100"
+        android:gravity="right|center"
+        android:paddingTop="2dp"
+        android:paddingBottom="6dp"
+        >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:id="@+id/example_row_b_action_3"
+            android:layout_weight="10"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/new_prev_detailicon"
+            />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:id="@+id/example_row_b_action_1"
+            android:layout_weight="10"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/new_prev_editicon" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:id="@+id/example_row_b_action_2"
+            android:layout_weight="10"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/new_prev_deleteicon"
+            android:layout_marginRight="12dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/swipelist_frontview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp"
+        android:paddingBottom="6dp"
+        android:background="@drawable/cardbg"
+        android:gravity="center|left"
+        android:padding="15dp"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            android:src="@drawable/custprofile_home"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/example_row_tv_title"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#494949"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/example_row_tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:inputType="number"
+                android:textSize="12dp"
+                android:textColor="#2F5C82"
+                android:layout_below="@+id/example_row_tv_title"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/example_row_tv_description1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:inputType="number"
+                android:textSize="12dp"
+                android:visibility="invisible"
+                android:textColor="#B0B0B0"
+                android:layout_marginLeft="@dimen/common_5_dp"
+                android:layout_below="@+id/example_row_tv_title"
+                android:layout_toRightOf="@+id/example_row_tv_price"
+                android:text="64565" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="28"
+                android:text="@string/desc"
+                android:visibility="invisible"
+                android:textSize="13dp"
+                android:gravity="center"
+                android:id="@+id/order_idn" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|right">
+
+            <TextView
+                android:id="@+id/example_row_tv_description"
+                android:layout_width="@dimen/common_50_dp"
+                android:layout_height="@dimen/common_20_dp"
+                android:layout_alignParentRight="true"
+                android:textSize="12dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/plus_minus_bg"/>
+
+            <ImageView
+                android:id="@+id/preview_schemebtn"
+                android:layout_width="@dimen/common_60_dp"
+                android:layout_height="@dimen/common_50_dp"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"
+                android:layout_below="@+id/example_row_tv_description"
+                android:src="@drawable/scheme_nbtn"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearMian"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/common_50_dp"
+        android:background="?attr/fulllayoutbg"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/hedder_theame"
+            android:layout_width="match_parent"
+            android:src="@drawable/light_hedder"
+            android:scaleType="fitXY"
+            android:layout_height="70dp">
+
+        </ImageView>
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="@dimen/common_10_dp"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/tab_lout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                 >
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="30dp"
+                        android:text="Day Coverage"
+                        android:textColor="#1D4B7D"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_marginRight="@dimen/common_10_dp"
+                        android:background="@drawable/buttonshape1"
+                        android:layout_alignParentLeft="true"
+                        android:layout_margin="@dimen/common_10_dp"/>
+
+                    <TextView
+                        android:id="@+id/btn_viewtarget"
+                        android:layout_width="126dp"
+                        android:layout_height="30dp"
+                        android:text="View Target"
+                        android:textColor="#C5C5C5"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="@dimen/common_10_dp"/>
+
+                    <TextView
+                        android:id="@+id/btn_dashboard"
+                        android:layout_width="126dp"
+                        android:layout_height="30dp"
+                        android:text="@string/DashBoard"
+                        android:textColor="#C5C5C5"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="@dimen/common_10_dp"/>
+
+                </RelativeLayout>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/calendar_lout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardCornerRadius="10dp"
+                    android:layout_margin="5dp"
+                    android:layout_below="@+id/tab_lout"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Calendar"
+                        android:gravity="center"
+                        android:textColor="#111111"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/common_15_dp"
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/common_5_dp"
+                        />
+
+
+                    <!--<com.applandeo.materialcalendarview.CalendarView-->
+                    <!--android:id="@+id/calendarView"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="0dp"-->
+                    <!--app:headerColor="@color/colorPrimary"-->
+                    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+                    <!--app:layout_constraintLeft_toLeftOf="parent"-->
+                    <!--app:layout_constraintRight_toRightOf="parent"-->
+                    <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+                    <com.skyhope.eventcalenderlibrary.CalenderEvent
+                        android:id="@+id/calender_event"
+                        android:layout_width="match_parent"
+                        app:selector_color="#9BC8FF"
+                        android:layout_marginTop="22dp"
+                        android:visibility="gone"
+                        android:layout_height="match_parent" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:background="?attr/cardbackground"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:id="@+id/month"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:background="#EBEBEB"
+                            android:gravity="center"
+                            android:textColor="?attr/filter_short_text_color"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <com.view.calender.horizontal.umar.horizontalcalendarview.HorizontalCalendarView
+                            android:id="@+id/horizontalcalendarview"
+                            android:layout_width="match_parent"
+                            android:layout_below="@+id/month"
+                            android:layout_height="70dp">
+
+                        </com.view.calender.horizontal.umar.horizontalcalendarview.HorizontalCalendarView>
+                        <!--<com.riontech.calendar.CustomCalendar-->
+                        <!--android:id="@+id/customCalendar"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--app:endMonth="07"-->
+                        <!--app:endYear="2016"-->
+                        <!--app:startMonth="01"-->
+                        <!--app:startYear="2016"-->
+                        <!--/>-->
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/txt_productivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="My Productivity"
+                    android:textColor="?attr/filter_short_text_color"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:textSize="@dimen/common_15_dp"
+                    android:layout_marginTop="@dimen/common_30_dp"
+                    android:layout_below="@+id/calendar_lout"
+                    android:layout_alignParentLeft="true"/>
+
+                <LinearLayout
+                    android:id="@+id/productivity_lout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    android:layout_marginTop="@dimen/common_15_dp"
+                    android:gravity="center"
+                    android:layout_below="@+id/txt_productivity">
+
+                    <TextView
+                        android:id="@+id/tv_visited_planned"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="3.2"
+                        android:textSize="14dp"
+                        android:gravity="center"
+                        android:textColor="?attr/filter_short_text_color"
+                        android:layout_marginRight="@dimen/common_5_dp"
+                        android:background="@drawable/cardbg"
+                        android:text="Visit \n Planned"/>
+
+                    <TextView
+                        android:id="@+id/tv_visit_completed"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="3.2"
+                        android:textSize="14dp"
+                        android:gravity="center"
+                        android:textColor="?attr/filter_short_text_color"
+                        android:layout_marginRight="@dimen/common_5_dp"
+                        android:layout_marginLeft="@dimen/common_5_dp"
+                        android:background="@drawable/cardbg"
+                        android:text="  Visit \n Completed "/>
+
+                    <TextView
+                        android:id="@+id/tv_positive_outcome"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="3.2"
+                        android:textSize="14dp"
+                        android:gravity="center"
+                        android:textColor="?attr/filter_short_text_color"
+                        android:layout_marginLeft="@dimen/common_5_dp"
+                        android:background="@drawable/cardbg"
+                        android:text="Positive \n Outcome"/>
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:id="@+id/bankcardId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardCornerRadius="5dp"
+                    android:layout_marginTop="@dimen/common_15_dp"
+                    card_view:cardBackgroundColor="?attr/cardbackground"
+                    android:layout_below="@+id/productivity_lout"
+                    android:layout_margin="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <!--<com.timqi.sectorprogressview.SectorProgressView-->
+                        <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+                        <!--android:id="@+id/sectorprogress_productivity"-->
+                        <!--android:layout_width="60dp"-->
+                        <!--android:layout_height="60dp"-->
+                        <!--app:bgColor="#9BC8FF"-->
+                        <!--app:fgColor="#075B97"-->
+                        <!--app:startAngle="0"-->
+                        <!--/>-->
+
+                        <com.github.mikephil.charting.charts.PieChart
+                            android:id="@+id/piechart_productivity"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginTop="@dimen/common_5_dp"
+                            />
+
+
+                        <TextView
+                            android:id="@+id/txt_prod"
+                            android:layout_width="84dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/piechart_productivity"
+                            android:layout_marginTop="11dp"
+                            android:text="Productivity"
+                            android:gravity="center"
+                            android:textColor="?attr/hint_text_color"
+                            android:textSize="@dimen/home_text_size"
+                            android:textStyle="bold" />
+
+                        <!--<com.timqi.sectorprogressview.SectorProgressView-->
+                        <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+                        <!--android:id="@+id/sectorprogress_coverage"-->
+                        <!--android:layout_width="60dp"-->
+                        <!--android:layout_height="60dp"-->
+                        <!--app:bgColor="#9BC8FF"-->
+                        <!--app:fgColor="#075B97"-->
+                        <!--app:percent="75"-->
+                        <!--android:layout_centerHorizontal="true"-->
+                        <!--app:startAngle="0"-->
+                        <!--/>-->
+                        <!---->
+
+                        <com.github.mikephil.charting.charts.PieChart
+                            android:id="@+id/piechart_coverage"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginTop="@dimen/common_5_dp"
+                            android:layout_centerHorizontal="true"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/home_text_size"
+                            android:layout_marginTop="10dp"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="?attr/hint_text_color"
+                            android:layout_below="@+id/piechart_coverage"
+                            android:text="Coverage"/>
+
+                        <!--<com.timqi.sectorprogressview.SectorProgressView-->
+                        <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+                        <!--android:id="@+id/sectorprogress_new"-->
+                        <!--android:layout_width="60dp"-->
+                        <!--android:layout_height="60dp"-->
+                        <!--app:bgColor="#9BC8FF"-->
+                        <!--app:fgColor="#075B97"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--app:percent="75"-->
+                        <!--app:startAngle="0"-->
+                        <!--/>-->
+
+
+                        <com.github.mikephil.charting.charts.PieChart
+                            android:id="@+id/piechart_new"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginTop="@dimen/common_5_dp"
+                            android:layout_alignParentRight="true"/>
+
+
+                        <TextView
+                            android:layout_width="81dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/piechart_new"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="11dp"
+                            android:gravity="center"
+                            android:text="New"
+                            android:textColor="?attr/hint_text_color"
+                            android:textSize="@dimen/home_text_size"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:id="@+id/bankcardId1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardCornerRadius="5dp"
+                    card_view:cardBackgroundColor="?attr/cardbackground"
+                    android:layout_below="@+id/bankcardId"
+                    android:layout_margin="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:visibility="gone"
+                        >
+
+                        <!--<com.timqi.sectorprogressview.SectorProgressView-->
+                        <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+                        <!--android:id="@+id/sectorprogress_buildoutlet"-->
+                        <!--android:layout_width="105dp"-->
+                        <!--android:layout_height="100dp"-->
+                        <!--app:bgColor="#9BC8FF"-->
+                        <!--app:fgColor="#075B97"-->
+                        <!--app:percent="25"-->
+                        <!--app:startAngle="0"-->
+                        <!--android:layout_marginTop="@dimen/common_5_dp"-->
+                        <!--android:layout_below="@+id/txt_buildoutlet"-->
+                        <!--/>-->
+
+
+                        <com.github.mikephil.charting.charts.PieChart
+                            android:id="@+id/piechart_buildoutlet"
+                            android:layout_width="115dp"
+                            android:layout_height="115dp"
+                            android:layout_marginTop="@dimen/common_5_dp"
+                            android:layout_below="@+id/txt_buildoutlet"/>
+
+
+
+                        <TextView
+                            android:id="@+id/txt_buildoutlet"
+                            android:layout_width="107dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Billed Outlets"
+                            android:textColor="?attr/hint_text_color"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+
+
+
+                        <!--<com.timqi.sectorprogressview.SectorProgressView-->
+                        <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+                        <!--android:id="@+id/sectorprogress_unbuildoutlet"-->
+                        <!--android:layout_width="105dp"-->
+                        <!--android:layout_height="100dp"-->
+                        <!--app:bgColor="#9BC8FF"-->
+                        <!--app:fgColor="#075B97"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--app:percent="25"-->
+                        <!--android:layout_marginTop="@dimen/common_5_dp"-->
+                        <!--android:layout_below="@+id/txt_unbuildoutlet"-->
+                        <!--app:startAngle="0"-->
+
+                        <!--/>-->
+
+
+
+                        <com.github.mikephil.charting.charts.PieChart
+                            android:id="@+id/piechart_unbuildoutlet"
+                            android:layout_width="115dp"
+                            android:layout_height="115dp"
+                            android:layout_marginTop="@dimen/common_5_dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/txt_unbuildoutlet"/>
+
+
+
+
+                        <TextView
+                            android:id="@+id/txt_unbuildoutlet"
+                            android:layout_width="119dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center"
+                            android:text="Unbilled Outlets"
+                            android:textColor="?attr/hint_text_color"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/btn_viewtarget9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_5_dp"
+                    android:textSize="@dimen/common_15_dp"
+                    android:textStyle="bold"
+                    android:textColor="#17619A"
+                    android:visibility="gone"
+                    android:layout_below="@+id/bankcardId1"
+                    android:text="View Target > >"/>
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

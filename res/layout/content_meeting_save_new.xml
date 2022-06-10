@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:layout_marginTop="@dimen/common_50_dp"
+    android:background="@color/Activity_background"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    tools:context=".kotlinFiles.MeetingSaveNew"
+    tools:showIn="@layout/activity_meeting_save_new">
+
+    <LinearLayout
+        android:id="@+id/linearMian"
+        android:layout_width="match_parent"
+        android:background="?attr/fulllayoutbg"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <ImageView
+        android:id="@+id/hedder_theame"
+        android:layout_width="match_parent"
+        android:src="?attr/metal_headder"
+        android:scaleType="fitXY"
+        android:layout_height="70dp">
+
+    </ImageView>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:orientation="vertical">
+
+
+
+
+                <androidx.cardview.widget.CardView
+
+                    android:id="@+id/attendance_card_view3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mm_header_image"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/common_10_dp"
+                    android:layout_marginTop="@dimen/common_5_dp"
+                    android:layout_marginRight="@dimen/common_10_dp"
+                    android:layout_marginBottom="@dimen/common_10_dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    app:cardUseCompatPadding="true"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+
+                            android:id="@+id/btn_Check_In"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/primarycolor"
+                            android:text="Check In"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <Button
+                            android:id="@+id/btn_Check_Out"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:background="@color/white"
+                            android:text="Check Out"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <ImageView
+                    android:id="@+id/btn_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/attendance_card_view3"
+                    android:layout_gravity="right"
+                    android:layout_alignParentRight="true"
+                    android:tint="?attr/visit_schedule_historytext"
+                    android:layout_marginLeft="@dimen/common_10_dp"
+                    android:layout_marginTop="@dimen/common_5_dp"
+                    android:layout_marginRight="@dimen/common_10_dp"
+                    android:layout_marginBottom="@dimen/common_10_dp"
+                    android:background="@drawable/add_circle_outline">
+
+                </ImageView>
+
+                <LinearLayout
+                    android:id="@+id/dfgdfgdf"
+                    android:layout_marginLeft="@dimen/common_10_dp"
+                    android:layout_marginTop="@dimen/common_5_dp"
+                    android:layout_marginRight="@dimen/common_10_dp"
+                    android:layout_marginBottom="@dimen/common_10_dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/msave_recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        />
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/sdasd"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/btn_save"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="@dimen/common_10_dp"
+
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="@dimen/common_10_dp"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/s_ms_att_music"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="@dimen/common_20_dp"
+                        android:src="@drawable/mic"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/s_ms_att_pdf"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:rotation="45"
+                        android:src="@drawable/ic_attach_file_black_24dp"></ImageView>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_saves"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/common_5_dp"
+                    android:layout_marginBottom="@dimen/common_40_dp"
+                    android:background="@drawable/btnstyle"
+                    android:text="@string/Save"
+                    android:textColor="@color/white">
+
+                </Button>
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

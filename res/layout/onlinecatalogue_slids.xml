@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/vcheader"
+        android:layout_weight="0.12">
+
+        <TextView
+            android:id="@+id/flip_img"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:text="@string/Flip"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:id="@+id/prodname_doalog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:id="@+id/close_btn"
+            android:layout_width="35dp"
+            android:layout_height="45dp"
+            android:background="@drawable/close_filter"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <cpm.simplelogic.helper.TouchImageView
+        android:id="@+id/vdialog_img"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@+id/vcheader"
+        android:visibility="gone"
+        android:scaleType="fitCenter" />
+
+    <RelativeLayout
+        android:id="@+id/cv_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vdialog_img"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/cat_pid_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.40"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:text=""
+            android:textSize="17dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/prodnamedesc_doalog"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text=""
+            android:layout_marginTop="5dp"
+            android:textSize="13dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/schemenm_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/prodnamedesc_doalog"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/prodnamedesc_doalog"
+            android:layout_below="@+id/prodnamedesc_doalog"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:textSize="13dp"
+            android:paddingLeft="20dp"
+            android:text=""
+            android:visibility="gone"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mrp_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_alignEnd="@+id/prodnamedesc_doalog"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:layout_alignRight="@+id/prodnamedesc_doalog"
+            android:layout_below="@+id/prodnamedesc_doalog"
+            android:gravity="center"
+            android:textSize="13dp"
+            android:paddingLeft="20dp"
+            android:text=""
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/rp_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignEnd="@+id/mrp_dialog"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/mrp_dialog"
+            android:layout_below="@+id/mrp_dialog"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textSize="13dp"
+            android:paddingLeft="20dp"
+            android:text=""
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/price_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignEnd="@+id/mrp_dialog"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/mrp_dialog"
+            android:layout_below="@+id/rp_dialog"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            android:gravity="center"
+            android:textSize="13dp"
+            android:paddingLeft="20dp"
+            android:text=""
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/plus_dialog"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_above="@+id/rp_dialog"
+            android:layout_marginLeft="5dp"
+            android:visibility="gone"
+            android:layout_alignBottom="@+id/editval_dialog"
+            android:layout_toRightOf="@+id/editval_dialog"
+            android:background="@drawable/plus_sign" />
+
+        <TextView
+            android:id="@+id/editval_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:background="@drawable/rounded_corner"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="4"
+            android:text=""
+            android:visibility="gone"
+            android:layout_toRightOf="@+id/minus_btn"
+            android:textColor="@color/black"
+            android:textSize="13dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/price_dialog"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp" />
+
+        <ImageView
+            android:id="@+id/minus_dialog"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignBottom="@+id/editval_dialog"
+            android:layout_marginRight="5dp"
+            android:visibility="gone"
+            android:background="@drawable/minus_sign"
+            android:layout_toLeftOf="@+id/editval_dialog" />
+
+        <Button
+            android:id="@+id/online_catalog_dialog_save"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:text="@string/Save"
+            android:visibility="gone"
+            android:background="#414042"
+            android:textColor="#FFFFFF"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/editval_dialog" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editval_dialog"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/mrp_dialog"
+            android:layout_toLeftOf="@+id/mrp_dialog"
+            android:layout_toStartOf="@+id/mrp_dialog"
+            android:gravity="center"
+            android:text="MRP : "
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/online_catalog_dialog_save"
+            android:layout_alignEnd="@+id/textView10"
+            android:layout_alignRight="@+id/textView10"
+            android:layout_below="@+id/mrp_dialog"
+            android:layout_weight="0.12"
+            android:gravity="center"
+            android:text="RP : "
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/pp_mrp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/online_catalog_dialog_save"
+            android:layout_alignEnd="@+id/textView10"
+            android:layout_alignRight="@+id/textView10"
+            android:layout_below="@+id/mrp_dialog"
+            android:layout_weight="0.12"
+            android:gravity="center"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/pp_rp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/online_catalog_dialog_save"
+            android:layout_alignEnd="@+id/textView10"
+            android:layout_alignRight="@+id/textView10"
+            android:layout_below="@+id/mrp_dialog"
+            android:layout_weight="0.12"
+            android:gravity="center"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/vimg_url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

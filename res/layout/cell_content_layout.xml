@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:orientation="vertical"
+    android:visibility="gone"
+    >
+
+    <!-- content header line -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="?attr/oredrer_customer_headder"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/work_sans"
+                android:text="@string/Store_Name"
+                android:textColor="?attr/shopname_onorder_option"
+                android:textSize="13sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/shop_name"
+                style="@style/signuptext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/shop_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/work_sans"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="13sp">
+
+            </TextView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="?attr/oredrer_customer_footer"
+        android:orientation="vertical"
+        android:weightSum="6">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/work_sans"
+                android:text="@string/Mobile_Number_H"
+                android:textColor="?attr/contents_head_onorder_option"
+                android:textSize="14dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/c_mobile_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/work_sans"
+                android:gravity="right"
+                android:text=""
+                android:textColor="?attr/contents_values_onorder_option"
+                android:textSize="14dp"
+
+                >
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/work_sans"
+                android:text="@string/Landline_Number_H"
+                android:textColor="?attr/contents_head_onorder_option"
+                android:textSize="14dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/customer_landline"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/work_sans"
+                android:gravity="right"
+                android:text=""
+                android:textColor="?attr/contents_values_onorder_option"
+                android:textSize="14dp"
+
+                >
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/work_sans"
+                android:textColor="?attr/contents_head_onorder_option"
+                android:text="@string/Credit_Profi"
+                android:textSize="14dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/c_credit_profile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/work_sans"
+                android:gravity="right"
+                android:text=""
+                android:textColor="?attr/contents_values_onorder_option"
+
+                android:textSize="14dp"
+
+                >
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/work_sans"
+                android:textColor="?attr/contents_head_onorder_option"
+                android:text="@string/Outstanding"
+                android:textSize="14dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/c_outstanding"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/work_sans"
+                android:gravity="right"
+                android:text=""
+                android:textColor="?attr/contents_values_onorder_option"
+                android:textSize="14dp"
+
+                >
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/work_sans"
+                android:text="@string/Amount_Overdue"
+                android:textColor="?attr/contents_head_onorder_option"
+                android:textSize="14dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/c_overdue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/work_sans"
+                android:gravity="right"
+                android:text=""
+                android:textColor="?attr/contents_values_onorder_option"
+                android:textSize="14dp"
+
+                >
+
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/c_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/work_sans"
+                android:gravity="right"
+                android:text=""
+                android:textColor="?attr/contents_values_onorder_option"
+                android:textSize="16dp"
+                android:visibility="gone"
+
+                />
+            >
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

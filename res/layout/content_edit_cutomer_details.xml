@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".kotlinFiles.Edit_cutomer_details"
+    tools:showIn="@layout/activity_edit_cutomer_details">
+
+
+    <LinearLayout
+        android:id="@+id/linearMian"
+        android:layout_width="match_parent"
+        android:background="?attr/fulllayoutbg"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <ImageView
+        android:id="@+id/hedder_theame"
+        android:layout_width="match_parent"
+        android:src="@drawable/light_hedder"
+        android:scaleType="fitXY"
+        android:layout_height="70dp">
+
+    </ImageView>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/newswipe_addretailer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="@dimen/common_10_dp"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/swipe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_20_dp"
+                    android:layout_marginRight="@dimen/common_20_dp"
+                    android:src="@drawable/fourtimeline1">
+                </ImageView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/common_15_dp"
+                    android:layout_marginLeft="@dimen/common_15_dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:textSize="12dp"
+                        android:textColor="?attr/visit_schedule_historytext"
+                        android:textStyle="bold"
+                        android:layout_weight="20"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2"
+                        android:textSize="12dp"
+                        android:textColor="?attr/visit_schedule_historytext"
+                        android:textStyle="bold"
+                        android:layout_weight="20"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3"
+                        android:textSize="12dp"
+                        android:textColor="?attr/visit_schedule_historytext"
+                        android:layout_weight="20"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4"
+                        android:textColor="?attr/visit_schedule_historytext"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        />
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_addretailerdetails"
+                    android:layout_width="match_parent"
+                    app:cardBackgroundColor="?attr/cardbackground"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="4dp"
+                    android:layout_marginTop="@dimen/common_5_dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/common_10_dp"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/et_storename"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/common_10_dp"
+                            android:hint="@string/Store_Name"
+                            android:textSize="@dimen/common_15_dp"
+                            android:cursorVisible="true"
+                            android:textCursorDrawable="@null"
+                            android:backgroundTint="@color/gray"
+                            android:inputType="textPersonName"
+                            android:textColorHint="?attr/hint_text_color"
+                            android:textColor="?attr/New_orderoption_menueoptions_textcolor"></EditText>
+
+                        <EditText
+                            android:id="@+id/et_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/common_10_dp"
+                            android:hint="@string/Addressn"
+                            android:textSize="@dimen/common_15_dp"
+                            android:cursorVisible="true"
+                            android:textCursorDrawable="@null"
+                            android:backgroundTint="@color/gray"
+                            android:inputType="textMultiLine"
+                            android:textColorHint="?attr/hint_text_color"
+                            android:textColor="?attr/New_orderoption_menueoptions_textcolor"
+                            ></EditText>
+
+                        <EditText
+                            android:id="@+id/et_street"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/common_10_dp"
+                            android:hint="@string/Street"
+                            android:textSize="@dimen/common_15_dp"
+                            android:cursorVisible="true"
+                            android:textCursorDrawable="@null"
+                            android:backgroundTint="@color/gray"
+                            android:inputType="textPersonName"
+                            android:textColorHint="?attr/hint_text_color"
+                            android:textColor="?attr/New_orderoption_menueoptions_textcolor"></EditText>
+                        <EditText
+                            android:id="@+id/et_Landmark"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/common_10_dp"
+                            android:hint="@string/LandMark"
+                            android:textSize="@dimen/common_15_dp"
+                            android:cursorVisible="true"
+                            android:textCursorDrawable="@null"
+                            android:backgroundTint="@color/gray"
+                            android:textColorHint="?attr/hint_text_color"
+                            android:textColor="?attr/New_orderoption_menueoptions_textcolor"
+                            android:inputType="textPersonName"></EditText>
+                        <EditText
+                            android:id="@+id/et_pin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/common_10_dp"
+                            android:hint="@string/PIN"
+                            android:textSize="@dimen/common_15_dp"
+                            android:maxLength="6"
+                            android:cursorVisible="true"
+                            android:textCursorDrawable="@null"
+                            android:backgroundTint="@color/gray"
+                            android:textColorHint="?attr/hint_text_color"
+                            android:textColor="?attr/New_orderoption_menueoptions_textcolor"
+                            android:inputType="number"></EditText>
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:layout_margin="@dimen/common_10_dp"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="1.4"
+                                android:background="@drawable/card_border_black"
+                                android:layout_height="100dp">
+
+                                <TextView
+                                    android:id="@+id/tv_googleaddress"
+                                    android:fontFamily="@font/work_sans"
+                                    android:textSize="12sp"
+                                    android:layout_margin="@dimen/common_3_dp"
+                                    android:hint="@string/Google_Address"
+                                    android:textColorHint="?attr/hint_text_color"
+                                    android:textColor="?attr/New_orderoption_menueoptions_textcolor"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100dp"
+                                    >
+                                </TextView>
+                            </RelativeLayout>
+
+
+
+                            <TextView
+                                android:id="@+id/tv_pin_add"
+                                android:fontFamily="@font/work_sans"
+                                android:textSize="12sp"
+                                android:textColor="?attr/visit_schedule_historytext"
+                                android:text="@string/pin_add"
+                                android:gravity="right"
+                                android:layout_marginLeft="@dimen/common_2_dp"
+                                android:layout_width="@dimen/common_0_dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="0.6">
+
+                            </TextView>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_addretailerplace"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="?attr/cardbackground"
+                    android:layout_marginTop="@dimen/common_5_dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="4dp"
+                    android:visibility="gone"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/common_10_dp"
+                        android:orientation="vertical">
+
+
+
+                        <EditText
+                            android:id="@+id/editTextcontact1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/common_10_dp"
+                            android:hint="@string/Contact1"
+                            android:inputType="number"
+                            android:textSize="@dimen/common_15_dp"
+                            android:cursorVisible="true"
+                            android:maxLength="10"
+                            android:textCursorDrawable="@null"
+                            android:backgroundTint="@color/gray"
+                            android:digits="0123456789"
+                            android:paddingTop="10dp"
+                            android:textColorHint="?attr/hint_text_color"
+                            android:textColor="?attr/New_orderoption_menueoptions_textcolor"></EditText>
+
+                        <EditText
+                            android:id="@+id/editTextcontact2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:digits="0123456789"
+                            android:layout_margin="@dimen/common_10_dp"
+                            android:hint="@string/Contact2"
+                            android:textSize="@dimen/common_15_dp"
+                            android:maxLength="10"
+                            android:cursorVisible="true"
+                            android:textCursorDrawable="@null"
+                            android:backgroundTint="@color/gray"
+                            android:inputType="number"
+                            android:paddingTop="10dp"
+                            android:textColorHint="?attr/hint_text_color"
+                            android:textColor="?attr/New_orderoption_menueoptions_textcolor"></EditText>
+
+                        <EditText
+                            android:id="@+id/editTextcontact3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/common_10_dp"
+                            android:hint="@string/Contact3"
+                            android:digits="0123456789"
+                            android:textSize="@dimen/common_15_dp"
+                            android:cursorVisible="true"
+                            android:maxLength="12"
+                            android:textCursorDrawable="@null"
+                            android:backgroundTint="@color/gray"
+                            android:inputType="number"
+                            android:paddingTop="10dp"
+                            android:textColorHint="?attr/hint_text_color"
+                            android:textColor="?attr/New_orderoption_menueoptions_textcolor"></EditText>
+
+
+                        <EditText
+                            android:id="@+id/editTextEmial"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/common_10_dp"
+                            android:hint="@string/email_id_hint"
+                            android:inputType="textEmailAddress"
+                            android:textSize="@dimen/common_15_dp"
+                            android:cursorVisible="true"
+                            android:textCursorDrawable="@null"
+                            android:backgroundTint="@color/gray"
+                            android:paddingTop="10dp"
+                            android:textColorHint="?attr/hint_text_color"
+                            android:textColor="?attr/New_orderoption_menueoptions_textcolor"></EditText>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_addretailercontact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="?attr/cardbackground"
+                    android:layout_marginTop="@dimen/common_5_dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="4dp"
+                    android:visibility="gone"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/common_10_dp"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/editTextgst"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/common_10_dp"
+                            android:hint="@string/GSTIN"
+                            android:inputType="textCapCharacters"
+                            android:textSize="@dimen/common_15_dp"
+                            android:cursorVisible="true"
+                            android:textCursorDrawable="@null"
+                            android:backgroundTint="@color/gray"
+                            android:paddingTop="10dp"
+                            android:textColorHint="?attr/hint_text_color"
+                            android:textColor="?attr/New_orderoption_menueoptions_textcolor"></EditText>
+
+                        <EditText
+                            android:id="@+id/editTextbanckaccname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/common_10_dp"
+                            android:cursorVisible="true"
+                            android:textCursorDrawable="@null"
+                            android:backgroundTint="@color/gray"
+                            android:hint="@string/Banck_ac_name"
+                            android:inputType="textEmailAddress"
+                            android:paddingTop="10dp"
+                            android:textSize="@dimen/common_15_dp"
+                            android:textColorHint="?attr/hint_text_color"
+                            android:textColor="?attr/New_orderoption_menueoptions_textcolor"></EditText>
+
+                        <EditText
+                            android:id="@+id/editTextaccountno"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/common_10_dp"
+                            android:hint="@string/Banck_ac_nu"
+                            android:textSize="@dimen/common_15_dp"
+                            android:cursorVisible="true"
+                            android:textCursorDrawable="@null"
+                            android:backgroundTint="@color/gray"
+                            android:inputType="number"
+                            android:maxLength="15"
+                            android:paddingTop="10dp"
+                            android:textColorHint="?attr/hint_text_color"
+                            android:textColor="?attr/New_orderoption_menueoptions_textcolor"></EditText>
+                        <EditText
+                            android:id="@+id/editTextifsc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/common_10_dp"
+                            android:hint="@string/Banck_ac_IFSC"
+                            android:textSize="@dimen/common_15_dp"
+                            android:cursorVisible="true"
+                            android:textCursorDrawable="@null"
+                            android:backgroundTint="@color/gray"
+                            android:inputType="text"
+                            android:maxLength="15"
+                            android:paddingTop="10dp"
+                            android:textColorHint="?attr/hint_text_color"
+                            android:textColor="?attr/New_orderoption_menueoptions_textcolor"></EditText>
+                        <EditText
+                            android:id="@+id/editTextAdharcard"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/common_10_dp"
+                            android:hint="@string/AdharCard"
+                            android:textSize="@dimen/common_15_dp"
+                            android:cursorVisible="true"
+                            android:textCursorDrawable="@null"
+                            android:backgroundTint="@color/gray"
+                            android:inputType="number"
+                            android:maxLength="15"
+                            android:paddingTop="10dp"
+                            android:textColorHint="?attr/hint_text_color"
+                            android:textColor="?attr/New_orderoption_menueoptions_textcolor"></EditText>
+                        <EditText
+                            android:id="@+id/editTextpancard"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/common_10_dp"
+                            android:hint="@string/Pan_card"
+                            android:textSize="@dimen/common_15_dp"
+                            android:cursorVisible="true"
+                            android:textCursorDrawable="@null"
+                            android:backgroundTint="@color/gray"
+                            android:inputType="text"
+                            android:maxLength="15"
+                            android:paddingTop="10dp"
+                            android:textColorHint="?attr/hint_text_color"
+                            android:textColor="?attr/New_orderoption_menueoptions_textcolor"></EditText>
+                        <EditText
+                            android:id="@+id/editTextshopanniversary"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:drawableTint="?attr/filter_short_text_color"
+                            android:drawableLeft="@drawable/ic_date_range_black_24dp"
+                            android:layout_margin="@dimen/common_10_dp"
+                            android:hint="@string/Shop_Anniversary"
+                            android:textSize="@dimen/common_15_dp"
+                            android:cursorVisible="true"
+                            android:textCursorDrawable="@null"
+                            android:backgroundTint="@color/gray"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:enabled="true"
+                            android:inputType="text"
+                            android:maxLength="15"
+                            android:paddingTop="10dp"
+                            android:textColorHint="?attr/hint_text_color"
+                            android:textColor="?attr/New_orderoption_menueoptions_textcolor"></EditText>
+                        <EditText
+                            android:id="@+id/editTextcust_birth"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:drawableTint="?attr/filter_short_text_color"
+                            android:drawableLeft="@drawable/ic_date_range_black_24dp"
+                            android:layout_margin="@dimen/common_10_dp"
+                            android:hint="@string/Customer_bith_date"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:textSize="@dimen/common_15_dp"
+                            android:cursorVisible="true"
+                            android:textCursorDrawable="@null"
+                            android:backgroundTint="@color/gray"
+                            android:inputType="text"
+                            android:maxLength="15"
+                            android:editable="false"
+                            android:enabled="true"
+                            android:paddingTop="10dp"
+                            android:textColorHint="?attr/hint_text_color"
+                            android:textColor="?attr/New_orderoption_menueoptions_textcolor"></EditText>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_addretailerdone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="?attr/cardbackground"
+                    android:layout_marginTop="@dimen/common_5_dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="4dp"
+                    android:visibility="gone"
+                    app:cardUseCompatPadding="true">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/common_10_dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/common_10_dp"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="2"
+                                android:fontFamily="@font/work_sans"
+                                android:text="@string/Visiting_Card"
+                                android:textColor="?attr/filter_short_text_color">
+
+                            </TextView>
+
+                            <ImageView
+                                android:id="@+id/visiting_card_pic"
+                                android:layout_width="0dp"
+                                android:layout_height="45dp"
+                                android:layout_weight="0.5"
+                                android:src="@drawable/img_not_found" />
+
+                            <ImageView
+                                android:id="@+id/visiting_card_btn"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/common_30_dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="0.5"
+                                android:src="@drawable/cam">
+
+                            </ImageView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/common_10_dp"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="2"
+                                android:fontFamily="@font/work_sans"
+                                android:text="@string/Inshop_Display"
+                                android:textColor="?attr/filter_short_text_color">
+
+                            </TextView>
+
+                            <ImageView
+                                android:id="@+id/inshop_display_pic"
+                                android:layout_width="0dp"
+                                android:layout_height="45dp"
+                                android:layout_weight="0.5"
+                                android:src="@drawable/img_not_found" />
+
+
+                            <ImageView
+                                android:id="@+id/inshop_display_btn"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/common_30_dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="0.5"
+                                android:src="@drawable/cam">
+
+                            </ImageView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/common_10_dp"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="2"
+                                android:fontFamily="@font/work_sans"
+                                android:text="@string/Signboard"
+                                android:textColor="?attr/filter_short_text_color">
+
+                            </TextView>
+
+                            <ImageView
+                                android:id="@+id/signboard_pic"
+                                android:layout_width="0dp"
+                                android:layout_height="45dp"
+                                android:layout_weight="0.5"
+                                android:src="@drawable/img_not_found" />
+
+                            <ImageView
+                                android:id="@+id/signboard_btn"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/common_30_dp"
+                                android:layout_weight="0.5"
+                                android:src="@drawable/cam">
+
+                            </ImageView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+                <LinearLayout
+                    android:id="@+id/buttonnext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:id="@+id/txt_done"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/work_sans"
+                        android:text="@string/Swipe_to_next"
+                        android:textColor="?attr/swipe_nextTv"
+                        android:textSize="14sp"></TextView>
+
+                    <ImageView
+                        android:id="@+id/nextimg"
+                        android:layout_width="17dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/common_5_dp"
+                        android:layout_marginRight="@dimen/common_10_dp"
+                        android:src="@drawable/viewordermenu">
+
+                    </ImageView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/buttonSave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="@dimen/common_10_dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/work_sans"
+                        android:text="@string/Done"
+                        android:textColor="?attr/swipe_nextTv"
+                        android:textSize="16sp"></TextView>
+
+                    <ImageView
+                        android:id="@+id/nextimg2"
+                        android:layout_width="@dimen/common_20_dp"
+                        android:layout_height="@dimen/common_20_dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/common_5_dp"
+                        android:layout_marginRight="@dimen/common_10_dp"
+                        android:src="@drawable/viewordermenu">
+
+                    </ImageView>
+
+                </LinearLayout>
+
+
+                <!--       <EditText -->
+                <!--         android:id="@+id/editTextContactP1" -->
+                <!--         android:layout_width="250dp" -->
+                <!--         android:layout_height="wrap_content" -->
+                <!--         android:layout_gravity="center" -->
+                <!--         android:hint="Contact Person" -->
+                <!--         android:inputType="textPersonName" -->
+                <!--         android:paddingTop="10dp" > -->
+                <!--     </EditText> -->
+
+
+
+
+                <ImageView
+                    android:id="@+id/buttonAddRetailerCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                </ImageView>
+
+            </LinearLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

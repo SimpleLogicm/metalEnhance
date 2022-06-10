@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.firebase:firebase-inappmessaging-display:19.0.2@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/294f8e02b44b15ae3ee5c89ee9da480b/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/294f8e02b44b15ae3ee5c89ee9da480b/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/294f8e02b44b15ae3ee5c89ee9da480b/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d2e9ec9ad719cc5b23adecac480e226f/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d2e9ec9ad719cc5b23adecac480e226f/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d2e9ec9ad719cc5b23adecac480e226f/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.firebase/firebase-inappmessaging-display/19.0.2/1e2a168895b4313e1fd0d11c35d66d722ca9a39a/firebase-inappmessaging-display-19.0.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

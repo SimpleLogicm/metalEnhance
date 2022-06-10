@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:background="?attr/cardbackground"
+            android:weightSum="3.0">
+
+                <TextView
+                    android:id="@+id/tv_orderdate"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left|center"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:gravity="left|center"
+                    android:text=""
+                    android:layout_marginLeft="5dp"
+                    android:textColor="?attr/filter_short_text_color"
+                    android:textSize="13dp"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_orderamount"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left|center"
+
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:gravity="left|center"
+
+
+                    android:text=""
+                    android:textColor="?attr/filter_short_text_color"
+                    android:textSize="13dp"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_outstanding"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left|center"
+                    android:fontFamily="sans-serif"
+                    android:textSize="13dp"
+                    android:layout_gravity="left|center"
+                    android:textColor="?attr/filter_short_text_color"
+                    >
+                </TextView>
+
+
+
+
+        </LinearLayout>
+
+
+</RelativeLayout>

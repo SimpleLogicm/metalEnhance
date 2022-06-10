@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nearest_customer"
+        android:icon="@drawable/nearest_customer"
+        android:title="@string/Nearest_Customer" />
+
+    <item
+        android:id="@+id/beat_on_map"
+        android:icon="@drawable/beat_on_map"
+        android:title="@string/Beat_On_Map" />
+
+    <item
+        android:id="@+id/order_list"
+        android:icon="@drawable/order_home"
+        android:title="@string/Order_List" />
+
+    <item
+        android:id="@+id/schedule_list"
+        android:icon="@drawable/deliveryschedule_home"
+        android:title="@string/Schedule_List" />
+
+    <item
+        android:id="@+id/cust_outstanding"
+        android:icon="@drawable/cust_outstanding_icon"
+        android:title="@string/Customer_Outstanding" />
+
+    <item
+        android:id="@+id/cust_Chat"
+        android:icon="@drawable/cust_outstanding_icon"
+        android:visible="false"
+        android:title="@string/Chat" />
+
+    <!--<item-->
+        <!--android:id="@+id/clock"-->
+        <!--android:icon="@drawable/clocks_bottom"-->
+        <!--android:title="Clocks" />-->
+
+    <!--<item-->
+        <!--android:id="@+id/delete"-->
+        <!--android:icon="@drawable/idea_new"-->
+        <!--android:title="Delete" />-->
+
+    <!--<item-->
+        <!--android:id="@+id/cancel"-->
+        <!--android:icon="@drawable/idea_new"-->
+        <!--android:title="Cancel" />-->
+
+</menu>

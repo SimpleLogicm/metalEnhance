@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.simplelogic.activities"
+    android:versionCode="2"
+    android:versionName="2.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="22" />
+    
+     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-feature android:name="android.hardware.camera" > </uses-feature> 
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />     
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    
+      <!-- Internet Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+     
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+ 
+ 
+    <!-- Network State Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    
+    <supports-screens
+    android:smallScreens="true"
+    android:normalScreens="true"
+    android:largeScreens="true"
+    android:resizeable="true"
+    android:anyDensity="true">
+</supports-screens>
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/mlogo"
+        android:largeHeap="true"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.simplelogic.activities.SplashScreenActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+           
+              <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+               <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+          
+        </activity>
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity"
+             android:label="@string/app_name" 
+            android:screenOrientation="portrait" />
+        
+        <activity android:name="com.simplelogic.activities.UploadActivity"
+             android:label="@string/app_name" 
+            android:screenOrientation="portrait" />
+         
+        
+          <activity
+            android:name="com.simplelogic.activities.LoginActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait"
+             android:theme="@android:style/Theme.NoTitleBar"
+             
+            >
+            </activity> 
+            <activity
+            android:name="com.simplelogic.activities.VIDEO_DIALOG"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Dialog"
+            android:screenOrientation="portrait"
+             
+             
+            >   
+           
+        </activity>
+<!--         <activity -->
+<!--             android:name="com.simplelogic.activities.MenuScreenActivity" -->
+<!--             android:label="@string/app_name" > -->
+           
+<!--         </activity> -->
+        
+          <activity
+            android:name="com.simplelogic.activities.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+             
+             </activity>
+               
+          <activity
+            android:name="com.simplelogic.activities.Test"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+                   
+        </activity>
+        
+           <activity
+            android:name="com.simplelogic.activities.Home"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+          
+        <activity
+            android:name="com.simplelogic.activities.PreviousOrderActivity_New"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+               </activity>
+              
+         <activity
+            android:name="info.androidhive.camerafileupload.UploadActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="com.simplelogic.activities.NewOrderActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+               </activity>
+               
+          <activity
+            android:name="com.simplelogic.fragments.EditOrderItems"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+               </activity>
+               
+            <activity
+            android:name="com.simplelogic.activities.EditSwipeOrderItems"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+               </activity>
+              
+               <activity
+            android:name="com.simplelogic.activities.NoOrderActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+               </activity>
+             
+            <activity
+            android:name="com.simplelogic.fragments.PreviewOrderActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+             </activity>
+             
+            
+             <activity
+            android:name="com.simplelogic.activities.CaptureSignature"
+            android:label="@string/app_name">
+             </activity>
+             
+             
+               <activity
+            android:name="com.simplelogic.activities.ReturnOrderActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+             </activity>
+          
+            <activity
+            android:name="com.simplelogic.activities.PreviousOrderActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            </activity>
+        
+            <activity
+            android:name="com.simplelogic.activities.PreviewOrderSwipeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            </activity>
+                
+            <activity
+            android:name="com.simplelogic.activities.CalendarFragment"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            </activity>
+                
+            <activity
+            android:name="com.simplelogic.slidingmenu.CalendarAct"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            </activity>
+            
+            <activity
+            android:name="com.simplelogic.activities.Calendar_Event"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            </activity>
+            
+            <activity
+            android:name="com.simplelogic.activities.List_Events"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            </activity>
+            
+                <activity
+            android:name="com.simplelogic.activities.Customer_Service"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            </activity>
+            
+                 <activity
+            android:name="com.simplelogic.activities.Customer_Feed"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            </activity>
+            
+            <activity
+            android:name="com.simplelogic.activities.Customer_Stock"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            </activity>
+            
+            <activity
+            android:name="com.simplelogic.activities.Today_Tabber"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            </activity>
+            
+            <activity
+            android:name="com.simplelogic.activities.Expenses"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            </activity>
+            
+            <activity
+            android:name="com.simplelogic.activities.Target"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            </activity>
+            
+            <activity
+            android:name="com.simplelogic.activities.Schedule"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            </activity>
+            
+            <activity
+            android:name="com.simplelogic.activities.Schedule1"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            </activity>
+            
+            <activity
+            android:name="com.simplelogic.activities.Schedule2"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            </activity>
+            
+             <activity
+            android:name="com.simplelogic.activities.Order"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            </activity>
+            
+             <activity
+            android:name="com.simplelogic.activities.Sales_Dash"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            </activity>
+            
+             <activity
+            android:name="com.simplelogic.activities.Filter_List"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" 
+            android:screenOrientation="portrait" >
+            </activity>
+                
+            <activity
+            android:name="com.simplelogic.activities.ExpandFilter"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" 
+            android:screenOrientation="portrait" >
+            </activity>
+            
+             <activity
+            android:name="com.simplelogic.activities.Invoice_filterList"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" 
+            android:screenOrientation="portrait" >
+            </activity>
+            
+            <activity
+            android:name="com.simplelogic.activities.New_filterList"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" 
+            android:screenOrientation="portrait" >
+            </activity>
+                       
+               <activity
+            android:name="com.simplelogic.activities.Address_activity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            </activity>
+            
+           <activity
+            android:name="com.simplelogic.activities.AndroidGPSTrackingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+           </activity>
+           <activity
+            android:name="com.simplelogic.activities.Nearest_Customer"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" 
+            android:screenOrientation="portrait" >
+           </activity>
+            <activity
+            android:name="com.simplelogic.activities.Item_Edit_Activity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateHidden" 
+            android:screenOrientation="portrait" >
+           </activity>
+            <activity
+            android:name="com.simplelogic.activities.Status_Act"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" 
+            android:screenOrientation="portrait" >
+           </activity>
+           
+           <activity
+            android:name="com.simplelogic.activities.Status_Activity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" 
+            android:screenOrientation="portrait" >
+           </activity>
+           
+           <activity
+            android:name="com.simplelogic.activities.Previous_Order"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" 
+            android:screenOrientation="portrait" >
+           </activity>
+           
+            <activity
+            android:name="com.simplelogic.activities.ReturnOrder_Customer"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" 
+            android:screenOrientation="portrait" >
+           </activity>
+           
+             <activity
+            android:name="com.simplelogic.activities.Previous_returnOrder"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" 
+            android:screenOrientation="portrait" >
+           </activity>
+           
+           <activity
+            android:name="com.simplelogic.activities.ReturnOrder1"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" 
+            android:screenOrientation="portrait" >
+           </activity>
+           
+           <activity
+            android:name="com.simplelogic.activities.ReturnOrder2"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" 
+            android:screenOrientation="portrait" >
+           </activity>
+           
+         <activity
+            android:name="com.simplelogic.activities.ReturnOrder3"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" 
+            android:screenOrientation="portrait" >
+         </activity>
+         
+         <activity
+            android:name="com.simplelogic.activities.ReturnEditItem"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" 
+            android:screenOrientation="portrait" >
+         </activity>
+        
+           
+             <receiver android:name=".AutoStart">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:name=".MyService"> </service>
+           
+             <!--<service android:name=".LocationService" />
+             
+                <receiver android:name="SendLocation">
+              <intent-filter>
+		        <action android:name="android.intent.action.BOOT_COMPLETED">
+		        </action>
+		     </intent-filter>
+  
+         </receiver>
+            
+            <service android:name="com.simplelogic.service.LocationServices" android:enabled="true"></service>-->
+      
+    </application>
+   
+</manifest>

@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.msimplelogic.activities.Sales_Dash"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginTop="50dp"
+    android:id="@+id/ll">
+
+    <LinearLayout
+        android:id="@+id/linearMian"
+        android:layout_width="match_parent"
+        android:background="?attr/fulllayoutbg"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/hedder_theame"
+            android:layout_width="match_parent"
+            android:src="@drawable/light_hedder"
+            android:scaleType="fitXY"
+            android:layout_height="70dp">
+
+        </ImageView>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:clipToPadding="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                            <androidx.cardview.widget.CardView
+                                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                android:clickable="true"
+                                android:id="@+id/bankcardId"
+                                android:layout_width="110dp"
+                                card_view:cardBackgroundColor="?attr/cardbackground"
+                                android:layout_height="110dp"
+                                card_view:cardCornerRadius="60dp"
+                                android:layout_margin="10dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:id="@+id/retail_sales"
+                                        android:layout_width="100dp"
+                                        android:layout_height="100dp"
+                                        android:src="@drawable/order_home"
+                                        android:padding="10dp"/>
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="?attr/textcolor"
+                                android:textSize="@dimen/home_text_size"
+                                android:layout_centerInParent="true"
+                                android:layout_below="@+id/bankcardId"
+                                android:text="@string/order"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                            <androidx.cardview.widget.CardView
+                                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                card_view:cardBackgroundColor="?attr/cardbackground"
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                card_view:cardCornerRadius="60dp"
+                                android:id="@+id/bankcardId7"
+                                android:layout_margin="10dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/marketing_data"
+                                        android:layout_width="100dp"
+                                        android:layout_height="100dp"
+                                        android:padding="10dp"
+                                        android:src="@drawable/update_stock" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Update_stock"
+                                android:textColor="?attr/textcolor"
+                                android:textSize="@dimen/home_text_size"
+                                android:layout_centerInParent="true"
+                                android:layout_below="@+id/bankcardId7"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:clipToPadding="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <androidx.cardview.widget.CardView
+                                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                card_view:cardBackgroundColor="?attr/cardbackground"
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                card_view:cardCornerRadius="60dp"
+                                android:id="@+id/bankcardId2"
+                                android:layout_margin="10dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:id="@+id/institute_sales"
+                                        android:layout_width="100dp"
+                                        android:layout_height="100dp"
+                                        android:src="@drawable/quote_home"
+                                        android:padding="10dp"/>
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="?attr/textcolor"
+                                android:textSize="@dimen/home_text_size"
+                                android:layout_centerInParent="true"
+                                android:layout_below="@+id/bankcardId2"
+                                android:text="@string/Quote"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <androidx.cardview.widget.CardView
+                                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                card_view:cardBackgroundColor="?attr/cardbackground"
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                card_view:cardCornerRadius="60dp"
+                                android:id="@+id/bankcardId1"
+                                android:layout_margin="10dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:id="@+id/customer_services"
+                                        android:layout_width="100dp"
+                                        android:layout_height="100dp"
+                                        android:src="@drawable/custservices_home"
+
+                                        android:padding="10dp"/>
+
+
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="?attr/textcolor"
+                                android:textSize="@dimen/home_text_size"
+                                android:layout_centerInParent="true"
+                                android:layout_below="@+id/bankcardId1"
+                                android:text="@string/Customer_Serviceo"/>
+                        </RelativeLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:clipToPadding="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <androidx.cardview.widget.CardView
+                                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                android:id="@+id/bankcardId4"
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                card_view:cardCornerRadius="60dp"
+                                card_view:cardBackgroundColor="?attr/cardbackground"
+                                android:layout_margin="10dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:id="@+id/schedule_listn"
+                                        android:layout_width="100dp"
+                                        android:layout_height="100dp"
+                                        android:padding="10dp"
+                                        android:src="@drawable/deliveryschedule_home" />
+
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/schedule_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="?attr/textcolor"
+                                android:textSize="@dimen/home_text_size"
+                                android:layout_below="@+id/bankcardId4"
+                                android:layout_centerInParent="true"
+                                android:text="Delivery Schedule"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/bankcardId5"
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:clickable="true"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:visibility="gone"
+                                app:cardCornerRadius="60dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/expenses"
+                                        android:layout_width="100dp"
+                                        android:layout_height="100dp"
+                                        android:padding="10dp"
+                                        android:src="@drawable/addretailer_home" />
+
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Add Retailer"
+                                android:layout_below="@+id/bankcardId5"
+                                android:textSize="@dimen/home_text_size"
+                                android:visibility="gone"
+                                android:layout_centerInParent="true"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                            <androidx.cardview.widget.CardView
+                                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                android:id="@+id/bankcardId6"
+                                card_view:cardCornerRadius="60dp"
+                                card_view:cardBackgroundColor="?attr/cardbackground"
+                                android:layout_margin="10dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:id="@+id/C_profile"
+                                        android:layout_width="100dp"
+                                        android:layout_height="100dp"
+                                        android:padding="10dp"
+                                        android:src="@drawable/custprofile_home" />
+
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="?attr/textcolor"
+                                android:textSize="@dimen/home_text_size"
+                                android:layout_centerInParent="true"
+                                android:layout_below="@+id/bankcardId6"
+                                android:text="@string/Customer_Profile"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:clipToPadding="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

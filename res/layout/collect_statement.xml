@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ldate1"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="44dp">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editText1"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="@string/FromC"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/from_date"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:ems="10"
+            android:hint="@string/Date_label"
+            android:editable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="textPersonName"
+            android:layout_toLeftOf="@+id/imageView1"
+            android:layout_toRightOf="@+id/textView7"
+            android:layout_toEndOf="@+id/textView7" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="30dp"
+            android:layout_height="27dp"
+            android:layout_alignBottom="@+id/editText1"
+            android:background="@drawable/cal_icon"
+            android:layout_toRightOf="@+id/editText1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:layout_height="44dp"
+        android:layout_below="@+id/ldate1"
+        android:id="@+id/ldate2">
+
+        <TextView
+            android:id="@+id/textView71"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editText11"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="@string/TOC"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/to_date"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/Date_label"
+            android:editable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="textPersonName"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/imageView"
+            android:layout_toRightOf="@+id/textView71"
+            android:layout_toEndOf="@+id/textView71" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="30dp"
+            android:layout_height="27dp"
+            android:layout_alignBottom="@+id/editText11"
+            android:layout_toRightOf="@+id/editText11"
+            android:background="@drawable/cal_icon" />
+    </LinearLayout>
+
+    <AutoCompleteTextView
+        android:id="@+id/auto_searchco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:completionThreshold="1"
+        android:drawableRight="@drawable/search_icon"
+        android:ems="10"
+        android:hint="@string/Search_Customer"
+        android:imeOptions="actionDone"
+        android:inputType="textMultiLine"
+        android:scrollbars="none"
+
+        android:singleLine="true"
+        android:textSize="15dp"
+        android:layout_below="@+id/ldate2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <requestFocus />
+    </AutoCompleteTextView>
+
+    <LinearLayout
+        android:id="@+id/top_strip"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/auto_searchco"
+        android:layout_gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/rlout_order"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1.00">
+
+            <TextView
+                android:id="@+id/sheader1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+                android:paddingLeft="5dp"
+                android:text="@string/Date_label"
+                android:gravity="center"
+                android:textSize="14dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlout_customer"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1.00">
+
+            <TextView
+                android:id="@+id/sheader2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:text="@string/Particulars"
+                android:textColor="#111111"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlout_schedule"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1.00">
+
+            <ImageView
+                android:id="@+id/imageView1e"
+                android:layout_width="15dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/rupee"
+                android:layout_alignBottom="@+id/sheader3" />
+
+            <TextView
+                android:id="@+id/sheader3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/Amount"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:textColor="#111111"
+                android:textSize="15dp"
+                android:layout_toRightOf="@+id/imageView1e"
+                android:layout_toEndOf="@+id/imageView1e" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/collection_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_strip"
+        android:layout_above="@+id/collect_total" />
+
+    <TextView
+        android:id="@+id/collect_total"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/sta_submit"
+        android:text=""
+        android:textStyle="bold"
+        android:gravity="center|right"
+        android:textColor="#111111"
+        android:paddingRight="18dp"
+        android:textSize="17dp" />
+
+    <Button
+        android:id="@+id/sta_submit"
+        android:layout_width="30dp"
+        android:layout_height="37dp"
+        android:background="#B22222"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="3dp"
+        android:text="@string/OK_Button_label"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

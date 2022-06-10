@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/containerPreview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/metal_bg_all"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.msimplelogic.activities.ProductAll_Varients"
+    tools:showIn="@layout/productall_varient_main">
+
+
+    <LinearLayout
+        android:id="@+id/linearMian"
+        android:layout_width="match_parent"
+        android:background="?attr/fulllayoutbg"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <ImageView
+        android:id="@+id/hedder_theame"
+        android:layout_width="match_parent"
+        android:src="?attr/metal_headder"
+        android:scaleType="fitXY"
+        android:layout_height="70dp">
+
+    </ImageView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <AutoCompleteTextView
+                android:id="@+id/newProduct_varient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="4dp"
+                android:completionThreshold="1"
+
+                android:drawableRight="@drawable/search_icon"
+                android:ems="10"
+                android:visibility="gone"
+                android:hint="@string/Search_Variants"
+                android:imeOptions="actionDone"
+                android:inputType="textMultiLine"
+                android:singleLine="true"
+                android:textSize="15dp">
+
+                <requestFocus />
+            </AutoCompleteTextView>
+
+            <ListView
+                android:id="@+id/example_lv_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/newProduct_varient"
+                android:layout_weight="1.0"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:layout_above="@+id/exampllist" />
+
+            <LinearLayout
+                android:id="@+id/exampllist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                android:descendantFocusability="beforeDescendants"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/common_3_dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txttotalPreviewv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="@string/Total"
+                        android:textColor="?attr/hint_text_color"
+                        android:textSize="17dp"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:layout_margin="@dimen/common_10_dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/buttonPreviewAddMOrev"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="@dimen/button_height"
+                        android:layout_gravity="center"
+                        android:background="@drawable/metal_button"
+                        android:fontFamily="sans-serif"
+                        android:text="@string/Save"
+                        android:layout_margin="@dimen/common_5_dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        />
+
+
+                    <Button
+                        android:id="@+id/buttonPreviewv"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="@dimen/button_height"
+                        android:layout_gravity="center"
+                        android:background="@drawable/metal_button"
+                        android:fontFamily="sans-serif"
+                        android:text="@string/Preview_Order"
+                        android:textAllCaps="false"
+                        android:layout_margin="@dimen/common_5_dp"
+                        android:textColor="@color/white"
+
+
+                        />
+
+                    <Button
+                        android:id="@+id/addmorenews"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="@dimen/button_height"
+                        android:background="@drawable/metal_button"
+                        android:fontFamily="sans-serif"
+                        android:text="@string/PAdd_More"
+                        android:textAllCaps="false"
+                        android:gravity="center"
+                        android:layout_margin="@dimen/common_5_dp"
+                        android:textColor="@color/white"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/rlout_apro"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/buttonPreviewHomev"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="Cancel"
+                        android:background="#414042"
+                        android:textColor="#FFFFFF" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

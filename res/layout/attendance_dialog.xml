@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/primarycolor"
+    android:layout_width="wrap_content"
+    android:layout_height="300dp">
+
+    <TextView
+        android:id="@+id/inh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_background_color"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/text_size_header"
+        android:layout_marginTop="20dp"
+        android:text="@string/IN_DETAILS" />
+
+
+    <TextView
+        android:id="@+id/att_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inh"
+        android:textColor="@color/text_background_color"
+        android:layout_marginLeft="10dp"
+        android:textSize="@dimen/text_content_size"
+        android:layout_marginTop="20dp"
+        android:text="Order Filter" />
+
+    <TextView
+        android:id="@+id/att_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/att_time"
+        android:textColor="@color/text_background_color"
+        android:layout_marginLeft="10dp"
+        android:textSize="@dimen/text_content_size"
+        android:layout_marginTop="20dp"
+        android:text="Order " />
+
+
+    <Button
+        android:id="@+id/atok"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/OK_Button_label"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_height"
+        android:layout_gravity="center"
+        android:layout_marginRight="5dp"
+        android:background="@color/white"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="@dimen/button_left_padding"
+        android:paddingTop="@dimen/button_top_padding"
+        android:paddingRight="@dimen/button_right_padding"
+        android:layout_marginBottom="@dimen/common_10_dp"
+        android:paddingBottom="@dimen/button_bottom_padding"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="#075B97"
+        android:textSize="17dp" />
+
+
+</RelativeLayout>

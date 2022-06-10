@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.riontech:calendar:1.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ef06f13ca8667bf3876ddc9b7f90f1fa/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ef06f13ca8667bf3876ddc9b7f90f1fa/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ef06f13ca8667bf3876ddc9b7f90f1fa/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

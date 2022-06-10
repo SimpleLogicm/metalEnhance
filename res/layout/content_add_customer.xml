@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".kotlinFiles.AddCustomer"
+    tools:showIn="@layout/activity_add_customer">
+
+
+    <LinearLayout
+        android:id="@+id/linearMian"
+        android:layout_width="match_parent"
+        android:background="?attr/fulllayoutbg"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <ImageView
+        android:id="@+id/hedder_theame"
+        android:layout_width="match_parent"
+        android:src="@drawable/light_hedder"
+        android:scaleType="fitXY"
+        android:layout_height="70dp">
+
+    </ImageView>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/common_10_dp"
+                android:orientation="vertical">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginBottom="@dimen/common_10_dp"
+                    android:layout_width="match_parent"
+                    app:cardBackgroundColor="?attr/cardbackground"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="@dimen/common_10_dp"
+                    app:cardElevation="@dimen/common_4_dp"
+                    >
+
+                    <LinearLayout
+                        android:padding="@dimen/common_10_dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="3"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1.5"
+                            android:layout_height="wrap_content"
+                            android:text="Retailer"
+                            android:textColor="?attr/filter_short_text_color"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/work_sans"
+                            android:textSize="16sp">
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/Addretailer"
+                            android:layout_width="@dimen/common_0_dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:textSize="16sp"
+                            android:gravity="center_vertical"
+                            android:textColor="?attr/visit_schedule_historytext"
+                            android:drawableLeft="@drawable/add"
+                            android:text="Add">
+
+
+                        </TextView>
+                        <TextView
+                            android:layout_width="@dimen/common_0_dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:textColor="#10609C"
+                            android:text="|">
+
+
+                        </TextView>
+                        <TextView
+                            android:id="@+id/viewretailer"
+                            android:layout_width="@dimen/common_0_dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.6"
+                            android:textSize="16sp"
+                            android:gravity="center_vertical"
+                            android:textColor="?attr/visit_schedule_historytext"
+                            android:drawableLeft="@drawable/ic_visibility_black_24dp"
+                            android:text=" View">
+
+
+                        </TextView>
+
+
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="?attr/cardbackground"
+                    android:layout_marginTop="@dimen/common_10_dp"
+                    app:cardCornerRadius="@dimen/common_10_dp"
+                    app:cardElevation="@dimen/common_4_dp"
+                    >
+
+                    <LinearLayout
+                        android:padding="@dimen/common_10_dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="3"
+                        android:visibility="gone"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1.5"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Distributor"
+                            android:textColor="?attr/filter_short_text_color"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/work_sans"
+                            android:textSize="16sp">
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/adddistributor"
+                            android:layout_width="@dimen/common_0_dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:textSize="16sp"
+                            android:gravity="center_vertical"
+                            android:textColor="?attr/visit_schedule_historytext"
+                            android:drawableLeft="@drawable/add"
+                            android:text="Add">
+
+
+                        </TextView>
+                        <TextView
+                            android:layout_width="@dimen/common_0_dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:textColor="#10609C"
+                            android:text="|">
+
+
+                        </TextView>
+                        <TextView
+                            android:id="@+id/viewdistributor"
+                            android:layout_width="@dimen/common_0_dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.6"
+                            android:textSize="16sp"
+                            android:gravity="center_vertical"
+                            android:textColor="?attr/visit_schedule_historytext"
+                            android:drawableLeft="@drawable/ic_visibility_black_24dp"
+                            android:text=" View">
+
+
+                        </TextView>
+
+
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

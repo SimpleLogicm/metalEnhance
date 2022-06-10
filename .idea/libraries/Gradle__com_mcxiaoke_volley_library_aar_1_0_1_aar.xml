@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="Gradle: com.mcxiaoke.volley:library-aar:1.0.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7d265f0334cd1067c5a92d32f3fc9111/jetified-library-aar-1.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/78808e2f7c96fc7475790a883fdd27de/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/78808e2f7c96fc7475790a883fdd27de/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/78808e2f7c96fc7475790a883fdd27de/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d302971cc0cfaa121596f27534e413ce/transformed/jetified-library-aar-1.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/701de9701a4c8b04d37f488ee2cb0fe8/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/701de9701a4c8b04d37f488ee2cb0fe8/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/701de9701a4c8b04d37f488ee2cb0fe8/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mcxiaoke.volley/library-aar/1.0.1/85e712b7063e21664fde75dd2ec67859b762d8bc/library-aar-1.0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mcxiaoke.volley/library-aar/1.0.1/1be57f67c205f00d4ee03a99fd55b15e99762ace/library-aar-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

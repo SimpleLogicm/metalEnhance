@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".kotlinFiles.UpdateStockScreen3"
+    tools:showIn="@layout/activity_update_stock_screen3"
+    android:fillViewport="true">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Activity_background"
+    >
+
+        <LinearLayout
+            android:id="@+id/linearMian"
+            android:layout_width="match_parent"
+            android:background="?attr/fulllayoutbg"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <ImageView
+            android:id="@+id/hedder_theame"
+            android:layout_width="match_parent"
+            android:src="@drawable/light_hedder"
+            android:scaleType="fitXY"
+            android:layout_height="70dp">
+
+        </ImageView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/us_media_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                card_view:cardBackgroundColor="?attr/cardbackground"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/s_header_image"
+                card_view:cardElevation="10dp"
+                app:cardCornerRadius="10dp"
+
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                card_view:cardUseCompatPadding="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/common_10_dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/ud_stock_he3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/common_10_dp"
+                        android:text="@string/Additional_Info"
+                        android:textStyle="bold"
+                        android:textColor="?attr/filter_short_text_color"
+                        android:textSize="16dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/s_uptate_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|left"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="@dimen/common_10_dp"
+                        android:text="@string/Stock_Status"
+                        android:textColor="?attr/filter_short_text_color"
+                        android:textSize="14dp"
+                        />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/common_5_dp"
+                        android:paddingBottom="@dimen/common_5_dp"
+                        android:id="@+id/stockradioGroup"
+                        android:layout_marginLeft="@dimen/common_5_dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        >
+
+                        <RadioButton
+                            android:id="@+id/radio_low"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_gravity="left"
+                            android:layout_weight=".6"
+                            android:text="@string/low"
+                            android:textColor="?attr/filter_short_text_color"
+                            android:textSize="14dp"
+
+                            />
+
+                        <RadioButton
+                            android:id="@+id/radio_Moderate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_weight=".6"
+                            android:layout_gravity="center"
+                            android:text="@string/Moderate"
+                            android:textColor="?attr/filter_short_text_color"
+                            android:textSize="14dp"
+
+                            />
+
+                        <RadioButton
+                            android:id="@+id/radio_High"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_weight=".6"
+                            android:layout_gravity="right"
+                            android:text="@string/High"
+                            android:textColor="?attr/filter_short_text_color"
+                            android:textSize="14dp"
+
+                            />
+
+                    </RadioGroup>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/username_text_input_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/common_10_dp"
+                        android:textColorHint="@color/album_title"
+                        android:theme="@style/TextInputLayoutAppearance"
+
+                        >
+
+                        <EditText
+                            android:id="@+id/st_details"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:ems="10"
+                            android:hint="@string/Detail"
+                            android:paddingLeft="@dimen/common_5_dp"
+                            android:cursorVisible="true"
+                            android:textCursorDrawable="@null"
+                            android:textColorHint="?attr/hint_text_color"
+                            android:textColor="?attr/filter_short_text_color"
+                            android:backgroundTint="@color/light_grey"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/ups_img_camera"
+                android:layout_width="@dimen/common_40_dp"
+                android:layout_below="@+id/us_media_card_view"
+                android:layout_height="@dimen/common_40_dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/common_30_dp"
+                android:src="@drawable/cam"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/up_recyclerview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_below="@+id/ups_img_camera"
+                android:layout_marginRight="10dp"
+                android:scrollbars="horizontal"
+                />
+
+            <Button
+                android:id="@+id/up_stock_update"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/metal_button"
+                android:layout_alignParentBottom="true"
+                android:paddingLeft="@dimen/button_left_padding"
+                android:paddingTop="@dimen/button_top_padding"
+                android:paddingRight="@dimen/button_right_padding"
+                android:paddingBottom="@dimen/button_bottom_padding"
+                android:text="@string/Update"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/common_10_dp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
+        </RelativeLayout>
+        </LinearLayout>
+
+
+
+</RelativeLayout>
+    </FrameLayout>
+</ScrollView>

@@ -1,0 +1,73 @@
+<androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="4dp"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:id="@+id/outlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/c_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/card_title_height"
+            android:textAlignment="center"
+            android:background="#075B97"
+            android:text=""
+            android:padding="@dimen/card_title_padding_top"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/card_title_text_size"
+            android:gravity="center_vertical" />
+
+        <RelativeLayout
+            android:id="@+id/l2"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/rounded_corner"
+            android:layout_below="@+id/c_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="1dp">
+
+
+            <TextView
+                android:id="@+id/c_ammount1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:gravity="center_vertical"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:layout_below="@id/c_ammount2"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp" />
+
+            <TextView
+                android:id="@+id/c_ammount2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:gravity="center_vertical"
+                android:textSize="12dp"
+                android:layout_marginLeft="5dp" />
+
+            <TextView
+                android:id="@+id/C_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:visibility="gone"
+                android:gravity="center_vertical"
+                android:textSize="12dp"
+                android:layout_marginLeft="5dp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

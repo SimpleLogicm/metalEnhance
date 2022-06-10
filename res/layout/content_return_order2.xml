@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/metal_bg_all"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".return_order2"
+    tools:showIn="@layout/activity_return_order2">
+
+
+
+    <LinearLayout
+        android:id="@+id/linearMian"
+        android:layout_width="match_parent"
+        android:background="?attr/fulllayoutbg"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/hedder_theame"
+            android:layout_width="match_parent"
+            android:src="@drawable/light_hedder"
+            android:scaleType="fitXY"
+            android:layout_height="70dp">
+
+        </ImageView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_marginTop="@dimen/common_10_dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/bottom"
+
+                android:orientation="vertical">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bottom"
+                android:layout_marginBottom="@dimen/common_10_dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/camerabtn"
+                    android:layout_width="@dimen/common_30_dp"
+                    android:layout_height="@dimen/common_30_dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="@dimen/common_10_dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/cam"
+                    android:visibility="visible">
+
+                </ImageView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="13dp"
+                    android:scrollbars="horizontal"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/buttonPreviewOrder"
+                    android:layout_width="150dp"
+                    android:layout_height="@dimen/common_30_dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btnstyle"
+                    android:text="@string/Return_Order"
+                    android:textColor="#FFFFFF"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

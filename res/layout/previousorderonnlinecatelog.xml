@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/metal_bg_all"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.msimplelogic.activities.PreviousOnlineCatalogue"
+    tools:showIn="@layout/previousorderonnlinecatelog_main"
+    >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_above="@+id/txttotalPreview" />
+
+    <TextView
+        android:id="@+id/txttotalPreview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="@dimen/album_title_padding"
+        android:paddingRight="@dimen/album_title_padding"
+        android:textColor="@color/album_title"
+        android:textSize="13dp"
+        android:layout_above="@+id/linearLayout3"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="3dp"
+        android:id="@+id/linearLayout3">
+
+
+        <Button
+            android:id="@+id/online_catalog_save"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_height"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/metal_button"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="@dimen/button_left_padding"
+            android:paddingTop="@dimen/button_top_padding"
+            android:paddingRight="@dimen/button_right_padding"
+            android:paddingBottom="@dimen/button_bottom_padding"
+            android:text="@string/Save"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/online_catalog_Previewv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_height"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/metal_button"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="@dimen/button_left_padding"
+            android:paddingTop="@dimen/button_top_padding"
+            android:paddingRight="@dimen/button_right_padding"
+            android:paddingBottom="@dimen/button_bottom_padding"
+            android:text="@string/Preview_Order"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+
+            />
+
+        <Button
+            android:id="@+id/online_catalog_addmore"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/common_40_dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/metal_button"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="@dimen/button_left_padding"
+            android:paddingTop="@dimen/button_top_padding"
+            android:paddingRight="@dimen/button_right_padding"
+            android:paddingBottom="@dimen/button_bottom_padding"
+            android:text="@string/PAdd_More"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

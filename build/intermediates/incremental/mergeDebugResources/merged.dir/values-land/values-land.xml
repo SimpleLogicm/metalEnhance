@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="landscape">true</bool>
+    <dimen name="abc_action_bar_default_height_material">48dp</dimen>
+    <dimen name="abc_text_size_subtitle_material_toolbar">12dp</dimen>
+    <dimen name="abc_text_size_title_material_toolbar">14dp</dimen>
+    <item format="integer" name="bannerContentWeight" type="dimen">3</item>
+    <item format="integer" name="bannerWeightSum" type="dimen">5</item>
+    <item format="float" name="dialogHeightPct" type="dimen">0.80</item>
+    <item format="float" name="dialogWidthPct" type="dimen">0.85</item>
+    <dimen name="mdtp_date_picker_component_width">220dp</dimen>
+    <dimen name="mdtp_date_picker_header_height">308dp</dimen>
+    <dimen name="mdtp_date_picker_header_width">170dp</dimen>
+    <dimen name="mdtp_date_picker_view_animator_height">220dp</dimen>
+    <dimen name="mdtp_date_picker_view_animator_height_v2">285dp</dimen>
+    <dimen name="mdtp_day_number_select_circle_radius_v2">16dp</dimen>
+    <dimen name="mdtp_dialog_height">200dip</dimen>
+    <dimen name="mdtp_left_side_width">240dip</dimen>
+    <dimen name="mdtp_picker_dimen">220dip</dimen>
+    <dimen name="mdtp_selected_date_day_size">100dp</dimen>
+    <dimen name="mdtp_selected_date_month_size">30dp</dimen>
+    <dimen name="mdtp_selected_date_year_size">30dp</dimen>
+    <integer name="bs_grid_colum">4</integer>
+    <integer name="bs_initial_grid_row">2</integer>
+    <integer name="bs_initial_list_row">3</integer>
+    <style name="Widget.Design.TabLayout" parent="Base.Widget.Design.TabLayout">
+    <item name="tabGravity">center</item>
+    <item name="tabMode">fixed</item>
+  </style>
+</resources>

@@ -1,0 +1,22 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.gastricspark:scrolldatepicker:0.0.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0a96456c516ddd8633301d9c979dccc6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0a96456c516ddd8633301d9c979dccc6/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0a96456c516ddd8633301d9c979dccc6/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f661fe5c923b67a02d93bf895216deb6/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f661fe5c923b67a02d93bf895216deb6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f661fe5c923b67a02d93bf895216deb6/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4caef0d0a3cfcc97390952d4353ab538/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4caef0d0a3cfcc97390952d4353ab538/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4caef0d0a3cfcc97390952d4353ab538/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d03ab9d6cfb47eca75e6fbe3affcc9c6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d03ab9d6cfb47eca75e6fbe3affcc9c6/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d03ab9d6cfb47eca75e6fbe3affcc9c6/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.gastricspark/scrolldatepicker/0.0.1/be0d09d07e702819dfab5012463e084b64bff34b/scrolldatepicker-0.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

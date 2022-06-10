@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.msimplelogic.activities.OrderAnalysisActivity"
+    android:orientation="vertical"
+    tools:showIn="@layout/order_analisys_main"
+   >
+
+    <LinearLayout
+        android:id="@+id/linearMian"
+        android:layout_width="match_parent"
+        android:background="?attr/fulllayoutbg"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/hedder_theame"
+            android:layout_width="match_parent"
+            android:src="?attr/metal_headder"
+            android:scaleType="fitXY"
+            android:layout_height="70dp">
+
+        </ImageView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="?attr/cardbackground"
+            android:layout_margin="@dimen/common_10_dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <Spinner
+                        android:id="@+id/analysis_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:paddingTop="10dp"
+                        android:textColor="?attr/New_orderoption_menueoptions_textcolor"
+                        style="@style/mySpinnerItemStyle"
+                        android:layout_marginRight="@dimen/common_10_dp"
+                        android:layout_marginLeft="@dimen/common_10_dp"
+                        android:layout_marginTop="5dp"/>
+
+                    <Spinner
+                        android:id="@+id/monthly_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_marginRight="@dimen/common_10_dp"
+                        android:layout_marginLeft="@dimen/common_10_dp"
+                        android:layout_height="60dp"
+                        android:textColor="?attr/New_orderoption_menueoptions_textcolor"
+                        style="@style/mySpinnerItemStyle"
+                        android:layout_gravity="center"
+                        android:visibility="invisible"
+                        android:layout_marginTop="5dp" />
+
+                    <Spinner
+                        android:id="@+id/quarterly_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="@dimen/common_10_dp"
+                        android:layout_marginLeft="@dimen/common_10_dp"
+                        android:layout_gravity="center"
+                        android:visibility="gone"
+                        android:textColorHint="?attr/hint_text_color"
+                        android:textColor="?attr/New_orderoption_menueoptions_textcolor"
+                        style="@style/mySpinnerItemStyle"
+                        android:layout_marginTop="5dp" />
+
+                    <Spinner
+                        android:id="@+id/halfyearly_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:visibility="gone"
+                        android:layout_marginRight="@dimen/common_10_dp"
+                        android:layout_marginLeft="@dimen/common_10_dp"
+                        android:textColorHint="?attr/hint_text_color"
+                        android:textColor="?attr/New_orderoption_menueoptions_textcolor"                        style="@style/mySpinnerItemStyle"
+                        android:layout_marginTop="5dp" />
+
+                    <Spinner
+                        android:id="@+id/yearly_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="@dimen/common_10_dp"
+                        android:layout_marginLeft="@dimen/common_10_dp"
+                        android:layout_gravity="center"
+                        android:visibility="gone"
+                        android:textColorHint="?attr/hint_text_color"
+                        android:textColor="?attr/New_orderoption_menueoptions_textcolor"                        style="@style/mySpinnerItemStyle"
+                        android:layout_marginTop="5dp" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_yaxis_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No of Orders"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        android:focusable="true"
+                        android:rotation="-90"
+                        android:textSize="13dp"
+                        android:gravity="left"
+                        android:layout_marginTop="190dp"
+                        android:textColor="?attr/filter_short_text_color"
+                        android:visibility="gone"
+                        android:focusableInTouchMode="true"
+                        android:scrollHorizontally="true"
+                        />
+
+                    <com.github.mikephil.charting.charts.BarChart
+                        android:id="@+id/chart1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="45dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/chart1s"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="Y- Axis: No of Orders"
+                        android:layout_below="@+id/chart1"
+                        android:textColor="#111111"
+                        android:visibility="gone"
+                        android:layout_alignParentBottom="true"
+                        />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.mahimrocky:EventCalender:v1.0.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9e477751d35162a33ad44f4b61ac197e/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9e477751d35162a33ad44f4b61ac197e/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9e477751d35162a33ad44f4b61ac197e/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1715c7247db865c667bf7168ee392ddd/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1715c7247db865c667bf7168ee392ddd/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1715c7247db865c667bf7168ee392ddd/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2c64bf5cac01db7aa40c611be368c0b7/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2c64bf5cac01db7aa40c611be368c0b7/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2c64bf5cac01db7aa40c611be368c0b7/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ad3ffad49ee17ffe105015e4cd3d6b35/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ad3ffad49ee17ffe105015e4cd3d6b35/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ad3ffad49ee17ffe105015e4cd3d6b35/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.mahimrocky/EventCalender/v1.0.0/9fabffe2345cdc24d78607b15307228d02422130/EventCalender-v1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

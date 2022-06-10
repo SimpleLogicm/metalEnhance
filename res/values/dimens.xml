@@ -1,0 +1,46 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">8dp</dimen>
+
+    <dimen name="text_size_header">20dp</dimen>
+    <dimen name="text_content_size">18dp</dimen>
+    <dimen name="home_text_size">12dp</dimen>
+    <dimen name="item_offset">10dp</dimen>
+    <dimen name="card_margin">5dp</dimen>
+    <dimen name="card_album_radius">0dp</dimen>
+    <dimen name="album_cover_height">160dp</dimen>
+    <dimen name="album_title_padding">10dp</dimen>
+    <dimen name="album_title">15dp</dimen>
+    <dimen name="songs_count_padding_bottom">5dp</dimen>
+    <dimen name="songs_count">12dp</dimen>
+    <dimen name="ic_album_overflow_width">20dp</dimen>
+    <dimen name="ic_album_overflow_height">30dp</dimen>
+    <dimen name="ic_album_overflow_margin_top">10dp</dimen>
+
+    <!-- Default -->
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- Products -->
+
+    <dimen name="title">14dp</dimen>
+    <dimen name="rating">15dip</dimen>
+    <dimen name="genre">13dip</dimen>
+    <dimen name="year">12dip</dimen>
+    <dimen name="card_title_height">42dp</dimen>
+    <dimen name="card_title_padding_top">1dp</dimen>
+    <dimen name="card_title_text_size">14dp</dimen>
+
+    <dimen name="button_left_padding">10dp</dimen>
+    <dimen name="button_right_padding">10dp</dimen>
+    <dimen name="button_top_padding">5dp</dimen>
+    <dimen name="button_bottom_padding">5dp</dimen>
+    <dimen name="button_height">35dp</dimen>
+    <dimen name="spacing">8dp</dimen>
+    <dimen name="size_32dp">48dp</dimen>
+    <dimen name="size_56dp">56dp</dimen>
+
+
+</resources>

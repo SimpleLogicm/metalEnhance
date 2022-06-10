@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="@dimen/common_10_dp"
+        android:padding="@dimen/common_10_dp"
+        card_view:cardBackgroundColor="?attr/cardbackground"
+        android:layout_marginTop="@dimen/common_10_dp"
+        android:layout_marginLeft="@dimen/common_5_dp"
+        android:layout_marginRight="@dimen/common_5_dp"
+        android:layout_marginBottom="@dimen/common_10_dp"
+        card_view:cardElevation="@dimen/common_4_dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/common_5_dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="2"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/signuptext"
+                        android:textColor="?attr/visit_schedule_historytext"
+                        android:textStyle="bold"
+                        android:textSize="10sp"
+                        android:text=" Shop Name">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="contact det"
+                        style="@style/welcometext"
+                        android:textColor="?attr/filter_short_text_color"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="right"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/signuptext"
+                        android:textColor="?attr/visit_schedule_historytext"
+                        android:textStyle="bold"
+                        android:textSize="10sp"
+                        android:text="Order No">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/txtName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="contact det"
+                        style="@style/welcometext"
+                        android:textColor="?attr/filter_short_text_color"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/txtSurname"
+                android:layout_width="match_parent"
+                android:drawableLeft="@drawable/ic_location_blue"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/work_sans"
+                android:gravity="center_vertical"
+                android:text="Surname"
+                android:drawableTint="?attr/New_orderoption_menueoptions_textcolor"
+
+                android:textColor="?attr/visit_schedule_historytext"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/txtEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/txtName"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="150dp"
+                android:text="Email"
+                android:textSize="10dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txtmrp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/txtSurname"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:text="Email"
+                android:textSize="10dp"
+
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/cche_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/txtSurname"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:textSize="10dp"
+
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.Cutta:GifView:1.4@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/250541d6cb23214c03dcf1e1eb71742b/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/250541d6cb23214c03dcf1e1eb71742b/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/250541d6cb23214c03dcf1e1eb71742b/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/250541d6cb23214c03dcf1e1eb71742b/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/250541d6cb23214c03dcf1e1eb71742b/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/250541d6cb23214c03dcf1e1eb71742b/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7659abbf2d010e9551aff4a87d05a13a/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7659abbf2d010e9551aff4a87d05a13a/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7659abbf2d010e9551aff4a87d05a13a/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.Cutta/GifView/1.4/4b63ab25c057980b195f1093fc0b16e7288d8914/GifView-1.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

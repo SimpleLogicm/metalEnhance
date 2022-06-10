@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="335dp"
+    android:orientation="vertical"
+    android:background="@drawable/boxgray"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/item_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/CUSTOMER_DETAILS"
+        android:textSize="17dp"
+        android:gravity="center"
+        android:textColor="#111111"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="10dp" 
+        android:background="#111111">
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/update_textdialog"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@null"
+        android:clickable="false"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:scrollbars="vertical"
+        android:textColor="#111111" />
+
+    <EditText
+         android:id="@+id/cu_distance"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center_vertical"
+         android:layout_marginLeft="10dp"
+         android:layout_marginTop="10dp"
+         android:layout_marginRight="10dp"
+         android:background="@null"
+         android:clickable="false"
+         android:enabled="false"
+         android:gravity="top"
+         android:inputType="textMultiLine"
+         android:scrollbars="vertical"
+         android:text=""
+         android:textColor="#111111" >
+
+        <requestFocus />
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/cu_distance_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@null"
+        android:clickable="false"
+        android:enabled="false"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:scrollbars="vertical"
+        android:text=""
+        android:textSize="12dp"
+        android:textColor="#111111">
+
+        <requestFocus />
+
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="1">
+
+
+        <Button
+            android:id="@+id/update_textdialogclick"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btnstyle"
+            android:text="@string/OK_Button_label"
+            android:textColor="#FFFFFF" />
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/c_ammount2"
+            android:orientation="horizontal"
+            android:paddingBottom="7dp">
+
+            <ImageView
+                android:id="@+id/cust_adrs_call"
+                android:layout_width="45dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="7dp"
+                android:src="@drawable/telephone_cust_prof"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/cust_adrs_map"
+                android:layout_width="45dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:src="@drawable/placeholder_cust_prof"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

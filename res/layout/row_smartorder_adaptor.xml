@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/llmain"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:layout_marginLeft="@dimen/common_5_dp"
+    android:layout_marginRight="@dimen/common_10_dp"
+    android:layout_marginBottom="@dimen/common_10_dp"
+    android:orientation="horizontal">
+
+
+    <RadioButton
+        android:id="@+id/radio"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+    </RadioButton>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        app:cardBackgroundColor="?attr/cardbackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/common_10_dp"
+>
+
+        <LinearLayout
+            android:id="@+id/card_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/common_5_dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/work_sans"
+                    android:text="@string/Order_Statuss"
+                    android:textColor="?attr/filter_short_text_color"
+                    android:textSize="12sp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/work_sans"
+                    android:gravity="right"
+                    android:text="@string/Order_date"
+                    android:textColor="?attr/filter_short_text_color"
+                    android:textSize="12sp">
+
+                </TextView>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/order_status"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/work_sans"
+                    android:text="@string/Order_Statuss"
+                    android:textStyle="bold"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="14sp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/order_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/work_sans"
+                    android:gravity="right"
+                    android:textStyle="bold"
+                    android:text="@string/Order_Statuss"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="14sp">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/common_10_dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_weight="1.8"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/work_sans"
+                        android:text="@string/Amount"
+                        android:textColor="?attr/filter_short_text_color"
+                        android:textSize="12sp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/work_sans"
+                        android:gravity="right"
+                        android:textStyle="bold"
+                        android:text="@string/Order_Statuss"
+                        android:textColor="?attr/colorPrimary"
+                        android:textSize="14sp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/order_feb"
+                    android:layout_width="@dimen/common_40_dp"
+                    android:tint="?attr/star_tint"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/unfavstar"
+                   />
+
+                <TextView
+                    android:id="@+id/order_favorite_flag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="yes"
+                    android:visibility="gone"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

@@ -1,0 +1,1274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.msimplelogic.activities"
+    android:versionCode="18"
+    android:versionName="1.5.8" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="30" />
+    <!-- Internet Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.location.GPS_ENABLED_CHANGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- new Internet Permissions -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+
+    <application
+        android:name="com.msimplelogic.App.AppController"
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/metal_pro"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true" >
+        <activity android:name="com.msimplelogic.activities.Visitlogsubmit" />
+        <activity android:name="com.msimplelogic.activities.kotlinFiles.Visitlog" />
+        <activity
+            android:name="com.msimplelogic.activities.Ratingview"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.msimplelogic.activities.ViewpagerActivity" />
+        <activity
+            android:name="com.msimplelogic.activities.Payhistory"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" /> <!-- <meta-data -->
+        <!-- android:name="firebase_performance_logcat_enabled" -->
+        <!-- android:value="true" /> -->
+        <activity
+            android:name="com.msimplelogic.activities.SplashScreenActivity"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcut" />
+        </activity>
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.SettingsActivity"
+            android:label="Settings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.return_order2"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.Visit_schedule_history"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.Productdemo"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.AddCustomer"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.kotGlobal.Checkout_quick_order"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.Favourite"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.msimplelogic.activities.SimpleScannerActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.ScanActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.ChatBActivity"
+            android:label="@string/title_activity_chat_b"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.msimplelogic.activities.Chat_PriceDemo"
+            android:label="@string/title_activity_chat_b"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.kotGlobal.QuickOrder"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.Smart_Order"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.Promotional_save"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.ListDetailsView"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.Promotional_meeting_save"
+            android:label="@string/title_activity_promotional_meetings"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.Invoice_order"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.Edit_cutomer_details"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.Order_notes"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.Visit_Schedule"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.UpdateStockScreen3"
+            android:label="@string/title_activity_update_stock_screen3"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.UpdateStockScreen2"
+            android:label="@string/title_activity_update_stock_screen2"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.UpdateStockScreen1"
+            android:label="@string/title_activity_update_stock_screen1"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.New_Feedback"
+            android:label="@string/title_activity_new__feedback"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.NotePreviewActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.ShiftRoaster"
+            android:label="@string/Attendance"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.HorizontalCalenderDemo"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.CheckOut"
+            android:label="@string/title_activity_check_out"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.MeetingInvoice"
+            android:label="@string/title_activity_promotional_meetings"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.Promotional_meeting_add"
+            android:label="@string/title_activity_promotional_meetings"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.Promotional_meetings"
+            android:label="@string/title_activity_promotional_meetings"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.Myprofile"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.MarketingMaterial"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.ActivitySummary"
+            android:label="My Activities"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.MyActivities"
+            android:label="My Activities"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.CompetitorAnalysis"
+            android:label="@string/title_activity_competitor_analysis"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.CustomerRating"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.AttendanceLog"
+            android:label="@string/Attendance"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.Day_sheduler_details"
+            android:label="@string/title_activity_day_sheduler_details"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.Day_sheduler"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.TimeSheetActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.TimesheetDetailsActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.Neworderoptions"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.Order_CustomerList"
+            android:label="@string/order_type"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.BeatSelection"
+            android:label="@string/order_type"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.msimplelogic.activities.Cust_feed_new2"
+            android:label="@string/Feedback"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.msimplelogic.activities.FeedbackDynamicActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.msimplelogic.activities.MarketSurveyActivity"
+            android:label="Market Survey"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--
+            <activity android:name="com.msimplelogic.activities.UploadActivity"
+             android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        -->
+        <activity
+            android:name="com.msimplelogic.activities.LoginActivity"
+            android:configChanges="locale"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.Video_Main_List"
+            android:label="Advertisement"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.VIDEO_DIALOG"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.msimplelogic.activities.Stock_options"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" />
+        <activity
+            android:name="com.msimplelogic.activities.Stock_Product_Options"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" /> <!-- <activity -->
+        <!-- android:name="com.msimplelogic.activities.MenuScreenActivity" -->
+        <!-- android:label="@string/app_name" > -->
+        <!-- </activity> -->
+        <activity
+            android:name="com.msimplelogic.activities.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.BasicMapDemoActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.MapsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.Test"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <!--
+        <activity
+            android:name="com.msimplelogic.activities.Home"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        -->
+        <activity
+            android:name="com.msimplelogic.activities.PreviousOrderActivity_New"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <!--
+        <activity
+            android:name="info.androidhive.camerafileupload.UploadActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        -->
+        <activity
+            android:name="com.msimplelogic.activities.NewOrderActivity"
+            android:label="@string/New_Order"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!--
+            <activity
+            android:name="com.simplelogic.fragments.EditOrderItems"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+               </activity>
+        -->
+        <activity
+            android:name="com.msimplelogic.activities.EditSwipeOrderItems"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.NoOrderActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <!--
+            <activity
+            android:name="com.simplelogic.fragments.PreviewOrderActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+             </activity>
+        -->
+        <activity
+            android:name="com.msimplelogic.activities.CaptureSignature"
+            android:label="@string/PCheckout"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.QuotationCaptureSignature"
+            android:label="Quotation Checkout"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.ReturnOrderActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.PreviousOrderActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.PreviewOrderSwipeActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <!--
+            <activity
+            android:name="com.msimplelogic.activities.CalendarFragment"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            </activity>
+        -->
+        <activity
+            android:name="com.msimplelogic.slidingmenu.CalendarAct"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.Calendar_Event"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.List_Events"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.Customer_Service"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.Customer_Feed"
+            android:label="@string/Customer_Serviceo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.msimplelogic.activities.Customer_Stock"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.Today_Tabber"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.Expenses"
+            android:label="@string/EXPENSE"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.Target"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.Schedule"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.Schedule1"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.Schedule2"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.Order"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.msimplelogic.activities.Sales_Dash"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.DashboardActivity"
+            android:label="@string/DashBoard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.OrderAnalysisActivity"
+            android:label="Order Analysis"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.TargetAchievementActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.ProductAnalysisActivity"
+            android:label="Product Analysis"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.CustomerAnalysisActivity"
+            android:label="Customer Analysis"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.CustomerAnalysisPieActivity"
+            android:label="Customer Analysis"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.FilterCustomerSearchActivity"
+            android:label="@string/Customer_Analysis"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.Dialog"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.msimplelogic.activities.ProductAnalysisPieActivity"
+            android:label="Product Analysis"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.ChangePasswordActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.ExpenseDetailsActivity"
+            android:label="@string/EXPENSE"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.msimplelogic.activities.ExpensesNewActivity"
+            android:label="@string/EXPENSE"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.msimplelogic.activities.FilterProductSearchActivity"
+            android:label="@string/Product_Analysis"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.Dialog"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.msimplelogic.activities.Filter_List"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.msimplelogic.activities.ExpandFilter"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.msimplelogic.activities.Invoice_filterList"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.msimplelogic.activities.New_filterList"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.msimplelogic.activities.Address_activity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.AndroidGPSTrackingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.Nearest_Customer"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.msimplelogic.activities.Item_Edit_Activity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppDialogTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.msimplelogic.activities.Sound_Act"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.Dialog"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.msimplelogic.activities.Calender_ReadonlyView"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.msimplelogic.activities.Status_Act"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.msimplelogic.activities.Status_Activity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.msimplelogic.activities.Previous_Order"
+            android:label="@string/Order_List"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.msimplelogic.activities.ReturnOrder_Customer"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.msimplelogic.activities.Previous_returnOrder"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.msimplelogic.activities.ReturnOrder1"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.msimplelogic.activities.ReturnOrder2"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.msimplelogic.activities.ReturnOrder3"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.msimplelogic.activities.ReturnEditItem"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.msimplelogic.activities.Pricing_Main"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.msimplelogic.activities.Stock_Main"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.msimplelogic.activities.Expended_List_Main"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.msimplelogic.activities.Youtube_Player_Activity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.msimplelogic.activities.Schedule_List"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.Image_Gellary"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.AllOrders_Sync"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.msimplelogic.activities.Previous_orderNew_S1"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.msimplelogic.activities.Previous_orderNew_S2"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.msimplelogic.activities.Previous_orderNew_S3"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.msimplelogic.activities.Previous_Item_Edit_Activity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.msimplelogic.activities.Survey_Main"
+            android:label="Market Survey"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.msimplelogic.activities.Survey_Home"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.Marketing"
+            android:label="Marketing"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.Contact_Us"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.About_Metal"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.msimplelogic.activities.SDcard_imageMain"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.msimplelogic.activities.SDcard_VideoMain"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.msimplelogic.activities.Target_REYC_Main"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.msimplelogic.activities.Target_REYCLE"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.msimplelogic.activities.Webview_Activity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.msimplelogic.activities.Customer_info_main"
+            android:label="Customer profile"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.msimplelogic.activities.Target_Summary1"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.msimplelogic.activities.Target_Summary2"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.msimplelogic.activities.Expended_list_demo"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.msimplelogic.activities.Forget_Pwd"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <!-- android:theme="@style/AppTheme2" -->
+        <!-- android:windowSoftInputMode="adjustPan" -->
+
+        <activity
+            android:name="com.msimplelogic.activities.Sound_Setting"
+            android:configChanges="locale"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.msimplelogic.activities.ProductAll_Varients"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.msimplelogic.activities.Product_All_P_Varients"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.msimplelogic.activities.Geo_Data"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.msimplelogic.activities.MapMultiUser"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.MapMultiUser1"
+            android:label="@string/Beat_On_Map"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.Cash_Collect"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.CalendarPlannerActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.Cash_Submit"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.Customer_Outstanding"
+            android:label="@string/Customer_Outstanding"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.CollectionStatement"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.MenuOptimization"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.OnlineCatalogue"
+            android:label="@string/Online_Catalogue"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.CameraVideoActivity"
+            android:label="Media"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.PreviousOnlineCatalogue"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.Url_Setting"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.SwipCatelauge"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.Dialog"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.msimplelogic.activities.PreviousSwipCatelauge"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.msimplelogic.slidingmenu.AddRetailerFragment"
+            android:label="Add Retailer"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.msimplelogic.activities.Order_Delivery"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.msimplelogic.activities.TAandOLactivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.msimplelogic.activities.OutstandingOverdueActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.msimplelogic.activities.SpeedViewActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.msimplelogic.activities.CatalogueSchemeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.msimplelogic.activities.TargetAnalysisActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.msimplelogic.activities.OnlineSchemeActivity"
+            android:label="@string/scheme_catalogue"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.ActivityPlanner"
+            android:label="@string/ACTIVITY_PLANNER1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.ActivityTask"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.ActivityTaskDetails"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.ActivityTour"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.ActivityLeaveManagement"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.ActivityTarget"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.ActivityViewTarget"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.SchemeDialog"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.msimplelogic.activities.Notification_View"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.Customer_Traits"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.CustomerServicesTraits"
+            android:label="@string/title_activity_customer__traits"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.QuoteAddRetailerTrait"
+            android:label="@string/title_activity_customer__traits"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.Surveys"
+            android:label="@string/title_activity_surveys"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.Product_comparison"
+            android:label="@string/title_activity_product_comparison"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.msimplelogic.activities.ActivityQuote"
+            android:label="@string/Quote"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.MeetingSaveNew"
+            android:label="@string/title_activity_promotional_meetings"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.msimplelogic.activities.kotlinFiles.AudioRecordTest"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.UserDialog" />
+
+        <receiver android:name="com.msimplelogic.activities.AutoStart" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.msimplelogic.activities.MyService"
+            android:enabled="true" />
+
+        <receiver
+            android:name="com.msimplelogic.helper.MyReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name="com.msimplelogic.services.MyNewIntentService"
+            android:exported="false" />
+        <!--
+         <service android:name=".LocationService" />
+
+                <receiver android:name="SendLocation">
+              <intent-filter>
+		        <action android:name="android.intent.action.BOOT_COMPLETED">
+		        </action>
+		     </intent-filter>
+
+         </receiver>
+
+            <service android:name="com.simplelogic.service.LocationServices" android:enabled="true"></service>
+        -->
+        <!-- debug -->
+        <!-- <meta-data -->
+        <!-- android:name="com.google.android.maps.v2.API_KEY" -->
+        <!-- android:value="AIzaSyBBVQp4TJDUAjbhvJcp9pdYNZjkU_O265M" /> -->
+        <!-- &lt;!&ndash;        For Kartik Laptop&ndash;&gt; -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDgsUCPDcrZfmrSziCgU4H8A2osNAGubN0" /> <!-- For Sujit Laptop -->
+        <!-- <meta-data -->
+        <!-- android:name="com.google.android.maps.v2.API_KEY" -->
+        <!-- android:value="AIzaSyDgsUCPDcrZfmrSziCgU4H8A2osNAGubN0" /> -->
+        <!-- For Google Play -->
+        <!-- <meta-data -->
+        <!-- android:name="com.google.android.maps.v2.API_KEY" -->
+        <!-- android:value="AIzaSyBvwlIOzlk2VU3IERHDotm6A6Ib4a95c1g" /> -->
+        <!-- debug For All Map Key -->
+        <!-- <meta-data -->
+        <!-- android:name="com.google.android.maps.v2.API_KEY" -->
+        <!-- android:value="AIzaSyCFtSXhR3zRKbMR9veiHIPZmTgwgJ4JvZk" /> -->
+        <!-- AIzaSyCFtSXhR3zRKbMR9veiHIPZmTgwgJ4JvZk -->
+        <!-- Production -->
+        <!-- <meta-data -->
+        <!-- android:name="com.google.android.maps.v2.API_KEY" -->
+        <!-- android:value="AIzaSyAy6FWvRasvYuCy1R2S9bKlEcbwExbTiuM" /> -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" /> <!-- Defining our FirebaseMessagingService -->
+        <service android:name="com.msimplelogic.activities.MyFirebaseMessagingService" >
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_notification" />
+
+        <provider
+            android:name="com.msimplelogic.activities.GenericFileProvider"
+            android:authorities="com.msimplelogic.activities.provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <receiver
+            android:name="com.msimplelogic.helper.OrderCheckReceiver"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.msimplelogic.services.OrderCheckService"
+            android:exported="false" />
+        <service
+            android:name="com.msimplelogic.services.TestJobServiceOrder"
+            android:label="Word Service"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <receiver android:name="com.msimplelogic.Receiver.NotificationActionReceiver" >
+            <intent-filter>
+                <action android:name="CONFIRM" />
+                <action android:name="CANCEL" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.msimplelogic.services.JobServiceBackground"
+            android:label="Word Service"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <receiver android:name="com.msimplelogic.Receiver.BJobSchedularServiceReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.msimplelogic.services.BJobScheduleService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name="com.msimplelogic.services.BJobService"
+            android:label="Word Service"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <activity
+            android:name="com.karumi.dexter.DexterActivity"
+            android:theme="@style/Dexter.Internal.Theme.Transparent" />
+
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:directBootAware="true"
+            android:exported="false" >
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.inappmessaging.display.FirebaseInAppMessagingDisplayRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.inappmessaging.FirebaseInAppMessagingRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+        <service
+            android:name="net.gotev.uploadservice.UploadService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+
+        <activity
+            android:name="cafe.adriel.androidaudiorecorder.AudioRecorderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false" >
+        </receiver>
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.INSTALL_PACKAGES" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <!--
+             FirebaseMessagingService performs security checks at runtime,
+             but set to not exported to explicitly avoid allowing another app to call it.
+        -->
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="false" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+            android:exported="false" >
+            <meta-data
+                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+                android:value="cct" />
+        </service>
+        <service
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" >
+        </service>
+
+        <receiver
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+            android:exported="false" />
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="com.msimplelogic.activities.firebaseinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
+        <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:authorities="com.msimplelogic.activities.com.squareup.picasso"
+            android:exported="false" /> <!-- Needs to be explicitly declared on P+ -->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--
+            Service handling Google Sign-In user revocation. For apps that do not integrate with
+            Google Sign-In, this service will never be started.
+        -->
+        <service
+            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+            android:exported="true"
+            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:name="com.crashlytics.android.CrashlyticsInitProvider"
+            android:authorities="com.msimplelogic.activities.crashlyticsinitprovider"
+            android:exported="false"
+            android:initOrder="90" /> <!-- The activity will be merged into the manifest of the hosting app. -->
+        <activity
+            android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity"
+            android:enabled="false"
+            android:exported="false"
+            android:launchMode="singleInstance"
+            android:process=":playcore_missing_splits_activity"
+            android:stateNotNeeded="true" />
+        <activity
+            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+            android:enabled="false"
+            android:exported="false"
+            android:process=":playcore_dialog_wrapper_activity"
+            android:stateNotNeeded="true"
+            android:theme="@style/Theme.PlayCore.Transparent" />
+    </application>
+
+</manifest>

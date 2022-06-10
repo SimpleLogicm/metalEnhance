@@ -1,0 +1,22 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.adrielcafe:AndroidAudioRecorder:0.3.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fa72e824ff598113c8eb5ad15e990094/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fa72e824ff598113c8eb5ad15e990094/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fa72e824ff598113c8eb5ad15e990094/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7301c1ea5cc3c28c4f8063271d6a0adc/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7301c1ea5cc3c28c4f8063271d6a0adc/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7301c1ea5cc3c28c4f8063271d6a0adc/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/25f25f60c52301ad4b7b5b5175b7adf7/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/25f25f60c52301ad4b7b5b5175b7adf7/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/25f25f60c52301ad4b7b5b5175b7adf7/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/41f6fe5da15ec9f215017ea4bed64530/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/41f6fe5da15ec9f215017ea4bed64530/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/41f6fe5da15ec9f215017ea4bed64530/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.adrielcafe/AndroidAudioRecorder/0.3.0/88f4470d024423f36dd12cd0cf866c6c814e6975/AndroidAudioRecorder-0.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

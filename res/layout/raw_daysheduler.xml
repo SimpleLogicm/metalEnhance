@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="?attr/cardbackground"
+    android:orientation="vertical"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp">
+
+    <LinearLayout
+        android:id="@+id/contents"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_shop"
+            android:layout_width="70dp"
+            android:layout_height="70dp"></de.hdodenhof.circleimageview.CircleImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical"
+
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/shopname"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/work_sans"
+                android:gravity="center_vertical"
+                android:text="abc"
+                android:textColor="?attr/filter_short_text_color"
+                android:textSize="15sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/common_5_dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_access_time_black_24dp">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/time_tv"
+                    style="@style/signuptext"
+                    android:layout_width="0dp"
+                    android:textColor="?attr/visit_schedule_historytext"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="9"
+                    android:gravity="center_vertical"
+                    android:text="10.00 Am"
+                    android:textSize="14sp">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    android:src="@drawable/location"
+                    >
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/distance_tv"
+                    style="@style/signuptext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:textColor="?attr/visit_schedule_historytext"
+                    android:gravity="center_vertical"
+                    android:text="1.8 KM"
+                    android:textSize="14sp"
+                    android:visibility="invisible">
+
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/call"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:src="@drawable/call"
+                    >
+
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/map"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:src="@drawable/locationdayschedulemap"
+                    >
+
+                </ImageView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

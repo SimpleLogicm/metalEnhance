@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Theme">
+        <attr name="primarycolor" format="reference" />
+        <attr name="primarycolordark" format="reference" />
+        <attr name="list_item_title" format="reference" />
+        <attr name="list_background" format="reference" />
+        <attr name="list_background_pressed" format="reference" />
+        <attr name="colorBackground" format="reference" />
+
+        <attr name="counter_text_bg" format="reference" />
+        <attr name="counter_text_color" format="reference" />
+        <attr name="filter_short_text_color" format="reference" />
+        <attr name="Beat_main_tv_color" format="reference" />
+        <attr name="Beat_adaptortv_color" format="reference" />
+        <attr name="New_orderoption_btn_cards" format="reference" />
+        <attr name="New_orderoption_menueoptions_backcolor" format="reference" />
+        <attr name="New_orderoption_menueoptions_textcolor" format="reference" />
+        <attr name="meetingshead" format="reference" />
+        <attr name="oredrer_customer_addbtn" format="reference" />
+        <attr name="oredrer_customer_headder" format="reference" />
+        <attr name="oredrer_customer_footer" format="reference" />
+        <attr name="oredrer_customer_goimage" format="reference" />
+        <attr name="metal_headder" format="reference" />
+        <attr name="metal_filterr" format="reference" />
+        <attr name="qrcodeimg" format="reference" />
+        <attr name="show_i_logo" format="reference" />
+        <attr name="metal_bg_withupper" format="reference" />
+
+        <attr name="cardbackground" format="reference" />
+        <attr name="visit_schedule_historytext" format="reference" />
+        <attr name="hint_text_color" format="reference" />
+        <attr name="ordercustomerlist_cardbackground" format="reference" />
+        <attr name="ordercustomerlist_cardtextcolor" format="reference" />
+        <attr name="fulllayoutbg" format="reference" />
+        <attr name="textcolor" format="reference" />
+        <attr name="white" format="reference" />
+        <attr name="black" format="reference" />
+        <attr name="shopname_onorder_option" format="reference" />
+        <attr name="contents_head_onorder_option" format="reference" />
+        <attr name="contents_values_onorder_option" format="reference" />
+        <attr name="notes_adaptor_left" format="reference" />
+        <attr name="notes_adaptor_right" format="reference" />
+        <attr name="swipe_nextTv" format="reference" />
+        <attr name="preview_card" format="reference" />
+        <attr name="selected_background" format="reference" />
+        <attr name="spinner_text_color" format="reference" />
+        <attr name="star_tint" format="reference" />
+    </declare-styleable>
+
+<!--    #005E2D-->
+</resources>

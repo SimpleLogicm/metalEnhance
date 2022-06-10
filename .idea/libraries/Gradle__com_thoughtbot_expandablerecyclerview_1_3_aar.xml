@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.thoughtbot:expandablerecyclerview:1.3@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/70f1915d24f4ed37f95b5f50b2ed7675/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/70f1915d24f4ed37f95b5f50b2ed7675/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/70f1915d24f4ed37f95b5f50b2ed7675/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

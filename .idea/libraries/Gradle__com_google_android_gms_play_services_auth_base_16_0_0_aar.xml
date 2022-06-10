@@ -1,0 +1,22 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.gms:play-services-auth-base:16.0.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/22568da9a55de590ebc7c787b3309c35/jetified-play-services-auth-base-16.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6f6812499e0885b48421d728fefe7d63/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6f6812499e0885b48421d728fefe7d63/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6f6812499e0885b48421d728fefe7d63/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/131ecbf36ba3df6269ebc53599191f09/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/131ecbf36ba3df6269ebc53599191f09/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/131ecbf36ba3df6269ebc53599191f09/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b84217d2c96d0d501ee896f8e5c07051/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b84217d2c96d0d501ee896f8e5c07051/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b84217d2c96d0d501ee896f8e5c07051/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1818756d893dee7e1e2452d91856efcd/transformed/jetified-play-services-auth-base-16.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2f20c4ed062f2485e3b68a3039c939eb/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2f20c4ed062f2485e3b68a3039c939eb/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2f20c4ed062f2485e3b68a3039c939eb/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/common_20_dp"
+    android:padding="@dimen/common_20_dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:layout_margin="@dimen/common_5_dp"
+        android:textSize="20sp"
+        android:text="Reminder">
+
+    </TextView>
+    <TextView
+        android:layout_margin="@dimen/common_5_dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:text="Your chek-In time is">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/timecurrent"
+        android:layout_margin="@dimen/common_5_dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_margin="@dimen/common_5_dp"
+        android:layout_width="match_parent"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/snooz"
+            android:layout_weight="0.7"
+            android:layout_width="0dp"
+            android:textColor="@color/white"
+            android:text="@string/Cancel"
+            android:background="@drawable/metal_button"
+            android:layout_height="@dimen/common_30_dp">
+
+        </Button>
+
+        <TextView
+            android:layout_width="@dimen/common_0_dp"
+            android:layout_weight="0.1"
+            android:layout_height="@dimen/common_30_dp">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_weight="0.7"
+            android:layout_width="0dp"
+            android:textColor="@color/white"
+            android:text="Chekout"
+            android:background="@drawable/metal_button"
+            android:layout_height="@dimen/common_30_dp">
+
+        </Button>
+
+
+    </LinearLayout>
+
+</LinearLayout>

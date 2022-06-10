@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="85dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/swipe"
+            android:src="@drawable/timeliner2"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_marginRight="@dimen/common_30_dp"
+            android:layout_marginLeft="@dimen/common_30_dp"
+            >
+
+        </ImageView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_below="@+id/swipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/common_10_dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/card_image">
+
+                </ImageView>
+
+                <TextView
+                    style="@style/signuptext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_10_dp"
+                    android:layout_marginTop="@dimen/common_10_dp"
+                    android:layout_marginRight="@dimen/common_10_dp"
+                    android:text="@string/Payment_method"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_10_dp"
+                    android:layout_marginTop="@dimen/common_5_dp"
+                    android:layout_marginRight="@dimen/common_10_dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/common_10_dp"
+                        android:layout_marginTop="@dimen/common_10_dp"
+                        android:layout_marginRight="@dimen/common_20_dp"
+                        app:cardElevation="@dimen/common_4_dp">
+
+                        <TextView
+                            android:id="@+id/btn_Cash"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/work_sans"
+                            android:padding="@dimen/common_10_dp"
+                            android:text="@string/Cash"
+                            android:textColor="@color/black"
+                            android:textSize="14sp">
+
+                        </TextView>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/common_10_dp"
+                        android:layout_marginTop="@dimen/common_10_dp"
+                        app:cardElevation="@dimen/common_4_dp">
+
+                        <TextView
+                            android:id="@+id/Btn_Cheque"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/work_sans"
+                            android:padding="@dimen/common_10_dp"
+                            android:text="@string/Cheque"
+                            android:textColor="@color/black"
+                            android:textSize="14sp">
+
+                        </TextView>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/common_20_dp"
+                        android:layout_marginTop="@dimen/common_10_dp"
+                        android:layout_marginBottom="@dimen/common_10_dp"
+                        app:cardElevation="@dimen/common_4_dp">
+
+                        <TextView
+                            android:id="@+id/Btn_neft"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/work_sans"
+                            android:padding="@dimen/common_10_dp"
+                            android:text="NEFT"
+                            android:textColor="@color/black"
+                            android:textSize="14sp">
+
+                        </TextView>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <EditText
+                        android:id="@+id/pcd_no.Et"
+                        android:layout_width="@dimen/common_0_dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.8"
+                        android:textSize="@dimen/common_15_dp"
+                        android:fontFamily="@font/work_sans"
+                        android:hint="PDC NO.">
+
+                    </EditText>
+
+                    <ImageView
+                        android:id="@+id/cam_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="0.2"
+                        android:src="@drawable/cam">
+
+                    </ImageView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+</LinearLayout>

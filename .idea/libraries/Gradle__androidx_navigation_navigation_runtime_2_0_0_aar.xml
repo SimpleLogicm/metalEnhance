@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.navigation:navigation-runtime:2.0.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8248dc17625d8b2daa2d2a802b89e882/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8248dc17625d8b2daa2d2a802b89e882/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8248dc17625d8b2daa2d2a802b89e882/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/712c832c6558fa3e92b664a2ca6bc595/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/712c832c6558fa3e92b664a2ca6bc595/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/712c832c6558fa3e92b664a2ca6bc595/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.navigation/navigation-runtime/2.0.0/d8ad82a1ae5222a5c294450bc7dee16eed8e433/navigation-runtime-2.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

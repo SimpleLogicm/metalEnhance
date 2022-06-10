@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android Projects/MetalEnhance/res/layout/activity_beat_selection.xml" value="0.1361111111111111" />
+        <entry key="..\:/Android Projects/MetalEnhance/res/layout/activity_home.xml" value="0.1361111111111111" />
+        <entry key="..\:/Android Projects/MetalEnhance/res/layout/activity_menu.xml" value="0.1" />
+        <entry key="..\:/Android Projects/MetalEnhance/res/layout/activity_neworderoptions.xml" value="0.1361111111111111" />
+        <entry key="..\:/Android Projects/MetalEnhance/res/layout/activity_newpreview_swipelistview.xml" value="0.1361111111111111" />
+        <entry key="..\:/Android Projects/MetalEnhance/res/layout/activity_notification__view.xml" value="0.1" />
+        <entry key="..\:/Android Projects/MetalEnhance/res/layout/activity_order__customer_list.xml" value="0.1361111111111111" />
+        <entry key="..\:/Android Projects/MetalEnhance/res/layout/activity_previous_order.xml" value="0.1361111111111111" />
+        <entry key="..\:/Android Projects/MetalEnhance/res/layout/activity_previous_order_new_s2.xml" value="0.1361111111111111" />
+        <entry key="..\:/Android Projects/MetalEnhance/res/layout/activity_quote.xml" value="0.2" />
+        <entry key="..\:/Android Projects/MetalEnhance/res/layout/activity_quotestatus.xml" value="0.1361111111111111" />
+        <entry key="..\:/Android Projects/MetalEnhance/res/layout/activity_signature_main.xml" value="0.1361111111111111" />
+        <entry key="..\:/Android Projects/MetalEnhance/res/layout/activity_splash_screen.xml" value="0.1" />
+        <entry key="..\:/Android Projects/MetalEnhance/res/layout/activity_task.xml" value="0.1" />
+        <entry key="..\:/Android Projects/MetalEnhance/res/layout/activity_timesheetdetails.xml" value="0.1361111111111111" />
+        <entry key="..\:/Android Projects/MetalEnhance/res/layout/adapter_newpreviewswipe.xml" value="0.1361111111111111" />
+        <entry key="..\:/Android Projects/MetalEnhance/res/layout/beatselectionadapter.xml" value="0.1361111111111111" />
+        <entry key="..\:/Android Projects/MetalEnhance/res/layout/content_beat_selection.xml" value="0.22" />
+        <entry key="..\:/Android Projects/MetalEnhance/res/layout/content_neworderoptions.xml" value="0.1361111111111111" />
+        <entry key="..\:/Android Projects/MetalEnhance/res/layout/content_newpreview_swipelistview.xml" value="0.1361111111111111" />
+        <entry key="..\:/Android Projects/MetalEnhance/res/layout/content_order__customer_list.xml" value="0.1361111111111111" />
+        <entry key="..\:/Android Projects/MetalEnhance/res/layout/content_quote.xml" value="0.18" />
+        <entry key="..\:/Android Projects/MetalEnhance/res/layout/content_task.xml" value="0.1" />
+        <entry key="..\:/Android Projects/MetalEnhance/res/layout/login.xml" value="0.22" />
+        <entry key="..\:/Android Projects/MetalEnhance/res/layout/new_order_new.xml" value="0.1361111111111111" />
+        <entry key="..\:/Android Projects/MetalEnhance/res/layout/new_quotationstatus.xml" value="0.25" />
+        <entry key="..\:/Android Projects/MetalEnhance/res/layout/newhome_layout.xml" value="0.1361111111111111" />
+        <entry key="..\:/Android Projects/MetalEnhance/res/layout/neworder_main.xml" value="0.1361111111111111" />
+        <entry key="..\:/Android Projects/MetalEnhance/res/layout/previousorderonnlinecatelog.xml" value="0.1361111111111111" />
+        <entry key="..\:/Android Projects/MetalEnhance/res/layout/previousorderonnlinecatelog_main.xml" value="0.1361111111111111" />
+        <entry key="..\:/Android Projects/MetalEnhance/res/layout/quat_content_capture_signature.xml" value="0.1361111111111111" />
+        <entry key="..\:/Android Projects/MetalEnhance/res/layout/quot_main_capturesignature.xml" value="0.13387978142076504" />
+        <entry key="..\:/Android Projects/MetalEnhance/res/layout/sales_dash.xml" value="0.17" />
+        <entry key="..\:/Android Projects/MetalEnhance/res/layout/signature.xml" value="0.1361111111111111" />
+        <entry key="..\:/Android Projects/MetalEnhance/res/layout/status_click.xml" value="0.21" />
+        <entry key="..\:/Android Projects/MetalEnhance/res/layout/status_list.xml" value="0.1361111111111111" />
+        <entry key="..\:/Android Projects/MetalEnhance/res/layout/status_list_txt.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

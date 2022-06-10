@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/metal_bg_withupper"
+    android:layout_centerHorizontal="true"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:text="Target Filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_10_dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="@dimen/album_title"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/common_60_dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+
+        <Spinner
+            android:id="@+id/target_amount"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:hint="Select Retailer"
+            android:inputType="textPassword"
+            android:layout_margin="@dimen/common_5_dp"
+            android:layout_below="@+id/dialog_title"
+            android:layout_marginTop="5dp" />
+
+        <Spinner
+            android:id="@+id/target_grpby"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:hint="Select Retailer"
+            android:inputType="textPassword"
+            android:layout_margin="@dimen/common_5_dp"
+            android:layout_below="@+id/target_amount"
+            android:layout_marginTop="5dp" />
+
+        <Spinner
+            android:id="@+id/target_product_category"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:hint="Select Retailer"
+            android:inputType="textPassword"
+            android:layout_margin="@dimen/common_5_dp"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/target_grpby"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/common_40_dp">
+
+            <Button
+                android:id="@+id/btnok_useremaildialog"
+                android:layout_width="90dp"
+                android:layout_height="35dp"
+                android:text="@string/OK_Button_label"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/metal_button"
+                android:fontFamily="sans-serif"
+                android:paddingLeft="@dimen/button_left_padding"
+                android:paddingTop="@dimen/button_top_padding"
+                android:paddingRight="@dimen/button_right_padding"
+                android:paddingBottom="@dimen/button_bottom_padding"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+
+                />
+
+            <Button
+                android:id="@+id/btncancel_useremaildialog"
+                android:layout_width="90dp"
+                android:layout_height="35dp"
+                android:text="@string/Cancel"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/metal_button"
+                android:fontFamily="sans-serif"
+                android:paddingLeft="@dimen/button_left_padding"
+                android:paddingTop="@dimen/button_top_padding"
+                android:paddingRight="@dimen/button_right_padding"
+                android:paddingBottom="@dimen/button_bottom_padding"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

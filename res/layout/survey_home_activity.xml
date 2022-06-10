@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.msimplelogic.activities.Survey_Home"
+    tools:showIn="@layout/survey_home_main"
+    >
+    <LinearLayout
+        android:id="@+id/linearMian"
+        android:layout_width="match_parent"
+        android:background="?attr/fulllayoutbg"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <ImageView
+        android:id="@+id/hedder_theame"
+        android:layout_width="match_parent"
+        android:src="@drawable/light_hedder"
+        android:scaleType="fitXY"
+        android:layout_height="70dp">
+
+    </ImageView>
+
+    </LinearLayout>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+
+        <TextView
+            android:layout_marginRight="10dp"
+            android:id="@+id/tv_current_surveys"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:textSize="16sp"
+            android:visibility="invisible"
+            android:textColor="?attr/visit_schedule_historytext"
+            android:fontFamily="@font/work_sans"
+            android:gravity="right"
+            android:text="@string/Current_Surveys">
+
+        </TextView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/media_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardBackgroundColor="?attr/cardbackground"
+            card_view:cardElevation="10dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingBottom="10dp"
+            card_view:cardUseCompatPadding="true"
+            >
+
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="?attr/filter_short_text_color"
+                android:textSize="18dp"
+                android:text="@string/Select_Customer">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <Spinner
+                    android:id="@+id/cust_state"
+                    android:layout_width="250dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:hint="Select City"
+                    android:textColor="?attr/New_orderoption_menueoptions_textcolor"
+                    style="@style/mySpinnerItemStyle"
+                    android:inputType="textPassword"
+                    android:paddingTop="20dp"
+                    android:layout_marginTop="10dp"/>
+
+                <Spinner
+                    android:id="@+id/cust_city"
+                    android:layout_width="250dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:hint="Select Beat"
+                    android:textColor="?attr/New_orderoption_menueoptions_textcolor"
+                    style="@style/mySpinnerItemStyle"
+                    android:inputType="textPassword"
+                    android:paddingTop="20dp"
+                    android:layout_marginTop="10dp" />
+
+                <Spinner
+                    android:id="@+id/cust_beat"
+                    android:layout_width="250dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:hint="Select Retailer"
+                    android:inputType="textPassword"
+                    android:textColor="?attr/New_orderoption_menueoptions_textcolor"
+                    style="@style/mySpinnerItemStyle"
+                    android:paddingTop="30dp"
+                    android:layout_marginTop="10dp" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteTextView1"
+                    android:layout_width="250dp"
+                    android:layout_height="@dimen/common_60_dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:inputType="textMultiLine"
+                    android:layout_weight="0.09"
+                    android:ems="10"
+                    android:scrollbars="none"
+                    android:hint="@string/Search_Customer"
+                    android:completionThreshold="1"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:textColorHint="?attr/hint_text_color"
+                    android:textColor="?attr/New_orderoption_menueoptions_textcolor"
+                    android:drawableRight="@drawable/search_icon"
+                    android:textSize="15dp" >
+
+                    <requestFocus />
+                </AutoCompleteTextView>
+
+                <LinearLayout
+                    android:id="@+id/add_layout"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/customer_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="?attr/filter_short_text_color"
+                        />
+
+                </LinearLayout>
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/but_neworder"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/metal_button"
+            android:paddingLeft="@dimen/button_left_padding"
+            android:paddingTop="@dimen/button_top_padding"
+            android:paddingRight="@dimen/button_right_padding"
+            android:paddingBottom="@dimen/button_bottom_padding"
+            android:text="@string/STARTs"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.bumptech.glide:glide:4.9.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/edec7a6bc672ec3586ecf4755a460877/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/edec7a6bc672ec3586ecf4755a460877/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/edec7a6bc672ec3586ecf4755a460877/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/477ee1210ac162ab6913434b9911a4f3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/477ee1210ac162ab6913434b9911a4f3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/477ee1210ac162ab6913434b9911a4f3/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b8dff718ed45ae5fe2877f14a76ed7ac/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b8dff718ed45ae5fe2877f14a76ed7ac/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b8dff718ed45ae5fe2877f14a76ed7ac/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1434e11fa7e3c1f07ff4007ae8a3309c/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1434e11fa7e3c1f07ff4007ae8a3309c/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1434e11fa7e3c1f07ff4007ae8a3309c/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/4.9.0/b53be1dd9e86c008d96d319510846282f95c49f/glide-4.9.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/4.9.0/5f95e3cc34b116a8024f2af42f66e257d2e28ccb/glide-4.9.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

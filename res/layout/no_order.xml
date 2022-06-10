@@ -1,0 +1,145 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    tools:context="com.msimplelogic.activities.NoOrderActivity">
+
+
+
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/common_50_dp"
+        android:id="@+id/linearMian"
+        android:layout_width="match_parent"
+        android:background="?attr/fulllayoutbg"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/hedder_theame"
+            android:layout_width="match_parent"
+            android:src="@drawable/light_hedder"
+            android:scaleType="fitXY"
+            android:layout_height="70dp">
+
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/editTextTarget"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:paddingTop="20dp"
+                android:text="@string/No_Order"
+                android:textAlignment="center"
+                android:textColor="?attr/filter_short_text_color"
+                android:textSize="18sp"
+                android:typeface="sans"
+                android:visibility="gone"></TextView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/common_30_dp"
+                app:cardCornerRadius="@dimen/common_10_dp"
+                app:cardElevation="@dimen/common_4_dp"
+                app:cardBackgroundColor="?attr/cardbackground"
+                app:cardUseCompatPadding="true">
+
+                <Spinner
+                    android:id="@+id/spnReason"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="?attr/New_orderoption_menueoptions_textcolor"
+                    style="@style/mySpinnerItemStyle"
+                    android:hint="Select City"
+                    android:padding="10dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ed_cradview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/common_30_dp"
+                android:visibility="gone"
+                app:cardCornerRadius="@dimen/common_10_dp"
+                app:cardBackgroundColor="?attr/cardbackground"
+                app:cardElevation="@dimen/common_4_dp"
+                app:cardUseCompatPadding="true">
+
+                <EditText
+                    android:id="@+id/edittextNoOrderreason"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:hint="@string/Enter_Reason"
+                    android:drawableRight="@drawable/mic"
+                    android:backgroundTint="#c3c3c3"
+                    android:inputType="textEmailAddress|textMultiLine"
+                    android:paddingLeft="5dp"
+                    android:textColor="?attr/filter_short_text_color"
+                    android:textCursorDrawable="@null"
+                    android:visibility="invisible" />
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="20dp"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp">
+
+                    <Button
+                        android:id="@+id/buttonnoOrderSave"
+                        android:layout_width="130dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/btnstyle"
+                        android:text="@string/Submit"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFFFF" />
+
+                    <Button
+                        android:id="@+id/buttonnoOrdercancel"
+                        android:layout_width="130dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/btnstyle"
+                        android:text="@string/Cancel"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

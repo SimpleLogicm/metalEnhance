@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/metal_bg_all"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".kotlinFiles.CustomerRating"
+    tools:showIn="@layout/activity_customer_rating">
+
+    <LinearLayout
+        android:id="@+id/linearMian"
+        android:layout_width="match_parent"
+        android:background="?attr/fulllayoutbg"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <ImageView
+        android:id="@+id/hedder_theame"
+        android:layout_width="match_parent"
+        android:src="@drawable/light_hedder"
+        android:scaleType="fitXY"
+        android:layout_height="70dp">
+
+    </ImageView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/rating_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingBottom="10dp"
+                app:cardCornerRadius="10dp"
+                card_view:cardBackgroundColor="?attr/cardbackground"
+                card_view:cardElevation="10dp"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp"
+                    >
+                    <AutoCompleteTextView
+                        android:id="@+id/editText1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:fontFamily="@font/work_sans"
+                        android:inputType="textPersonName"
+                        android:hint="@string/CompetitorName"
+                        android:padding="10dp"
+                        app:backgroundTint="@color/black_overlay"
+                        android:textColorHint="?attr/hint_text_color"
+                        android:textColor="?attr/New_orderoption_menueoptions_textcolor"
+                        android:backgroundTint="#c3c3c3"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:textSize="15sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/ratingtext1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="?attr/hint_text_color"
+                            android:text="Customer happiness Quotient on product"
+                            android:layout_marginBottom="10dp"
+                            android:textSize="16dp" />
+
+                        <com.willy.ratingbar.RotationRatingBar
+                            android:id="@+id/simpleRatingBar1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            app:srb_clearRatingEnabled="true"
+                            app:srb_clickable="true"
+                            app:srb_drawableEmpty="@drawable/rating_empty"
+                            app:srb_drawableFilled="@drawable/rating_fill"
+                            app:srb_isIndicator="false"
+                            app:srb_minimumStars="1"
+                            app:srb_numStars="6"
+                            app:srb_rating="1"
+                            app:srb_scrollable="true"
+                            app:srb_starHeight="30dp"
+                            app:srb_starPadding="4dp"
+                            app:srb_starWidth="30dp"
+                            app:srb_stepSize="1">
+
+                        </com.willy.ratingbar.RotationRatingBar>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/ratingtext2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Product Quality"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="?attr/hint_text_color"
+                            android:textSize="16dp" />
+
+                        <com.willy.ratingbar.RotationRatingBar
+                            android:id="@+id/simpleRatingBar2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            app:srb_clearRatingEnabled="true"
+                            app:srb_clickable="true"
+                            app:srb_drawableEmpty="@drawable/rating_empty"
+                            app:srb_drawableFilled="@drawable/rating_fill"
+                            app:srb_isIndicator="false"
+                            app:srb_minimumStars="1"
+                            app:srb_numStars="6"
+                            app:srb_rating="1"
+                            app:srb_scrollable="true"
+                            app:srb_starHeight="30dp"
+                            app:srb_starPadding="4dp"
+                            app:srb_starWidth="30dp"
+                            app:srb_stepSize="1">
+
+                        </com.willy.ratingbar.RotationRatingBar>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/rating_click"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"
+                android:layout_below="@+id/rating_card_view"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/metal_button"
+                android:paddingLeft="@dimen/button_left_padding"
+                android:paddingTop="@dimen/button_top_padding"
+                android:paddingRight="@dimen/button_right_padding"
+                android:paddingBottom="@dimen/button_bottom_padding"
+                android:text="@string/Submit"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp"/>
+
+
+            <TextView
+                android:id="@+id/tv_history"
+                android:layout_margin="@dimen/common_15_dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/rating_click"
+                android:fontFamily="@font/work_sans"
+                android:text="@string/Visit_History"
+                android:visibility="visible"
+                android:textColor="?attr/visit_schedule_historytext"
+                android:textSize="14sp">
+
+            </TextView>
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

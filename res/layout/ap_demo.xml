@@ -1,0 +1,188 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.msimplelogic.activities.BasicMapDemoActivity"
+    tools:showIn="@layout/activity_attendance_main"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearMian"
+        android:layout_width="match_parent"
+        android:background="?attr/fulllayoutbg"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <ImageView
+        android:id="@+id/hedder_theame"
+        android:layout_width="match_parent"
+        android:src="?attr/metal_headder"
+        android:scaleType="fitXY"
+        android:layout_height="70dp">
+
+    </ImageView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/attendance_card_view1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_alignParentTop="true"
+                card_view:cardBackgroundColor="@color/white"
+                card_view:cardElevation="10dp"
+                app:cardCornerRadius="10dp"
+                card_view:cardUseCompatPadding="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+
+                    >
+
+                    <Button
+                        android:id="@+id/att_mapat"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:background="#007AD0"
+                        android:text="@string/Mark_Attendance"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <Button
+                        android:id="@+id/att_log"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/Attendance_Log"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="?attr/filter_short_text_color"
+                        android:background="?attr/cardbackground"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="1dip"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight=".008"
+                        android:visibility="gone"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:background="@color/black_overlay"/>
+
+                    <Button
+                        android:id="@+id/att_shftro"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="?attr/filter_short_text_color"
+                        android:background="?attr/cardbackground"
+                        android:textSize="14dp"
+                        android:layout_marginRight="@dimen/common_5_dp"
+                        android:text="@string/Shift_Roaster"
+                        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/attendance_card_view2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/attendance_card_view1"
+                card_view:cardBackgroundColor="@color/white"
+                card_view:cardElevation="10dp"
+                app:cardCornerRadius="5dp"
+                card_view:cardUseCompatPadding="true"
+                >
+
+                <fragment
+                    android:id="@+id/googleMap"
+                    class="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/Morelocationdetail"
+                    android:layout_width="50dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="10dp"
+                    android:visibility="gone"
+                    android:src="@drawable/more_geodata"
+                    android:text="MORE"
+                    android:textColor="#FFFFFF" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/attendance_card_view3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/attendance_card_view1"
+                    card_view:cardBackgroundColor="?attr/cardbackground"
+                    card_view:cardElevation="10dp"
+                    app:cardCornerRadius="20dp"
+
+                    android:paddingBottom="10dp"
+                    card_view:cardUseCompatPadding="true"
+                    android:gravity="center"
+                    android:layout_gravity="bottom|center"
+                    >
+
+                    <LinearLayout
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+
+                            android:layout_alignParentBottom="true"
+                            android:id="@+id/at_in"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:background="@color/primarycolor"
+                            android:text="@string/IN"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/at_out"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:background="@color/white"
+                            android:text="@string/OUT"
+                            android:textColor="@color/black"
+                            android:textAllCaps="false"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

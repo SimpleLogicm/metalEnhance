@@ -1,0 +1,1111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.msimplelogic.activities">
+    <!-- Internet Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.location.GPS_ENABLED_CHANGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- new Internet Permissions -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:name="com.msimplelogic.App.AppController"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/metal_pro"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:icon">
+        <activity android:name=".Visitlogsubmit"></activity>
+        <activity android:name=".kotlinFiles.Visitlog" />
+        <activity
+            android:name=".Ratingview"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ViewpagerActivity" />
+        <activity
+            android:name=".Payhistory"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" /> <!-- <meta-data -->
+        <!-- android:name="firebase_performance_logcat_enabled" -->
+        <!-- android:value="true" /> -->
+        <activity
+            android:name=".SplashScreenActivity"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcut" />
+        </activity>
+        <activity
+            android:name=".kotlinFiles.SettingsActivity"
+            android:label="Settings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".return_order2"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".kotlinFiles.Visit_schedule_history"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".kotlinFiles.Productdemo"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".kotlinFiles.AddCustomer"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".kotlinFiles.kotGlobal.Checkout_quick_order"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".kotlinFiles.Favourite"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".SimpleScannerActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ScanActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".kotlinFiles.ChatBActivity"
+            android:label="@string/title_activity_chat_b"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Chat_PriceDemo"
+            android:label="@string/title_activity_chat_b"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".kotlinFiles.kotGlobal.QuickOrder"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".kotlinFiles.Smart_Order"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".kotlinFiles.Promotional_save"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".kotlinFiles.ListDetailsView"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".kotlinFiles.Promotional_meeting_save"
+            android:label="@string/title_activity_promotional_meetings"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".kotlinFiles.Invoice_order"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".kotlinFiles.Edit_cutomer_details"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".kotlinFiles.Order_notes"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".kotlinFiles.Visit_Schedule"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".kotlinFiles.UpdateStockScreen3"
+            android:label="@string/title_activity_update_stock_screen3"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".kotlinFiles.UpdateStockScreen2"
+            android:label="@string/title_activity_update_stock_screen2"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".kotlinFiles.UpdateStockScreen1"
+            android:label="@string/title_activity_update_stock_screen1"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".kotlinFiles.New_Feedback"
+            android:label="@string/title_activity_new__feedback"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".kotlinFiles.NotePreviewActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".kotlinFiles.ShiftRoaster"
+            android:label="@string/Attendance"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".kotlinFiles.HorizontalCalenderDemo"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".kotlinFiles.CheckOut"
+            android:label="@string/title_activity_check_out"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".kotlinFiles.MeetingInvoice"
+            android:label="@string/title_activity_promotional_meetings"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".kotlinFiles.Promotional_meeting_add"
+            android:label="@string/title_activity_promotional_meetings"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".kotlinFiles.Promotional_meetings"
+            android:label="@string/title_activity_promotional_meetings"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".kotlinFiles.Myprofile"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".kotlinFiles.MarketingMaterial"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".kotlinFiles.ActivitySummary"
+            android:label="My Activities"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".kotlinFiles.MyActivities"
+            android:label="My Activities"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".kotlinFiles.CompetitorAnalysis"
+            android:label="@string/title_activity_competitor_analysis"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".kotlinFiles.CustomerRating"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".kotlinFiles.AttendanceLog"
+            android:label="@string/Attendance"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".kotlinFiles.Day_sheduler_details"
+            android:label="@string/title_activity_day_sheduler_details"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".kotlinFiles.Day_sheduler"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".kotlinFiles.TimeSheetActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".kotlinFiles.TimesheetDetailsActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".kotlinFiles.Neworderoptions"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".kotlinFiles.Order_CustomerList"
+            android:label="@string/order_type"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".kotlinFiles.BeatSelection"
+            android:label="@string/order_type"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Cust_feed_new2"
+            android:label="@string/Feedback"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FeedbackDynamicActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MarketSurveyActivity"
+            android:label="Market Survey"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--
+            <activity android:name="com.msimplelogic.activities.UploadActivity"
+             android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        -->
+        <activity
+            android:name=".LoginActivity"
+            android:configChanges="locale"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".kotlinFiles.Video_Main_List"
+            android:label="Advertisement"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".VIDEO_DIALOG"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".Stock_options"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" />
+        <activity
+            android:name=".Stock_Product_Options"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" /> <!-- <activity -->
+        <!-- android:name="com.msimplelogic.activities.MenuScreenActivity" -->
+        <!-- android:label="@string/app_name" > -->
+        <!-- </activity> -->
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BasicMapDemoActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Test"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <!--
+        <activity
+            android:name="com.msimplelogic.activities.Home"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        -->
+        <activity
+            android:name=".PreviousOrderActivity_New"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <!--
+        <activity
+            android:name="info.androidhive.camerafileupload.UploadActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        -->
+        <activity
+            android:name=".NewOrderActivity"
+            android:label="@string/New_Order"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!--
+            <activity
+            android:name="com.simplelogic.fragments.EditOrderItems"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+               </activity>
+        -->
+        <activity
+            android:name=".EditSwipeOrderItems"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NoOrderActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <!--
+            <activity
+            android:name="com.simplelogic.fragments.PreviewOrderActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+             </activity>
+        -->
+        <activity
+            android:name=".CaptureSignature"
+            android:label="@string/PCheckout"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".QuotationCaptureSignature"
+            android:label="Quotation Checkout"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ReturnOrderActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PreviousOrderActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PreviewOrderSwipeActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <!--
+            <activity
+            android:name="com.msimplelogic.activities.CalendarFragment"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            </activity>
+        -->
+        <activity
+            android:name="com.msimplelogic.slidingmenu.CalendarAct"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Calendar_Event"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".List_Events"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Customer_Service"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Customer_Feed"
+            android:label="@string/Customer_Serviceo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Customer_Stock"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Today_Tabber"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Expenses"
+            android:label="@string/EXPENSE"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Target"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Schedule"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Schedule1"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Schedule2"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Order"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".Sales_Dash"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DashboardActivity"
+            android:label="@string/DashBoard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OrderAnalysisActivity"
+            android:label="Order Analysis"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TargetAchievementActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProductAnalysisActivity"
+            android:label="Product Analysis"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CustomerAnalysisActivity"
+            android:label="Customer Analysis"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CustomerAnalysisPieActivity"
+            android:label="Customer Analysis"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FilterCustomerSearchActivity"
+            android:label="@string/Customer_Analysis"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.Dialog"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ProductAnalysisPieActivity"
+            android:label="Product Analysis"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".kotlinFiles.ChangePasswordActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ExpenseDetailsActivity"
+            android:label="@string/EXPENSE"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ExpensesNewActivity"
+            android:label="@string/EXPENSE"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".FilterProductSearchActivity"
+            android:label="@string/Product_Analysis"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.Dialog"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Filter_List"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ExpandFilter"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Invoice_filterList"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".New_filterList"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Address_activity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AndroidGPSTrackingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Nearest_Customer"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Item_Edit_Activity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppDialogTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Sound_Act"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.Dialog"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Calender_ReadonlyView"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Status_Act"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Status_Activity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Previous_Order"
+            android:label="@string/Order_List"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ReturnOrder_Customer"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Previous_returnOrder"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ReturnOrder1"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ReturnOrder2"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ReturnOrder3"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ReturnEditItem"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Pricing_Main"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Stock_Main"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Expended_List_Main"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Youtube_Player_Activity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Schedule_List"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".kotlinFiles.Image_Gellary"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".kotlinFiles.AllOrders_Sync"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Previous_orderNew_S1"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Previous_orderNew_S2"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Previous_orderNew_S3"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Previous_Item_Edit_Activity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Survey_Main"
+            android:label="Market Survey"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Survey_Home"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".kotlinFiles.Marketing"
+            android:label="Marketing"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".kotlinFiles.Contact_Us"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".kotlinFiles.About_Metal"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".SDcard_imageMain"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".SDcard_VideoMain"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Target_REYC_Main"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Target_REYCLE"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Webview_Activity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".Customer_info_main"
+            android:label="Customer profile"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Target_Summary1"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Target_Summary2"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Expended_list_demo"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Forget_Pwd"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+<!--            android:theme="@style/AppTheme2"-->
+<!--            android:windowSoftInputMode="adjustPan"-->
+
+
+        <activity
+            android:name=".Sound_Setting"
+            android:configChanges="locale"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ProductAll_Varients"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Product_All_P_Varients"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Geo_Data"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".MapMultiUser"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MapMultiUser1"
+            android:label="@string/Beat_On_Map"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Cash_Collect"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CalendarPlannerActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Cash_Submit"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Customer_Outstanding"
+            android:label="@string/Customer_Outstanding"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CollectionStatement"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MenuOptimization"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OnlineCatalogue"
+            android:label="@string/Online_Catalogue"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CameraVideoActivity"
+            android:label="Media"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PreviousOnlineCatalogue"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".kotlinFiles.Url_Setting"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SwipCatelauge"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.Dialog"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".PreviousSwipCatelauge"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.msimplelogic.slidingmenu.AddRetailerFragment"
+            android:label="Add Retailer"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Order_Delivery"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".TAandOLactivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".OutstandingOverdueActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".SpeedViewActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".CatalogueSchemeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".TargetAnalysisActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".OnlineSchemeActivity"
+            android:label="@string/scheme_catalogue"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".kotlinFiles.ActivityPlanner"
+            android:label="@string/ACTIVITY_PLANNER1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".kotlinFiles.ActivityTask"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".kotlinFiles.ActivityTaskDetails"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".kotlinFiles.ActivityTour"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".kotlinFiles.ActivityLeaveManagement"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".kotlinFiles.ActivityTarget"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".kotlinFiles.ActivityViewTarget"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SchemeDialog"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".Notification_View"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".kotlinFiles.Customer_Traits"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".kotlinFiles.CustomerServicesTraits"
+            android:label="@string/title_activity_customer__traits"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".kotlinFiles.QuoteAddRetailerTrait"
+            android:label="@string/title_activity_customer__traits"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".kotlinFiles.Surveys"
+            android:label="@string/title_activity_surveys"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".kotlinFiles.Product_comparison"
+            android:label="@string/title_activity_product_comparison"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ActivityQuote"
+            android:label="@string/Quote"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".kotlinFiles.MeetingSaveNew"
+            android:label="@string/title_activity_promotional_meetings"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".kotlinFiles.AudioRecordTest"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.UserDialog" />
+
+        <receiver android:name=".AutoStart">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".MyService"
+            android:enabled="true" />
+
+        <receiver
+            android:name="com.msimplelogic.helper.MyReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name="com.msimplelogic.services.MyNewIntentService"
+            android:exported="false" />
+        <!--
+         <service android:name=".LocationService" />
+
+                <receiver android:name="SendLocation">
+              <intent-filter>
+		        <action android:name="android.intent.action.BOOT_COMPLETED">
+		        </action>
+		     </intent-filter>
+
+         </receiver>
+
+            <service android:name="com.simplelogic.service.LocationServices" android:enabled="true"></service>
+        -->
+        <!-- debug -->
+        <!-- <meta-data -->
+        <!-- android:name="com.google.android.maps.v2.API_KEY" -->
+        <!-- android:value="AIzaSyBBVQp4TJDUAjbhvJcp9pdYNZjkU_O265M" /> -->
+        <!-- &lt;!&ndash;        For Kartik Laptop&ndash;&gt; -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDgsUCPDcrZfmrSziCgU4H8A2osNAGubN0" /> <!-- For Sujit Laptop -->
+        <!-- <meta-data -->
+        <!-- android:name="com.google.android.maps.v2.API_KEY" -->
+        <!-- android:value="AIzaSyDgsUCPDcrZfmrSziCgU4H8A2osNAGubN0" /> -->
+        <!-- For Google Play -->
+        <!-- <meta-data -->
+        <!-- android:name="com.google.android.maps.v2.API_KEY" -->
+        <!-- android:value="AIzaSyBvwlIOzlk2VU3IERHDotm6A6Ib4a95c1g" /> -->
+        <!-- debug For All Map Key -->
+        <!-- <meta-data -->
+        <!-- android:name="com.google.android.maps.v2.API_KEY" -->
+        <!-- android:value="AIzaSyCFtSXhR3zRKbMR9veiHIPZmTgwgJ4JvZk" /> -->
+        <!-- AIzaSyCFtSXhR3zRKbMR9veiHIPZmTgwgJ4JvZk -->
+        <!-- Production -->
+        <!-- <meta-data -->
+        <!-- android:name="com.google.android.maps.v2.API_KEY" -->
+        <!-- android:value="AIzaSyAy6FWvRasvYuCy1R2S9bKlEcbwExbTiuM" /> -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" /> <!-- Defining our FirebaseMessagingService -->
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_notification" />
+
+        <provider
+            android:name=".GenericFileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <receiver
+            android:name="com.msimplelogic.helper.OrderCheckReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.msimplelogic.services.OrderCheckService"
+            android:exported="false" />
+        <service
+            android:name="com.msimplelogic.services.TestJobServiceOrder"
+            android:label="Word Service"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <receiver android:name="com.msimplelogic.Receiver.NotificationActionReceiver">
+            <intent-filter>
+                <action android:name="CONFIRM" />
+                <action android:name="CANCEL" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.msimplelogic.services.JobServiceBackground"
+            android:label="Word Service"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <receiver android:name="com.msimplelogic.Receiver.BJobSchedularServiceReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.msimplelogic.services.BJobScheduleService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name="com.msimplelogic.services.BJobService"
+            android:label="Word Service"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+    </application>
+
+</manifest>

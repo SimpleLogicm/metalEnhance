@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.SanojPunchihewa:InAppUpdater:1.0.5-alpha.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bb6dedd7d83e8d8364d57b43e2256d09/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bb6dedd7d83e8d8364d57b43e2256d09/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bb6dedd7d83e8d8364d57b43e2256d09/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bb6dedd7d83e8d8364d57b43e2256d09/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bb6dedd7d83e8d8364d57b43e2256d09/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bb6dedd7d83e8d8364d57b43e2256d09/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/19af7dda2450f2edd818c240e270faf7/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/19af7dda2450f2edd818c240e270faf7/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/19af7dda2450f2edd818c240e270faf7/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.SanojPunchihewa/InAppUpdater/1.0.5-alpha.1/665c8bcee486ab135479293f90c07788e7c3cc78/InAppUpdater-1.0.5-alpha.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

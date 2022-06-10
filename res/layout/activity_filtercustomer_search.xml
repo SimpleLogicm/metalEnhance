@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_product__search"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+
+<LinearLayout
+        android:id="@+id/containerNewOrder"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:id="@+id/spnState"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="Select Category"
+            android:textColor="@color/white"
+            android:inputType="textPersonName"
+            style="@style/mySpinnerItemStyle"
+            android:paddingTop="0dp" />
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:id="@+id/spnCity"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            style="@style/mySpinnerItemStyle"
+            android:textColor="@color/white"
+            android:hint="Select Product"
+            android:inputType="textPassword"
+            android:paddingTop="0dp" />
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:id="@+id/spnBeat"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            style="@style/mySpinnerItemStyle"
+
+            android:hint="Select Product"
+            android:inputType="textPassword"
+            android:paddingTop="0dp" />
+
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextViewcustsearch"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:inputType="textMultiLine"
+            android:completionThreshold="1"
+            android:imeOptions="actionDone"
+            android:textColor="#111111"
+            android:ems="10"
+            android:textSize="15dp"
+            android:drawableRight="@drawable/search_icon"
+            android:hint="Search Variant"
+            android:paddingTop="20dp" />
+
+
+        <TextView
+            android:id="@+id/txt_data"
+            android:layout_width="241dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:gravity="center_vertical"
+            android:inputType="textMultiLine"
+            android:paddingLeft="5dp"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="245dp"
+                android:layout_height="40dp"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="none"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:id="@+id/fromdate"
+                android:hint="From Date"
+                />
+
+            <EditText
+                android:layout_width="245dp"
+                android:paddingLeft="10dp"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="none"
+                android:layout_height="40dp"
+                android:id="@+id/todate"
+                android:hint="To Date"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:text="OK"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:textColor="@color/white"
+            android:background="#075B97"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:id="@+id/button_prdsearch" />
+
+    </LinearLayout>
+</RelativeLayout>

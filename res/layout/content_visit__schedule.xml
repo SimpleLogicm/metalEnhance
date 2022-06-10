@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.msimplelogic.activities.kotlinFiles.Visit_Schedule"
+    tools:showIn="@layout/activity_visit__schedule">
+
+    <LinearLayout
+        android:id="@+id/linearMian"
+        android:layout_width="match_parent"
+        android:background="?attr/fulllayoutbg"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <ImageView
+        android:id="@+id/hedder_theame"
+        android:layout_width="match_parent"
+        android:src="@drawable/light_hedder"
+        android:scaleType="fitXY"
+        android:layout_height="70dp">
+
+    </ImageView>
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/common_10_dp"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    style="@style/welcometext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/filter_short_text_color"
+                    android:text="@string/Upcomimg_visit_schedule"
+                    android:textSize="15sp">
+
+                </TextView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_visit_shedule"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_10_dp">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <TextView
+                    android:id="@+id/tv_view_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="@dimen/common_5_dp"
+                    android:fontFamily="@font/work_sans"
+                    android:text="@string/View_all"
+                    android:visibility="gone"
+                    android:textColor="@color/shedulelist_shopname"
+                    android:textSize="14sp">
+
+                </TextView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="?attr/cardbackground"
+                    android:layout_marginTop="@dimen/common_5_dp"
+                    app:cardCornerRadius="@dimen/common_10_dp"
+                    android:layout_margin="@dimen/common_5_dp"
+                    app:cardElevation="@dimen/common_4_dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/et_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/common_10_dp"
+                            android:backgroundTint="#c3c3c3"
+                            android:cursorVisible="false"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:textSize="@dimen/common_15_dp"
+                            android:drawableTint="?attr/filter_short_text_color"
+                            android:drawableLeft="@drawable/ic_date_range_black_24dp"
+                            android:fontFamily="@font/work_sans"
+                            android:hint="@string/Dates"
+                            android:textColorHint="?attr/hint_text_color"
+                            android:textColor="?attr/New_orderoption_menueoptions_textcolor">
+
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/et_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/common_10_dp"
+                            android:backgroundTint="#c3c3c3"
+                            android:cursorVisible="false"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:drawableLeft="@drawable/ic_access_time_black_24dp"
+                            android:fontFamily="@font/work_sans"
+                            android:hint="@string/Time"
+                            android:textColorHint="?attr/hint_text_color"
+                            android:drawableTint="?attr/filter_short_text_color"
+                            android:textSize="@dimen/common_15_dp"
+                            android:textColor="?attr/New_orderoption_menueoptions_textcolor">
+
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/et_discription"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/common_10_dp"
+                            android:backgroundTint="#c3c3c3"
+                            android:cursorVisible="true"
+                            android:fontFamily="@font/work_sans"
+                            android:hint="@string/Description"
+                            android:textColorHint="?attr/hint_text_color"
+                            android:textSize="@dimen/common_15_dp"
+                            android:textColor="?attr/New_orderoption_menueoptions_textcolor"></EditText>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/common_10_dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <EditText
+                                android:id="@+id/et_riminder"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:backgroundTint="#c3c3c3"
+                                android:cursorVisible="true"
+                                android:fontFamily="@font/work_sans"
+                                android:hint="@string/reminder"
+                                android:inputType="number"
+                                android:textColorHint="?attr/hint_text_color"
+                                android:textSize="@dimen/common_15_dp"
+                                android:textColor="?attr/New_orderoption_menueoptions_textcolor"></EditText>
+
+                            <Spinner
+                                android:id="@+id/spin_time"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                style="@style/mySpinnerItemStyle"
+                                android:textColor="?attr/New_orderoption_menueoptions_textcolor"
+                                android:entries="@array/time"></Spinner>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/btn_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/common_10_dp"
+                    android:background="@drawable/btnstyle"
+                    android:fontFamily="@font/work_sans"
+                    android:text="@string/Save"
+                    android:textSize="@dimen/common_15_dp"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white">
+
+                </Button>
+
+
+                <TextView
+                    android:id="@+id/tv_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="@dimen/common_5_dp"
+                    android:fontFamily="@font/work_sans"
+                    android:text="@string/Visit_History"
+                    android:visibility="visible"
+                    android:textColor="?attr/visit_schedule_historytext"
+                    android:textSize="14sp">
+
+                </TextView>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

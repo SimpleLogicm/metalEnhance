@@ -1,0 +1,322 @@
+<resources>
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+
+    <style name="AppTheme2" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!-- Application theme. -->
+
+    <style name="CustomAuto">
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/primarycolor</item>
+        <item name="colorPrimaryDark">@color/primarycolordark</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="meetingshead">@color/meetingshead_light</item>
+        <item name="colorControlNormal">@color/black</item>
+        <item name="android:colorBackground">@color/white</item>
+        <item name="android:colorForeground">@color/black</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">true</item>
+        <item name="cardbackground">@color/white</item>
+        <item name="visit_schedule_historytext">@color/shedulelist_shopname</item>
+        <item name="fulllayoutbg">@color/fulllayoutbg</item>
+        <item name="Beat_main_tv_color">@color/Beat_main_tv_color_light</item>
+        <item name="Beat_adaptortv_color">@color/Beat_adaptortv_color_light</item>
+        <item name="filter_short_text_color">@color/black</item>
+        <item name="textcolor">@color/text_lighttheam_color</item>
+        <item name="New_orderoption_btn_cards">@color/back</item>
+        <item name="star_tint">@color/blue</item>
+
+        <item name="New_orderoption_menueoptions_textcolor">@color/black</item>
+        <item name="New_orderoption_menueoptions_backcolor">@color/primarycolor</item>
+        <item name="ordercustomerlist_cardbackground">@color/ordercustomerlist_cardbackground_light</item>
+        <item name="ordercustomerlist_cardtextcolor">@color/ordercustomerlist_cardtextcolor_light</item>
+        <item name="hint_text_color">@color/hint_text_color_light</item>
+        <item name="preview_card">@color/primarycolor</item>
+        <item name="shopname_onorder_option">@color/colorMainactivitycard</item>
+        <item name="contents_head_onorder_option">@color/contents_head_onorder_option_light</item>
+        <item name="contents_values_onorder_option">@color/contents_values_onorder_option_light</item>
+        <item name="notes_adaptor_left">@color/contents_values_onorder_option_light</item>
+        <item name="notes_adaptor_right">@color/contents_values_onorder_option_light</item>
+        <item name="swipe_nextTv">@color/swipe_light</item>
+        <item name="selected_background">@color/selected_background_light</item>
+        <item name="spinner_text_color">@color/black</item>
+        <item name="oredrer_customer_addbtn">@drawable/plus_cust</item>
+        <item name="oredrer_customer_headder">@drawable/expandedblue</item>
+        <item name="oredrer_customer_footer">@drawable/expandedbottom</item>
+        <item name="oredrer_customer_goimage">@drawable/viewordermenu</item>
+        <item name="metal_headder">@drawable/light_hedder</item>
+        <item name="metal_filterr">@drawable/filterordertype_icon</item>
+        <item name="qrcodeimg">@drawable/qrcode</item>
+        <item name="show_i_logo">@drawable/showupdatestock_logo</item>
+        <item name="metal_bg_withupper">@drawable/metal_bg_all</item>
+
+
+
+
+        <item name="android:windowEnterTransition">@transition/activity_slide</item>
+        <item name="android:windowExitTransition">@transition/activity_slide</item>
+
+        <item name="android:timePickerDialogTheme">@style/AlertDialogCustom</item>
+        <item name="android:datePickerDialogTheme">@style/AlertDialogCustom</item>
+        <item name="android:alertDialogTheme">@style/AlertDialogCustom</item>
+
+        <item name="android:checkboxStyle">@style/MyCheckBoxStyle</item>
+        <item name="android:radioButtonStyle">@style/RadioButtonStyle</item>
+<!--        <item name="android:spinnerDropDownItemStyle">@style/mySpinnerItemStyle</item>-->
+
+    </style>
+
+    <style name="Autocomplete" parent="Widget.AppCompat.AutoCompleteTextView"> <item name="android:popupBackground">@android:color/transparent</item> <item name="android:textColor">@color/black</item> </style>
+
+<!--    <style name="AppTheme.DARK" parent="AppTheme.NoActionBar">-->
+<!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+<!--        <item name="colorPrimary">@color/primaryColorDarkTheme</item>-->
+<!--        <item name="colorPrimaryDark">@color/primaryColorDarkTheme</item>-->
+<!--        <item name="colorAccent">@color/secondaryColorDarkTheme</item>-->
+<!--        <item name="colorControlNormal">@color/black</item>-->
+<!--        <item name="android:colorBackground">@color/colorMainactivitycard</item>-->
+<!--        <item name="android:colorForeground">@color/black</item>-->
+<!--        <item name="windowNoTitle">true</item>-->
+<!--        <item name="meetingshead">@color/meetingshead_dark</item>-->
+<!--        <item name="windowActionBar">true</item>-->
+<!--        <item name="contents_head_onorder_option">@color/contents_head_onorder_option_dark</item>-->
+<!--        <item name="contents_values_onorder_option">@color/contents_values_onorder_option_dark</item>-->
+<!--        <item name="swipe_nextTv">@color/colorMainactivitytext</item>-->
+<!--        <item name="preview_card">@color/preview_card_dark</item>-->
+<!--        <item name="star_tint">@color/Star_tint_dark</item>-->
+<!--        <item name="cardbackground">@color/colorMainactivitycard</item>-->
+<!--        <item name="hint_text_color">@color/hint_text_color_dark</item>-->
+<!--        <item name="fulllayoutbg">@color/fulllayoutbgdark</item>-->
+<!--        <item name="ordercustomerlist_cardbackground">@color/ordercustomerlist_cardbackground_dark</item>-->
+<!--        <item name="ordercustomerlist_cardtextcolor">@color/ordercustomerlist_cardtextcolor_dark</item>-->
+<!--        <item name="Beat_adaptortv_color">@color/Beat_adaptortv_color_dark</item>-->
+<!--        <item name="filter_short_text_color">@color/filter_short_textcolor</item>-->
+<!--        <item name="Beat_main_tv_color">@color/Beat_main_tv_color_dark</item>-->
+<!--        <item name="visit_schedule_historytext">@color/colorMainactivitytext</item>-->
+<!--        <item name="textcolor">@color/colorMainactivitytext</item>-->
+<!--        <item name="New_orderoption_menueoptions_backcolor">@color/colorMainactivitycard</item>-->
+<!--        <item name="New_orderoption_menueoptions_textcolor">@color/colorMainactivitytext</item>-->
+<!--        <item name="New_orderoption_btn_cards">@color/colorMainactivitycard</item>-->
+<!--        <item name="shopname_onorder_option">@color/colorMainactivitycard</item>-->
+<!--        <item name="notes_adaptor_left">@color/colorMainactivitytext</item>-->
+<!--        <item name="notes_adaptor_right">@color/Beat_adaptortv_color_dark</item>-->
+<!--        <item name="android:windowEnterTransition">@transition/activity_slide</item>-->
+<!--        <item name="android:windowExitTransition">@transition/activity_slide</item>-->
+<!--        <item name="selected_background">@color/selected_background_dark</item>-->
+<!--        <item name="spinner_text_color">@color/white</item>-->
+<!--        <item name="oredrer_customer_addbtn">@drawable/add_circle_dark</item>-->
+<!--        <item name="oredrer_customer_headder">@drawable/dark_theme_oredroptions_headder</item>-->
+<!--        <item name="oredrer_customer_footer">@drawable/darkh_theme_orderoption_footer</item>-->
+<!--        <item name="oredrer_customer_goimage">@drawable/viewordermenu_dark</item>-->
+<!--        <item name="metal_headder">@drawable/dark_hedder</item>-->
+<!--        <item name="metal_filterr">@drawable/filterordertype_icon_dark</item>-->
+<!--        <item name="qrcodeimg">@drawable/qrcode_dark</item>-->
+<!--        <item name="show_i_logo">@drawable/showupdatestock_logo_dark</item>-->
+<!--        <item name="metal_bg_withupper">@drawable/dark_theme_background</item>-->
+
+
+
+
+
+<!--        <item name="android:timePickerDialogTheme">@style/AlertDialogCustom</item>-->
+<!--        <item name="android:datePickerDialogTheme">@style/AlertDialogCustom</item>-->
+<!--        <item name="android:alertDialogTheme">@style/AlertDialogCustom</item>-->
+
+<!--        <item name="android:checkboxStyle">@style/MyCheckBoxStyle</item>-->
+<!--        <item name="android:radioButtonStyle">@style/RadioButtonStyle</item>-->
+<!--        <item name="android:spinnerItemStyle">@style/SpinnerItemTheme</item>-->
+<!--&lt;!&ndash;        <item name="android:spinnerDropDownItemStyle">@style/mySpinnerItemStyle</item>&ndash;&gt;-->
+<!--        &lt;!&ndash;        <item name="android:spinnerItemStyle">@style/SpinnerItem</item>&ndash;&gt;-->
+<!--        &lt;!&ndash;        <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItem</item>&ndash;&gt;-->
+<!--    </style>-->
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AlertDialogCustom" parent="android:Theme.Material.Light.Dialog.Alert">
+        <item name="android:colorPrimary">?attr/colorPrimary</item>
+        <item name="android:colorAccent">?attr/colorPrimary</item>
+    </style>
+
+
+    <style name="MyCheckBoxStyle" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:textColor">?attr/spinner_text_color</item>
+        <item name="buttonTint">?attr/colorPrimary</item>
+    </style>
+
+    <style name="RadioButtonStyle" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:textColor">?attr/spinner_text_color</item>
+        <item name="buttonTint">?attr/colorPrimary</item>
+    </style>
+
+    <style name="signuptext">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/work_sans</item>
+        <item name="android:textColor">#29435C</item>
+
+    </style>
+
+    <style name="welcometext">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:fontFamily">@font/work_sans</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="AppDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="mySpinnerItemStyle">
+        <item name="backgroundTint">?attr/spinner_text_color</item>
+        <item name="android:textColor">?attr/spinner_text_color</item>
+        <item name="android:state_selected">@color/white</item>
+        <item name="android:selectedWeekBackgroundColor">@color/white</item>
+    </style>
+
+    <style name="SpinnerItem">
+        <item name="android:textColor">?attr/spinner_text_color</item>
+
+    </style>
+
+    <style name="AutocompleteStyle" parent="Base.Widget.AppCompat.EditText">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">?attr/spinner_text_color</item>
+
+        <item name="android:dropDownListViewStyle">@style/DropDownMenuBackground</item>
+    </style>
+
+    <style name="DropDownMenuBackground">
+        <item name="android:background">?attr/colorPrimary</item>
+    </style>
+
+    <style name="SpinnerItemTheme" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+        <item name="android:textColor">@color/primarycolor</item>
+    </style>
+
+    <style name="SpinnerDropDownItem" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:textColor">#993399</item>
+
+    </style>
+
+    <style name="MonthPickerDialogStyle">
+        <item name="monthBgColor">@color/white</item>
+        <item name="monthBgSelectedColor">@color/primarycolor</item>
+        <item name="monthFontColorSelected">@color/white</item>
+        <item name="monthFontColorNormal">@color/black</item>
+        <item name="monthFontColorDisabled">@color/brown</item>
+
+        <item name="headerBgColor">@color/black_overlay</item>
+        <item name="headerFontColorSelected">@color/white</item>
+        <item name="headerFontColorNormal">#85FFFFFF</item>
+        <item name="headerTitleColor">#fff</item>
+
+        <item name="dialogActionButtonColor">@color/black</item>
+    </style>
+
+    <style name="TextInputLayoutAppearance" parent="Widget.Design.TextInputLayout">
+        <!-- reference our hint & error styles -->
+        <item name="android:textColor">@color/album_title</item>
+        <item name="android:textColorHint">@color/album_title</item>
+        <item name="colorControlNormal">@color/album_title</item>
+        <item name="colorControlActivated">@color/album_title</item>
+        <item name="colorControlHighlight">@color/album_title</item>
+    </style>
+
+    <style name="BottomSheet.StyleDialog" parent="BottomSheet.Dialog">
+        <item name="android:backgroundDimAmount">0.4</item>
+        <item name="android:windowAnimationStyle">@style/BottomSheet.Animation</item>
+        <item name="android:textColorPrimary">#2679AE</item>
+        <item name="android:textColorSecondary">#2679AE</item>
+        <item name="android:textColorHint">#2679AE</item>
+        <item name="bs_dialogBackground">#ffffff</item>
+        <item name="bs_dividerColor">#2679AE</item>
+        <item name="bs_numColumns">2</item>
+    </style>
+    <style name="BottomSheet.StyleDialog_dark" parent="BottomSheet.Dialog">
+        <item name="android:backgroundDimAmount">0.4</item>
+        <item name="android:windowAnimationStyle">@style/BottomSheet.Animation</item>
+        <item name="android:textColorPrimary">@color/colorMainactivitytext</item>
+        <item name="android:textColorSecondary">@color/colorMainactivitytext</item>
+        <item name="android:textColorHint">@color/colorMainactivitytext</item>
+        <item name="bs_dialogBackground">@color/colorMainactivitycard</item>
+        <item name="bs_dividerColor">@color/colorMainactivitytext</item>
+        <item name="bs_numColumns">2</item>
+    </style>
+
+    <style name="Theme.UserDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@color/Activity_background</item>
+    </style>
+
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorPrimary">@color/primarycolor</item>
+    </style>
+
+
+
+    <!-- Text styles -->
+    <style name="Text" parent="TextAppearance.AppCompat"></style>
+
+    <style name="Text.Caption" parent="TextAppearance.AppCompat.Caption"></style>
+
+    <style name="Text.Small" parent="TextAppearance.AppCompat.Small"></style>
+
+    <style name="Text.Body1" parent="TextAppearance.AppCompat.Body1"></style>
+
+    <style name="Text.Body2" parent="TextAppearance.AppCompat.Body2"></style>
+
+    <style name="Text.Medium" parent="TextAppearance.AppCompat.Medium"></style>
+
+    <style name="Text.Large" parent="TextAppearance.AppCompat.Large"></style>
+
+    <style name="Text.Headline" parent="TextAppearance.AppCompat.Headline"></style>
+
+    <style name="Text.Title" parent="TextAppearance.AppCompat.Title"></style>
+
+    <style name="Text.Display1" parent="TextAppearance.AppCompat.Display1"></style>
+
+    <style name="Text.Subhead" parent="TextAppearance.AppCompat.Subhead"></style>
+
+    <style name="Text.Button" parent="TextAppearance.AppCompat.Button"></style>
+
+    <!-- Button Styles-->
+    <style name="Buton" parent="Widget.AppCompat.Button"></style>
+
+    <style name="Buton.Small" parent="Widget.AppCompat.Button.Small"></style>
+
+    <style name="Buton.Colored" parent="Widget.AppCompat.Button.Colored"></style>
+
+    <style name="Buton.Borderless" parent="Widget.AppCompat.Button.Borderless"></style>
+
+    <style name="Buton.Borderless.Colored" parent="Widget.AppCompat.Button.Borderless.Colored"></style>
+
+
+</resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@drawable/metal_bg_all"
+    android:layout_centerHorizontal="true"
+    android:gravity="center"
+    android:layout_margin="@dimen/common_10_dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:text="@string/app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+       android:layout_marginTop="@dimen/common_15_dp"
+        android:textStyle="bold"
+        android:textSize="@dimen/album_title"
+        android:textColor="@color/primarycolor" />
+
+    <EditText
+        android:id="@+id/et_useremail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:hint="Please Enter Email Id"
+        android:gravity="center"
+        android:inputType="textEmailAddress"
+        android:textSize="@dimen/common_15_dp"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/et_useremail"
+        android:gravity="center"
+        android:layout_marginTop="15dp">
+
+        <Button
+            android:id="@+id/btnok_useremaildialog"
+            android:layout_width="90dp"
+            android:layout_height="35dp"
+            android:text="@string/OK_Button_label"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/metal_button"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="@dimen/button_left_padding"
+            android:paddingTop="@dimen/button_top_padding"
+            android:paddingRight="@dimen/button_right_padding"
+            android:paddingBottom="@dimen/button_bottom_padding"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+
+            />
+
+        <Button
+            android:id="@+id/btncancel_useremaildialog"
+            android:layout_width="90dp"
+            android:layout_height="35dp"
+            android:text="@string/Cancel"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/metal_button"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="@dimen/button_left_padding"
+            android:paddingTop="@dimen/button_top_padding"
+            android:paddingRight="@dimen/button_right_padding"
+            android:paddingBottom="@dimen/button_bottom_padding"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="15dp"
+        />
+
+
+</RelativeLayout>

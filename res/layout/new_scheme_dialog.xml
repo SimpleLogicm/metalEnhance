@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@android:color/transparent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_image"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/common_20_dp"
+        android:gravity="center"
+        android:background="@android:color/transparent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/imageView_round"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/common_15_dp"
+            android:layout_marginTop="130dp"
+            android:layout_marginRight="@dimen/common_15_dp"
+            android:background="@drawable/border_shadow"
+            >
+
+            <TextView
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:textSize="16dp"
+                android:layout_marginTop="60dp"
+                android:textColor="@color/hint_text_color_light"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_schemename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:padding="12dp"
+                android:textSize="13dp"
+                android:layout_below="@+id/header"
+                android:textColor="@color/black"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/tv_schemeamnt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:layout_below="@+id/tv_schemename"
+                android:textColor="@color/hint_text_color_light"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/tv_schemedscrpn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:padding="12dp"
+                android:textSize="13dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/black"
+                android:layout_below="@+id/tv_schemeamnt"
+                android:visibility="gone"
+                android:text="TextView" />
+
+
+            <TextView
+                android:id="@+id/tv_scheme_minqty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:padding="6dp"
+                android:visibility="gone"
+                android:textSize="13dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/black"
+                android:layout_below="@+id/tv_schemedscrpn"
+                android:text="TextView" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:src="@drawable/schemebox_icon" />
+    </RelativeLayout>
+</LinearLayout>

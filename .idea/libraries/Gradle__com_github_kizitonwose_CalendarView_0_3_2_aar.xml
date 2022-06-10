@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.kizitonwose:CalendarView:0.3.2@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/01b2648f017188c7599c4e4cb0dc3e61/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/01b2648f017188c7599c4e4cb0dc3e61/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/01b2648f017188c7599c4e4cb0dc3e61/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/819551ada1d298d96488deda950df9bc/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/819551ada1d298d96488deda950df9bc/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/819551ada1d298d96488deda950df9bc/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.kizitonwose/CalendarView/0.3.2/b31adda34d17669565700b77bc096b635695eb54/CalendarView-0.3.2-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.kizitonwose/CalendarView/0.3.2/3506f9afd1bcd53f738a21e184921e37de89b7be/CalendarView-0.3.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

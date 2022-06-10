@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/metal_bg_all"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".kotlinFiles.Url_Setting"
+    tools:showIn="@layout/url_setting_main"
+    >
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:text=""
+        android:ems="10"
+        android:hint="@string/server_url_hint"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="90dp"
+        android:id="@+id/edit_url" />
+
+    <Button
+        android:text="@string/OK_Button_label"
+        android:id="@+id/urls_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_height"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/metal_button"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="@dimen/button_left_padding"
+        android:paddingTop="@dimen/button_top_padding"
+        android:paddingRight="@dimen/button_right_padding"
+        android:paddingBottom="@dimen/button_bottom_padding"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/TmLanguage"
+        android:text="@string/Select_Language"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_height"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/metal_button"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="@dimen/button_left_padding"
+        android:paddingTop="@dimen/button_top_padding"
+        android:paddingRight="@dimen/button_right_padding"
+        android:paddingBottom="@dimen/button_bottom_padding"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        />
+
+</LinearLayout>

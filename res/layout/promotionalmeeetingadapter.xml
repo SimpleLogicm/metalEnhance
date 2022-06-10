@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="?attr/cardbackground"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:orientation="horizontal">
+        <AutoCompleteTextView
+            android:id="@+id/m_edit_value"
+            android:layout_width="0dp"
+            android:textColorHint="?attr/hint_text_color"
+            android:textColor="?attr/New_orderoption_menueoptions_textcolor"
+            android:backgroundTint="#c3c3c3"
+            android:layout_height="@dimen/common_50_dp"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:layout_weight="2.7"
+            android:singleLine="true"
+            android:layout_marginTop="5dp"
+
+            android:hint="Attendees">
+        </AutoCompleteTextView>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/add"
+            android:layout_marginLeft="3dp"
+            android:layout_width="wrap_content"
+            android:layout_weight="0.3"
+            android:src="@drawable/add_plus"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/common_30_dp">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/deletel"
+            android:layout_marginLeft="3dp"
+            android:layout_width="wrap_content"
+            android:layout_weight="0.3"
+            android:src="@drawable/minus_btn"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/common_30_dp">
+
+        </ImageView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ids"
+            android:layout_marginLeft="3dp"
+            android:visibility="gone"
+            android:layout_height="20dp"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+           />
+    </LinearLayout>
+</LinearLayout>

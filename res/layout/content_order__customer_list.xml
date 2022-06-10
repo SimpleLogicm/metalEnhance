@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".kotlinFiles.Order_CustomerList"
+    tools:showIn="@layout/activity_order__customer_list">
+
+    <LinearLayout
+        android:id="@+id/linearMian"
+        android:layout_width="match_parent"
+        android:background="?attr/fulllayoutbg"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <ImageView
+        android:id="@+id/hedder_theame"
+        android:layout_width="match_parent"
+        android:src="@drawable/light_hedder"
+        android:scaleType="fitXY"
+        android:layout_height="70dp">
+
+    </ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="?attr/ordercustomerlist_cardbackground"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Selected_Beatcolon"
+                        android:gravity="right"
+                        style="@style/signuptext"
+                        android:textColor="?attr/ordercustomerlist_cardtextcolor"
+                        android:textStyle="bold"
+
+                        >
+
+                    </TextView>
+                    <TextView
+                        android:id="@+id/beat_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Selected Beat"
+                        android:gravity="left"
+                        android:textColor="?attr/ordercustomerlist_cardtextcolor"
+                        style="@style/signuptext"
+                        android:textStyle="bold"
+                        >
+                    </TextView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="?attr/cardbackground"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:cardElevation="4dp"
+                >
+                <AutoCompleteTextView
+                    android:id="@+id/Product_Variant"
+                    android:layout_width="match_parent"
+                    android:inputType="textMultiLine"
+                    android:scrollbars="none"
+                    android:layout_height="wrap_content"
+                    android:completionThreshold="1"
+                    android:imeOptions="actionDone"
+                    android:ems="10"
+                    android:singleLine="true"
+                    android:backgroundTint="#ffffff"
+                    android:textColorHint="?attr/hint_text_color"
+                    android:textColor="?attr/New_orderoption_menueoptions_textcolor"
+                    android:textSize="14dp"
+                    android:drawableRight="@drawable/search_icon"
+                    android:hint="@string/Search_Customer">
+                    <requestFocus />
+                </AutoCompleteTextView>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <ListView
+                android:layout_marginTop="5dp"
+                android:id="@+id/mainListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="6dp"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="5dp"
+                android:scrollbars="none"
+                tools:context=".listview.MainActivity" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

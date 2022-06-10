@@ -1,0 +1,26 @@
+<component name="libraryTable">
+  <library name="Gradle: net.gotev:uploadservice:2.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9fc40e6016ddd038a964f7cecf67b26c/jetified-uploadservice-2.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/74300e0a666ee341bace19d40f121624/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/74300e0a666ee341bace19d40f121624/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/74300e0a666ee341bace19d40f121624/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2ecab585cab9ec71be74702da8802f79/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2ecab585cab9ec71be74702da8802f79/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2ecab585cab9ec71be74702da8802f79/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1fa483a0bf3bfa5cc02b45728d0323dc/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1fa483a0bf3bfa5cc02b45728d0323dc/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1fa483a0bf3bfa5cc02b45728d0323dc/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c868ad47e9fc93f5a94cfa5f9b93b35a/transformed/jetified-uploadservice-2.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f73fd9a1ce654285afaabf6179bdda91/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f73fd9a1ce654285afaabf6179bdda91/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f73fd9a1ce654285afaabf6179bdda91/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.gotev/uploadservice/2.1/7df15b22b31869dcbffa623341dba37ed8c69191/uploadservice-2.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.gotev/uploadservice/2.1/cbe8e138c4b5373b3707c54dce1c49a4e4ab0be7/uploadservice-2.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="red_color">#ff0000</drawable>
+
+    <drawable name="white_color">#ffffff</drawable>
+
+    <drawable name="orange_color">#ffffbb33</drawable>
+
+    <color name="primarycolor">#075b97</color>
+    <color name="swipe_light">#3E556E</color>
+    <color name="selected_background_light">#9AC9FF</color>
+    <color name="fulllayoutbg">#F2F2F2</color>
+    <color name="notes_adaptor_left">#3E5C6F</color>
+    <color name="notes_adaptor_right">#5F5F5F</color>
+    <color name="rp_mrp_normal_light">#BCBCBC</color>
+
+    <color name="primarycolordark">#075b97</color>
+    <color name="contents_head_onorder_option_light">#6E7175</color>
+    <color name="contents_values_onorder_option_light">#0C4EA2</color>
+    <color name="list_item_title">#fff</color>
+    <color name="shopname_onorder_option_light">#6DA5F7</color>
+    <color name="ordercustomerlist_cardbackground_light">#9BC8FF</color>
+    <color name="ordercustomerlist_cardtextcolor_light">#134172</color>
+    <color name="list_background">#303030</color>
+    <color name="list_background_pressed">#992416</color>
+    <color name="Beat_main_tv_color_light">#246490</color>
+    <color name="Beat_adaptortv_color_light">#767676</color>
+    <!-- <color name="list_divider">#272727</color>-->
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+    <color name="text_background_color">#ffffff</color>
+    <color name="text_lighttheam_color">#414141</color>
+    <color name="genre">#666666</color>
+    <color name="list_divider">#d9d9d9</color>
+    <color name="New_orderoption_menueoptions_textcolor">#000000</color>
+    <color name="list_row_start_color">#ffffff</color>
+    <color name="list_row_end_color">#ffffff</color>
+    <color name="list_row_hover_start_color">#ebeef0</color>
+    <color name="list_row_hover_end_color">#ebeef0</color>
+    <color name="Activity_background">#F2F2F2</color>
+    <color name="meetingshead_light">#3E566F</color>
+
+    <color name="colorPrimary">#25baa2</color>
+    <color name="colorPrimaryDark">#0e917c</color>
+    <color name="colorAccent">#89d0c2</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="back">#EFF6FF</color>
+    <color name="example_1_white">#D9FFFFFF</color>
+    <color name="example_1_white_light">#4DFFFFFF</color>
+    <color name="example_1_bg">#075B97</color>
+    <color name="blue">#0000FF</color>
+    <color name="sky">#0099CC</color>
+    <color name="gray">#808080</color>
+    <color name="lightgray">#bfbfbf</color>
+    <color name="lightgray02">#111111</color>
+    <color name="orrange">#e33d1b</color>
+    <color name="darkorrange">#cc2303</color>
+
+    <color name="bkg_card">#c73e3e</color>
+
+    <color name="grey_secondry">#BDBDBD</color>
+    <color name="grey_primary">#414042</color>
+
+    <color name="album_title">#4c4c4c</color>
+    <color name="viewBg">#f1f5f8</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="brown">#A52A2A</color>
+
+    <color name="themeDeselected">#d69b9b9b</color>
+    <color name="themeSelected">#e300aaff</color>
+    <color name="seperator">#7ca6a6a6</color>
+
+
+    <!-- Theme Colors -->
+
+    <color name="shedulelist_shopname">#245575</color>
+    <color name="light_grey">#D3D3D3</color>
+    <color name="hint_text_color_light">#9E9E9E</color>
+
+    <color name="black">#000000</color>
+
+
+    <color name="bgBackSideColor">#f4f0ff</color>
+    <color name="atte_back">#959595</color>
+    <color name="brown_s">#BCBCBC</color>
+
+    <color name="username0">#e21400</color>
+    <color name="username1">#91580f</color>
+    <color name="username2">#f8a700</color>
+    <color name="username3">#f78b00</color>
+    <color name="username4">#58dc00</color>
+    <color name="username5">#287b00</color>
+    <color name="username6">#a8f07a</color>
+    <color name="username7">#4ae8c4</color>
+    <color name="username8">#3b88eb</color>
+    <color name="username9">#3824aa</color>
+    <color name="username10">#a700ff</color>
+    <color name="username11">#d300e7</color>
+
+    <!-- RED Theme -->
+    <color name="primaryColorRed">#F44336</color>
+    <color name="primaryLightColorRed">#FFCDD2</color>
+    <color name="primaryDarkColorRed">#D32F2F</color>
+    <color name="secondaryColorRed">#FFC107</color>
+    <color name="secondaryLightColorRed">#fccf4a</color>
+    <color name="secondaryDarkColorRed">#e1a902</color>
+    <color name="primaryTextColorRed">#ffffff</color>
+    <color name="secondaryTextColorRed">#000000</color>
+
+    <!-- PINK Theme -->
+    <color name="primaryColorPink">#E91E63</color>
+    <color name="primaryLightColorPink">#F8BBD0</color>
+    <color name="primaryDarkColorPink">#C2185B</color>
+    <color name="secondaryColorPink">#448AFF</color>
+    <color name="secondaryLightColorPink">#89b3f8</color>
+    <color name="secondaryDarkColorPink">#1a62da</color>
+    <color name="primaryTextColorPink">#000000</color>
+    <color name="secondaryTextColorPink">#000000</color>
+
+    <!-- PURPLE Theme -->
+    <color name="primaryColorPurple">#9C27B0</color>
+    <color name="primaryLightColorPurple">#E1BEE7</color>
+    <color name="primaryDarkColorPurple">#7B1FA2</color>
+    <color name="secondaryColorPurple">#CDDC39</color>
+    <color name="secondaryLightColorPurple">#e1ea86</color>
+    <color name="secondaryDarkColorPurple">#b4c320</color>
+    <color name="primaryTextColorPurple">#ffffff</color>
+    <color name="secondaryTextColorPurple">#000000</color>
+
+
+    <!-- DEEPPURPLE Theme -->
+    <color name="primaryColorDeepPurple">#673AB7</color>
+    <color name="primaryLightColorDeepPurple">#D1C4E9</color>
+    <color name="primaryDarkColorDeepPurple">#512DA8</color>
+    <color name="secondaryColorDeepPurple">#FFEB3B</color>
+    <color name="secondaryLightColorDeepPurple">#fff599</color>
+    <color name="secondaryDarkColorDeepPurple">#e0cd24</color>
+    <color name="primaryTextColorDeepPurple">#ffffff</color>
+    <color name="secondaryTextColorDeepPurple">#000000</color>
+
+    <!-- INDIGO Theme -->
+    <color name="primaryColorIndigo">#3F51B5</color>
+    <color name="primaryLightColorIndigo">#C5CAE9</color>
+    <color name="primaryDarkColorIndigo">#303F9F</color>
+    <color name="secondaryColorIndigo">#FF9800</color>
+    <color name="secondaryLightColorIndigo">#feba56</color>
+    <color name="secondaryDarkColorIndigo">#cf7b00</color>
+    <color name="primaryTextColorIndigo">#ffffff</color>
+    <color name="secondaryTextColorIndigo">#000000</color>
+
+    <!-- BLUE Theme -->
+    <color name="primaryColorBlue">#1e88e5</color>
+    <color name="primaryLightColorBlue">#6ab7ff</color>
+    <color name="primaryDarkColorBlue">#005cb2</color>
+    <color name="secondaryColorBlue">#607D8B</color>
+    <color name="secondaryLightColorBlue">#CFD8DC</color>
+    <color name="secondaryDarkColorBlue">#455A64</color>
+    <color name="primaryTextColorBlue">#000000</color>
+    <color name="secondaryTextColorBlue">#000000</color>
+
+    <!-- LIGHTBLUE Theme -->
+    <color name="primaryColorLightBlue">#039be5</color>
+    <color name="primaryLightColorLightBlue">#63ccff</color>
+    <color name="primaryDarkColorLightBlue">#006db3</color>
+    <color name="secondaryColorLightBlue">#CDDC39</color>
+    <color name="secondaryLightColorLightBlue">#F0F4C3</color>
+    <color name="secondaryDarkColorLightBlue">#AFB42B</color>
+    <color name="primaryTextColorLightBlue">#000000</color>
+    <color name="secondaryTextColorLightBlue">#000000</color>
+
+    <!-- CYAN Theme -->
+    <color name="primaryColorCyan">#00acc1</color>
+    <color name="primaryLightColorCyan">#5ddef4</color>
+    <color name="primaryDarkColorCyan">#007c91</color>
+    <color name="secondaryColorCyan">#f50057</color>
+    <color name="secondaryLightColorCyan">#ff5983</color>
+    <color name="secondaryDarkColorCyan">#bb002f</color>
+    <color name="primaryTextColorCyan">#000000</color>
+    <color name="secondaryTextColorCyan">#000000</color>
+
+    <!-- TEAL Theme -->
+    <color name="primaryColorTeal">#00796b</color>
+    <color name="primaryLightColorTeal">#48a999</color>
+    <color name="primaryDarkColorTeal">#004c40</color>
+    <color name="secondaryColorTeal">#ffd180</color>
+    <color name="secondaryLightColorTeal">#ffffb1</color>
+    <color name="secondaryDarkColorTeal">#caa052</color>
+    <color name="primaryTextColorTeal">#ffffff</color>
+    <color name="secondaryTextColorTeal">#000000</color>
+
+
+
+    <!--  GREEN Theme -->
+    <color name="primaryColorGreen">#4CAF50</color>
+    <color name="primaryLightColorGreen">#C8E6C9</color>
+    <color name="primaryDarkColorGreen">#388E3C</color>
+    <color name="secondaryColorGreen">#00BCD4</color>
+    <color name="secondaryLightColorGreen">#6cd1de</color>
+    <color name="secondaryDarkColorGreen">#0197ab</color>
+    <color name="primaryTextColorGreen">#ffffff</color>
+    <color name="secondaryTextColorGreen">#000000</color>
+
+    <!-- LIGHTGREEN Theme -->
+    <color name="primaryColorLightGreen">#8BC34A</color>
+    <color name="primaryLightColorLightGreen">#DCEDC8</color>
+    <color name="primaryDarkColorLightGreen">#689F38</color>
+    <color name="secondaryColorLightGreen">#448AFF</color>
+    <color name="secondaryLightColorLightGreen">#83affa</color>
+    <color name="secondaryDarkColorLightGreen">#1e58b8</color>
+    <color name="primaryTextColorLightGreen">#ffffff</color>
+    <color name="secondaryTextColorLightGreen">#000000</color>
+
+    <!-- Lime Theme -->
+    <color name="primaryColorLime">#CDDC39</color>
+    <color name="primaryLightColorLime">#F0F4C3</color>
+    <color name="primaryDarkColorLime">#AFB42B</color>
+    <color name="secondaryColorLime">#7C4DFF</color>
+    <color name="secondaryLightColorLime">#ae94f5</color>
+    <color name="secondaryDarkColorLime">#4f2cb3</color>
+    <color name="primaryTextColorLime">#ffffff</color>
+    <color name="secondaryTextColorLime">#000000</color>
+
+    <!-- YELLOW Theme -->
+    <color name="primaryColorYellow">#FFEB3B</color>
+    <color name="primaryLightColorYellow">#FFF9C4</color>
+    <color name="primaryDarkColorYellow">#FBC02D</color>
+    <color name="secondaryColorYellow">#536DFE</color>
+    <color name="secondaryLightColorYellow">#8799fd</color>
+    <color name="secondaryDarkColorYellow">#3751e1</color>
+    <color name="primaryTextColorYellow">#ffffff</color>
+    <color name="secondaryTextColorYellow">#000000</color>
+
+    <!-- AMBER Theme -->
+    <color name="primaryColorAmber">#FFC107</color>
+    <color name="primaryLightColorAmber">#FFECB3</color>
+    <color name="primaryDarkColorAmber">#FFA000</color>
+    <color name="secondaryColorAmber">#03A9F4</color>
+    <color name="secondaryLightColorAmber">#65c4ef</color>
+    <color name="secondaryDarkColorAmber">#1e87b6</color>
+    <color name="primaryTextColorAmber">#ffffff</color>
+    <color name="secondaryTextColorAmber">#000000</color>
+
+    <!-- ORANGE Theme -->
+    <color name="primaryColorOrange">#FF9800</color>
+    <color name="primaryLightColorOrange">#FFE0B2</color>
+    <color name="primaryDarkColorOrange">#F57C00</color>
+    <color name="secondaryColorOrange">#8BC34A</color>
+    <color name="secondaryLightColorOrange">#b4e67a</color>
+    <color name="secondaryDarkColorOrange">#649131</color>
+    <color name="primaryTextColorOrange">#ffffff</color>
+    <color name="secondaryTextColorOrange">#000000</color>
+
+    <!-- DEEPORANGE Theme -->
+    <color name="primaryColorDeepOrange">#FF5722</color>
+    <color name="primaryLightColorDeepOrange">#FFCCBC</color>
+    <color name="primaryDarkColorDeepOrange">#E64A19</color>
+    <color name="secondaryColorDeepOrange">#00BCD4</color>
+    <color name="secondaryLightColorDeepOrange">#75e8f6</color>
+    <color name="secondaryDarkColorDeepOrange">#2a9cab</color>
+    <color name="primaryTextColorDeepOrange">#ffffff</color>
+    <color name="secondaryTextColorDeepOrange">#000000</color>
+
+    <!-- BROWN Theme -->
+    <color name="primaryColorBrown">#795548</color>
+    <color name="primaryLightColorBrown">#D7CCC8</color>
+    <color name="primaryDarkColorBrown">#5D4037</color>
+    <color name="secondaryColorBrown">#FFC107</color>
+    <color name="secondaryLightColorBrown">#f6c83f</color>
+    <color name="secondaryDarkColorBrown">#cf9c02</color>
+    <color name="primaryTextColorBrown">#ffffff</color>
+    <color name="secondaryTextColorBrown">#000000</color>
+
+    <!-- GRAY Theme -->
+    <color name="primaryColorGray">#9E9E9E</color>
+    <color name="primaryLightColorGray">#F5F5F5</color>
+    <color name="primaryDarkColorGray">#616161</color>
+    <color name="secondaryColorGray">#536DFE</color>
+    <color name="secondaryLightColorGray">#94a5ff</color>
+    <color name="secondaryDarkColorGray">#2c44c9</color>
+    <color name="primaryTextColorGray">#ffffff</color>
+    <color name="secondaryTextColorGray">#000000</color>
+
+    <!-- BLUEGRAY Theme -->
+    <color name="primaryColorBlueGray">#607D8B</color>
+    <color name="primaryLightColorBlueGray">#CFD8DC</color>
+    <color name="primaryDarkColorBlueGray">#455A64</color>
+    <color name="secondaryColorBlueGray">#CDDC39</color>
+    <color name="secondaryLightColorBlueGray">#e3f15c</color>
+    <color name="secondaryDarkColorBlueGray">#a6b320</color>
+    <color name="primaryTextColorBlueGray">#ffffff</color>
+    <color name="secondaryTextColorBlueGray">#000000</color>
+
+
+<!--    Dark theme-->
+    <color name="primaryColorDarkTheme">#0C9855</color>
+    <color name="primaryLightColorDarkTheme">#CFD8DC</color>
+    <color name="primaryDarkColorDarkTheme">#00CC65</color>
+    <color name="secondaryColorDarkTheme">#00CC65</color>
+    <color name="secondaryLightColorDarkTheme">#e3f15c</color>
+    <color name="secondaryDarkColorDarkTheme">#a6b320</color>
+    <color name="primaryTextColorDarkTheme">#ffffff</color>
+    <color name="secondaryTextColorDarkTheme">#000000</color>
+    <color name="colorMainactivitycard">#18203c</color>
+    <color name="colorMainactivitytext">#c2c4d3</color>
+    <color name="fulllayoutbgdark">#000000</color>
+    <color name="filter_short_textcolor">#969797</color>
+    <color name="Beat_main_tv_color_dark">#c98559</color>
+    <color name="Beat_adaptortv_color_dark">#c2c4d3</color>
+    <color name="ordercustomerlist_cardbackground_dark">#41E296</color>
+    <color name="ordercustomerlist_cardtextcolor_dark">#005E2D</color>
+    <color name="hint_text_color_dark">#8E91A1</color>
+    <color name="shopname_onorder_option_dark">#99FFD2</color>
+    <color name="contents_head_onorder_option_dark">#4A5952</color>
+    <color name="contents_values_onorder_option_dark">#0B9052</color>
+    <color name="preview_card_dark">#0c9855</color>
+    <color name="selected_background_dark">#22c778</color>
+    <color name="meetingshead_dark">#A4B8B8</color>
+    <color name="tintplus">#0C9855</color>
+    <color name="rp_mrp_normal_dark">#BCBCBC</color>
+    <color name="Star_tint_dark">#0C9855</color>
+
+
+
+
+</resources>

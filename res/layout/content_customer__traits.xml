@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".kotlinFiles.Customer_Traits"
+    tools:showIn="@layout/activity_customer__traits">
+
+    <LinearLayout
+        android:id="@+id/linearMian"
+        android:layout_width="match_parent"
+        android:background="?attr/fulllayoutbg"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <ImageView
+        android:id="@+id/hedder_theame"
+        android:layout_width="match_parent"
+        android:src="@drawable/light_hedder"
+        android:scaleType="fitXY"
+        android:layout_height="70dp">
+    </ImageView>
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    app:cardBackgroundColor="?attr/cardbackground"
+                    android:id="@+id/order_card"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.8"
+                            android:fontFamily="@font/work_sans"
+                            android:text="@string/ORDER"
+                            android:textStyle="bold"
+                            android:textColor="?attr/filter_short_text_color"
+                            android:textSize="14sp"></TextView>
+
+                        <ImageView
+                            android:id="@+id/ORDER_btn_img"
+                            android:layout_width="0dp"
+                            android:layout_height="25dp"
+                            android:layout_weight="0.2"
+                            android:src="@drawable/viewordermenu">
+                        </ImageView>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/order_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_5_dp"
+                    android:layout_marginRight="@dimen/common_5_dp"
+                    android:visibility="gone"
+                    >
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:id="@+id/Return_order_card"
+                    android:layout_height="40dp"
+                    app:cardBackgroundColor="?attr/cardbackground"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.8"
+                            android:fontFamily="@font/work_sans"
+                            android:text="@string/Return_Order"
+                            android:textStyle="bold"
+                            android:textAllCaps="true"
+                            android:textColor="?attr/filter_short_text_color"
+                            android:textSize="14sp">
+
+                        </TextView>
+
+                        <ImageView
+                            android:id="@+id/Return_order_img"
+                            android:layout_width="0dp"
+                            android:layout_height="25dp"
+                            android:layout_weight="0.2"
+                            android:src="@drawable/viewordermenu">
+
+                        </ImageView>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/return_order_rv"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_marginLeft="@dimen/common_5_dp"
+                    android:layout_marginRight="@dimen/common_5_dp"
+                    android:layout_height="wrap_content">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    app:cardBackgroundColor="?attr/cardbackground"
+                    android:id="@+id/no_order_card"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.8"
+                            android:fontFamily="@font/work_sans"
+                            android:text="@string/No_Order"
+                            android:textAllCaps="true"
+                            android:textStyle="bold"
+                            android:textColor="?attr/filter_short_text_color"
+                            android:textSize="14sp">
+
+                        </TextView>
+
+                        <ImageView
+                            android:id="@+id/No_order_img"
+                            android:layout_width="0dp"
+                            android:layout_height="25dp"
+                            android:layout_weight="0.2"
+                            android:src="@drawable/viewordermenu">
+
+                        </ImageView>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/no_order_rv"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/common_5_dp"
+                    android:layout_marginRight="@dimen/common_5_dp"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:id="@+id/feedback_card"
+                    android:visibility="gone"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.8"
+                            android:fontFamily="@font/work_sans"
+                            android:text="@string/Feedback"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="16sp">
+
+                        </TextView>
+
+                        <ImageView
+                            android:id="@+id/feedback_img"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="0.2"
+                            android:src="@drawable/viewordermenu">
+
+                        </ImageView>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/feedback_rv"
+                    android:layout_width="match_parent"
+                    android:layout_margin="@dimen/common_10_dp"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="10dp"
+                    android:id="@+id/complaints_card"
+                    android:visibility="gone"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.8"
+                            android:fontFamily="@font/work_sans"
+                            android:text="@string/Complaints"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="16sp">
+
+                        </TextView>
+
+                        <ImageView
+                            android:id="@+id/Complaints_btn"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="0.2"
+                            android:src="@drawable/viewordermenu">
+
+                        </ImageView>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/complaints_rv"
+                    android:layout_width="match_parent"
+                    android:layout_margin="@dimen/common_10_dp"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/claims_card"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="10dp"
+                    android:visibility="gone"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.8"
+                            android:fontFamily="@font/work_sans"
+                            android:text="@string/Claims"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="16sp">
+
+                        </TextView>
+
+                        <ImageView
+                            android:id="@+id/Claims_img"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="0.2"
+                            android:src="@drawable/viewordermenu">
+
+                        </ImageView>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/claim_rv"
+                    android:layout_width="match_parent"
+                    android:layout_margin="@dimen/common_10_dp"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:id="@+id/CompetitorAnalysis_card"
+                    app:cardCornerRadius="10dp"
+                    android:visibility="gone"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.8"
+                            android:fontFamily="@font/work_sans"
+                            android:text="@string/CompetitorAnalysis"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="16sp">
+
+                        </TextView>
+
+                        <ImageView
+                            android:id="@+id/CompetitorAnalysis_img"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="0.2"
+                            android:src="@drawable/viewordermenu">
+
+                        </ImageView>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/compatitor_analysis_rv"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_margin="@dimen/common_10_dp"
+                    android:layout_height="wrap_content">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:id="@+id/picture_vid_card"
+                    app:cardCornerRadius="10dp"
+                    android:visibility="gone"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.8"
+                            android:fontFamily="@font/work_sans"
+                            android:text="@string/Picture_vid"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="16sp">
+
+                        </TextView>
+
+                        <ImageView
+                            android:id="@+id/pic_vid_img"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="0.2"
+                            android:src="@drawable/viewordermenu">
+
+                        </ImageView>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/picture_vid_rv"
+                    android:layout_margin="@dimen/common_10_dp"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

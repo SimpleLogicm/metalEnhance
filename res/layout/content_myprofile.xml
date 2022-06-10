@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="?attr/fulllayoutbg"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".kotlinFiles.Myprofile"
+    android:scrollbars="none"
+    tools:showIn="@layout/activity_myprofile">
+
+    <LinearLayout
+        android:id="@+id/linearMian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <ImageView
+        android:id="@+id/hedder_theamemy"
+        android:layout_width="match_parent"
+        android:src="@drawable/light_hedder"
+        android:scaleType="fitXY"
+        android:layout_height="70dp">
+    </ImageView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:id="@+id/swipe_scroll"
+
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/swipe_card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <LinearLayout
+                    android:id="@+id/lout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/name_pic_card"
+                            android:layout_width="match_parent"
+                            app:cardBackgroundColor="?attr/cardbackground"
+                            android:layout_height="90dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="4dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:padding="10dp">
+
+                                <TextView
+                                    android:id="@+id/btn_edit"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:drawableRight="@drawable/ic_edit_black_24dp">
+                                </TextView>
+
+                                <EditText
+                                    android:id="@+id/tv_fullname"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/work_sans"
+                                    android:gravity="center"
+                                    android:editable="false"
+                                    android:backgroundTint="@color/white"
+                                    android:textColor="?attr/filter_short_text_color"
+                                    android:textSize="14sp">
+                                </EditText>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/personal_details_card"
+                            android:layout_width="match_parent"
+                            app:cardBackgroundColor="?attr/cardbackground"
+                            android:layout_marginTop="10dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="4dp"
+
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:weightSum="6"
+                                android:padding="@dimen/common_10_dp"
+                                android:orientation="vertical"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:orientation="horizontal"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.6">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Personal Details"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold"
+                                        android:layout_gravity="center_vertical"
+                                        android:fontFamily="@font/work_sans"
+                                        android:textColor="?attr/filter_short_text_color"
+                                        >
+                                    </TextView>
+                                    <TextView
+                                        android:id="@+id/btn_editpersonaldetails"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical">
+                                    </TextView>
+
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="1dp"
+                                    android:background="@color/light_grey"></View>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:orientation="vertical"
+                                    android:layout_height="0dp"
+                                    android:gravity="center_vertical"
+                                    android:layout_marginTop="@dimen/common_5_dp"
+                                    android:layout_weight="1.1">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/work_sans"
+                                        android:text="First Name"
+                                        android:textStyle="bold"
+                                        android:textColor="?attr/filter_short_text_color"
+                                        android:textSize="13sp"></TextView>
+                                    <EditText
+                                        android:id="@+id/et_firstname"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textColorHint="?attr/hint_text_color"
+                                        android:textColor="?attr/New_orderoption_menueoptions_textcolor"
+                                        android:backgroundTint="#c3c3c3"                                        android:textSize="13sp"
+                                        >
+                                    </EditText>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:orientation="vertical"
+                                    android:layout_height="0dp"
+                                    android:gravity="center_vertical"
+                                    android:layout_weight="1.1">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Last Name"
+                                        android:textSize="13sp"
+                                        android:textStyle="bold"
+                                        android:fontFamily="@font/work_sans"
+                                        android:textColor="?attr/filter_short_text_color"
+                                        >
+                                    </TextView>
+                                    <EditText
+                                        android:id="@+id/et_lastname"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textColorHint="?attr/hint_text_color"
+                                        android:textColor="?attr/New_orderoption_menueoptions_textcolor"
+                                        android:backgroundTint="#c3c3c3"                                        android:textSize="13sp"
+                                        >
+                                    </EditText>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:orientation="vertical"
+                                    android:layout_height="0dp"
+                                    android:gravity="center_vertical"
+                                    android:layout_weight="1.1">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Designation"
+                                        android:textSize="13sp"
+                                        android:textStyle="bold"
+                                        android:fontFamily="@font/work_sans"
+                                        android:textColor="?attr/filter_short_text_color"
+                                        >
+                                    </TextView>
+                                    <EditText
+                                        android:id="@+id/et_designation"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/work_sans"
+                                        android:textColorHint="?attr/hint_text_color"
+                                        android:textColor="?attr/New_orderoption_menueoptions_textcolor"
+                                        android:backgroundTint="#c3c3c3"                                        android:inputType="textEmailAddress"
+                                        android:textSize="13sp"
+                                        >
+                                    </EditText>
+
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:orientation="vertical"
+                                    android:gravity="center_vertical"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1.1">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Contact No"
+                                        android:textSize="13sp"
+                                        android:textStyle="bold"
+                                        android:fontFamily="@font/work_sans"
+                                        android:textColor="?attr/filter_short_text_color"
+                                        >
+                                    </TextView>
+                                    <EditText
+                                        android:id="@+id/et_profilecontact"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textColorHint="?attr/hint_text_color"
+                                        android:textColor="?attr/New_orderoption_menueoptions_textcolor"
+                                        android:backgroundTint="#c3c3c3"                                        android:inputType="phone"
+                                        android:textSize="13sp"
+                                        >
+                                    </EditText>
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:orientation="vertical"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1.1">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Address"
+                                        android:textSize="13sp"
+                                        android:textStyle="bold"
+                                        android:fontFamily="@font/work_sans"
+                                        android:textColor="?attr/filter_short_text_color"
+                                        >
+                                    </TextView>
+                                    <EditText
+                                        android:id="@+id/et_profileaddress"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textColorHint="?attr/hint_text_color"
+                                        android:textColor="?attr/New_orderoption_menueoptions_textcolor"
+                                        android:backgroundTint="#c3c3c3"                                        android:textSize="13sp"
+                                        >
+                                    </EditText>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/other_details_card"
+                            android:layout_width="match_parent"
+                            app:cardCornerRadius="20dp"
+                            android:layout_marginTop="10dp"
+                            app:cardBackgroundColor="?attr/cardbackground"
+                            app:cardElevation="4dp"
+                            android:visibility="gone"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:weightSum="6"
+                                android:padding="10dp"
+                                android:orientation="vertical"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:orientation="horizontal"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.7">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Other Details"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold"
+                                        android:layout_gravity="center_vertical"
+                                        android:fontFamily="@font/work_sans"
+                                        android:textColor="?attr/filter_short_text_color"
+                                        >
+                                    </TextView>
+                                    <TextView
+                                        android:id="@+id/btn_editotherdetails"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        >
+                                    </TextView>
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="1dp"
+                                    android:background="@color/light_grey"></View>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:orientation="vertical"
+                                    android:layout_height="0dp"
+                                    android:gravity="center_vertical"
+                                    android:layout_marginTop="@dimen/common_5_dp"
+                                    android:layout_weight="1.1">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Email Id"
+                                        android:textSize="13sp"
+                                        android:textStyle="bold"
+                                        android:fontFamily="@font/work_sans"
+                                        android:textColor="?attr/filter_short_text_color"
+                                        >
+                                    </TextView>
+
+                                    <EditText
+                                        android:id="@+id/et_emailid"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:editable="false"
+                                        android:textColorHint="?attr/hint_text_color"
+                                        android:textColor="?attr/New_orderoption_menueoptions_textcolor"
+                                        android:backgroundTint="#c3c3c3"                                        android:textSize="13sp"
+                                        >
+                                    </EditText>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:orientation="vertical"
+                                    android:layout_height="0dp"
+                                    android:gravity="center_vertical"
+
+                                    android:layout_weight="1.1">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="PAN No"
+                                        android:textSize="13sp"
+                                        android:textStyle="bold"
+                                        android:fontFamily="@font/work_sans"
+                                        android:textColor="?attr/filter_short_text_color"
+                                        >
+                                    </TextView>
+                                    <EditText
+                                        android:id="@+id/et_panno"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textColorHint="?attr/hint_text_color"
+                                        android:textColor="?attr/New_orderoption_menueoptions_textcolor"
+                                        android:backgroundTint="#c3c3c3"                                        android:textSize="13sp"
+                                        >
+                                    </EditText>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:orientation="vertical"
+                                    android:layout_height="0dp"
+                                    android:gravity="center_vertical"
+
+                                    android:layout_weight="1.1">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Adhaar No"
+                                        android:textSize="13sp"
+                                        android:textStyle="bold"
+                                        android:fontFamily="@font/work_sans"
+                                        android:textColor="?attr/filter_short_text_color"
+                                        >
+                                    </TextView>
+                                    <EditText
+                                        android:id="@+id/et_adhaarno"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/work_sans"
+                                        android:textColorHint="?attr/hint_text_color"
+                                        android:textColor="?attr/New_orderoption_menueoptions_textcolor"
+                                        android:backgroundTint="#c3c3c3"                                        android:textSize="13sp"
+                                        android:inputType="number"
+                                        >
+                                    </EditText>
+
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:orientation="vertical"
+                                    android:gravity="center_vertical"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1.1">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Vehicle No"
+                                        android:textSize="13sp"
+                                        android:textStyle="bold"
+                                        android:fontFamily="@font/work_sans"
+                                        android:textColor="?attr/filter_short_text_color"
+                                        >
+                                    </TextView>
+                                    <EditText
+                                        android:id="@+id/et_vehicleno"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textColorHint="?attr/hint_text_color"
+                                        android:textColor="?attr/New_orderoption_menueoptions_textcolor"
+                                        android:backgroundTint="#c3c3c3"                                        android:textSize="13sp"
+                                        >
+                                    </EditText>
+
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:orientation="vertical"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1.1">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Birthday"
+                                        android:textSize="13sp"
+                                        android:textStyle="bold"
+                                        android:fontFamily="@font/work_sans"
+                                        android:textColor="?attr/filter_short_text_color"
+                                        >
+                                    </TextView>
+                                    <EditText
+                                        android:id="@+id/et_birthday"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textColorHint="?attr/hint_text_color"
+                                        android:textColor="?attr/New_orderoption_menueoptions_textcolor"
+                                        android:backgroundTint="#c3c3c3"                                        android:inputType="date"
+                                        android:textSize="13sp"
+                                        android:focusable="false"
+                                        android:editable="false"
+                                        >
+                                    </EditText>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/user_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/user"
+                    app:civ_border_color="#075B97"
+                    app:civ_border_width="1dp">
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+                <TextView
+                    android:id="@+id/btn_profilenext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="right"
+                    android:layout_below="@+id/lout"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="@dimen/common_40_dp"
+                    android:text="Swipe to Next >>"
+                    android:textColor="?attr/visit_schedule_historytext" />
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

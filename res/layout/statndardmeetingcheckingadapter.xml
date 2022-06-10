@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/pro_statnda_edit"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColor="?attr/filter_short_text_color"
+            android:textColorHint="?attr/hint_text_color"
+            android:gravity="left"
+            android:background="@drawable/rounded_edittext"
+            android:textCursorDrawable="@color/black"
+            android:paddingLeft="@dimen/common_5_dp"
+            android:paddingTop="@dimen/common_5_dp"
+            android:layout_marginTop="5dp"
+            android:hint="@string/Description">
+        </EditText>
+
+
+        <TextView
+            android:id="@+id/ids"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+         >
+        </TextView>
+
+    </LinearLayout>
+</LinearLayout>

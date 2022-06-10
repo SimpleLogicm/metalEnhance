@@ -1,0 +1,26 @@
+<component name="libraryTable">
+  <library name="Gradle: com.squareup.picasso:picasso:2.71828@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4e6b577663f1d6a85e3b65d4f9f05ee5/jetified-picasso-2.71828/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/594e06fa837deb04dddb3066afdbb1e8/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/594e06fa837deb04dddb3066afdbb1e8/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/594e06fa837deb04dddb3066afdbb1e8/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/749f3c1bf3c630e03311db732942c3f1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/749f3c1bf3c630e03311db732942c3f1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/749f3c1bf3c630e03311db732942c3f1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/74f5e1dca764d1651772fa9a5029b684/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/74f5e1dca764d1651772fa9a5029b684/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/74f5e1dca764d1651772fa9a5029b684/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3fa90cedda4ce60c1278b18ff624e830/transformed/jetified-picasso-2.71828/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a9082191413708fe47a7660742e65204/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a9082191413708fe47a7660742e65204/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a9082191413708fe47a7660742e65204/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.71828/2843564e6bac90b1e125104d7c842c87a96a8ee9/picasso-2.71828-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.71828/41874e20a4d17fd4ad2052ac217073e14d00c910/picasso-2.71828-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

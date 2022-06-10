@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="5">
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:fontFamily="@font/work_sans"
+android:textColor="?attr/hint_text_color"
+            android:textSize="12sp"
+            android:text="@string/Date_label"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+
+        <TextView
+            android:id="@+id/tv_shift"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Shift"
+            android:fontFamily="@font/work_sans"
+            android:textColor="?attr/hint_text_color"
+
+            android:textSize="12sp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+          />
+
+        <TextView
+            android:id="@+id/tv_in"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/IN"
+            android:fontFamily="@font/work_sans"
+            android:textColor="?attr/hint_text_color"
+            android:textSize="12sp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+           />
+
+        <TextView
+            android:id="@+id/tv_out"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="@string/OUT"
+            android:fontFamily="@font/work_sans"
+            android:textColor="?attr/hint_text_color"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+          />
+
+        <TextView
+            android:id="@+id/tv_hours"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Hours"
+            android:fontFamily="@font/work_sans"
+            android:textSize="12sp"
+            android:textColor="?attr/hint_text_color"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+           />
+
+
+    </LinearLayout>
+
+</LinearLayout>

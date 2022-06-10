@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!--<TextView-->
+        <!--android:id="@+id/txtWelcomeUser"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:text="admin"-->
+        <!--android:textColor="#FFFFFF"-->
+      	<!--android:background="#BDBDBD"-->
+        <!--android:gravity="center"-->
+        <!--android:textSize="15sp"  >-->
+    <!--</TextView>-->
+
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="#ececec"
+        android:layout_gravity="center" >
+                      
+                    <RelativeLayout
+                        android:id="@+id/rlout_order"
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:background="@drawable/single_btab"
+                        android:layout_weight="1.00" >
+
+                         <TextView
+                             android:id="@+id/textView1"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_alignParentLeft="true"
+                             android:layout_alignParentRight="true"
+                             android:layout_centerVertical="true"
+                             android:text="@string/Ordero"
+                             android:gravity="center"
+                             android:textSize="15dp" />
+
+                    </RelativeLayout>
+                    
+                     <RelativeLayout
+                        android:id="@+id/rlout_customer"
+                         android:layout_width="10dp"
+                         android:layout_height="match_parent"
+                         android:layout_marginLeft="2dp"
+                         android:background="@drawable/single_btab"
+                         android:layout_weight="1.00">
+
+                         <TextView
+                             android:id="@+id/textView1jkjk"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_alignParentLeft="true"
+                             android:layout_alignParentRight="true"
+                             android:layout_centerVertical="true"
+                             android:text="@string/Customer_Serviceo"
+                             android:gravity="center"
+                             android:textSize="15dp" />
+
+                    </RelativeLayout>
+                    
+                     <RelativeLayout
+                        android:id="@+id/rlout_schedule"
+                         android:layout_width="10dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:background="@drawable/single_btab"
+                        android:layout_weight="1.00" >
+
+                         <TextView
+                             android:id="@+id/textView1sf"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_alignParentLeft="true"
+                             android:layout_alignParentRight="true"
+                             android:layout_centerVertical="true"
+                             android:text="@string/Scheduleo"
+                             android:gravity="center"
+                             android:textColor="#111111"
+                             android:textSize="15dp" />
+                    </RelativeLayout>
+              </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+      <Spinner
+        android:id="@+id/cust_state"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:hint="Select City"
+        android:inputType="textPassword"
+        android:paddingTop="10dp"
+        android:layout_marginTop="5dp"/>
+
+    <Spinner
+        android:id="@+id/cust_city"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:hint="Select Beat"
+        android:inputType="textPassword"
+        android:paddingTop="20dp"
+        android:layout_marginTop="5dp" />
+
+        <Spinner
+        android:id="@+id/cust_beat"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:hint="Select Retailer"
+        android:inputType="textPassword"
+        android:paddingTop="10dp"
+        android:layout_marginTop="5dp" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView1"
+            android:layout_width="250dp"
+            android:layout_gravity="center"
+            android:inputType="textMultiLine"
+            android:scrollbars="none"
+            android:completionThreshold="1"
+            android:imeOptions="actionDone"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:singleLine="true"
+            android:drawableRight="@drawable/search_icon"
+            android:textSize="15dp"
+            android:hint="@string/Search_Customer">
+            <requestFocus />
+        </AutoCompleteTextView>
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="50dp"
+                android:visibility="gone"
+                app:srcCompat="@drawable/addretailer" />
+
+            <LinearLayout
+    android:id="@+id/add_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+        <TextView
+        android:id="@+id/customer_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:text="" />
+
+        <TextView
+            android:id="@+id/customer_MObile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="" />
+
+     <TextView
+         android:id="@+id/customer_landline"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:gravity="center"
+         android:textColor="#000000"
+         android:text="" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/credit_profile_layout"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/ocredit_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="" />
+        <TextView
+            android:id="@+id/oamount_utstanding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="" />
+        <TextView
+            android:id="@+id/oamount_overdue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:layout_marginBottom="2dp"
+            android:text="" />
+
+    </LinearLayout>
+
+        <LinearLayout
+        android:id="@+id/order_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/but_neworder"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#414042"
+                android:text="@string/New_Order"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/but_preorder"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/Previous_Order"
+                android:background="#414042"
+                android:layout_marginLeft="10dp"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:layout_marginTop="5dp" >
+
+            <Button
+                android:id="@+id/but_noorder"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#414042"
+                android:text="@string/No_Order"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/but_returnorder"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/Return_Order"
+                android:background="#414042"
+                android:layout_marginLeft="10dp"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp">
+
+                <Button
+                    android:id="@+id/order_delivery_click"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#414042"
+                    android:visibility="gone"
+                    android:layout_marginLeft="50dp"
+                    android:text="@string/Order_Delivery"
+                    android:textColor="#FFFFFF" />
+
+                <ImageView
+                    android:id="@+id/outstandingoverdue_btn"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:visibility="gone"
+
+                    android:src="@drawable/overdue_iconnew"
+                    />
+
+
+            </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/customer_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/feedback_btn"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/Feedback"
+                android:background="#414042"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/comp_btn"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/Complaints"
+                android:background="#414042"
+                android:layout_marginLeft="10dp"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:layout_marginTop="5dp" >
+
+            <Button
+                android:id="@+id/Claims_btn"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/Claims"
+                android:background="#414042"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/stock_btn"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/Competition_Stock"
+                android:background="#414042"
+                android:layout_marginLeft="10dp"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/imag_btn"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/Picture"
+                android:background="#414042"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/video_btn"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/Video"
+                android:background="#414042"
+                android:layout_marginLeft="10dp"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+     </LinearLayout>
+
+     <LinearLayout
+        android:id="@+id/schedule_view"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/buttonSchedule"
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+
+                android:background="#414042"
+                android:text="@string/Delivery_Schedule"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/buttoninvoice"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:text="@string/Invoice"
+                android:background="#414042"
+                android:layout_marginLeft="10dp"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+ </LinearLayout>
+ </ScrollView>
+
+</LinearLayout>

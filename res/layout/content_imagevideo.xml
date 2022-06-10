@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/metal_bg_all"
+    android:layout_marginTop="@dimen/common_50_dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_60_dp"
+        android:padding="@dimen/common_10_dp">
+
+        <Button
+            android:id="@+id/btn_image"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/common_20_dp"
+            android:background="#A3A3A3"
+            android:text="@string/Image"
+            android:textSize="@dimen/common_15_dp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_video"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/common_20_dp"
+            android:background="#A3A3A3"
+            android:textSize="@dimen/common_15_dp"
+            android:text="@string/Video"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_below="@+id/btn_image"
+            android:layout_marginTop="@dimen/common_10_dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_description"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@+id/iv_image"
+            android:layout_marginTop="@dimen/common_20_dp"
+            android:elevation="@dimen/common_10_dp"
+            app:cardCornerRadius="@dimen/common_15_dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/white"
+                android:gravity="left"
+                android:hint="@string/Description"
+                android:padding="@dimen/common_10_dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:textAllCaps="false"
+            android:background="@drawable/metal_button"
+            android:textColor="@color/white"
+            android:text="@string/Submit"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

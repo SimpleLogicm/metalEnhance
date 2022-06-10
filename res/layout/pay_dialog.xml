@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    app:cardBackgroundColor="?attr/cardbackground"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textColor="?attr/filter_short_text_color"
+            android:textSize="18dp"
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:text="PAY" />
+
+        <ImageView
+            android:id="@+id/payclose_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            app:srcCompat="@drawable/close_filter" />
+
+        <EditText
+            android:id="@+id/payamount_edit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:background="@drawable/border_shadow"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/payclose_btn"
+            android:textSize="15dp"
+            android:hint="Pay Amount"
+            android:inputType="number"
+            android:textColorHint="?attr/hint_text_color"
+            android:textColor="?attr/filter_short_text_color"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/payamount_edit">
+
+            <Button
+                android:id="@+id/payok_btn"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:textSize="16dp"
+                android:background="@drawable/metal_button"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"
+                android:layout_marginRight="5dp"
+                android:text="Ok" />
+
+            <Button
+                android:id="@+id/paycancel_btn"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:textSize="16dp"
+                android:background="@drawable/metal_button"
+                android:layout_marginLeft="5dp"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"
+                android:text="@string/Cancel" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

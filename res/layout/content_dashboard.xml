@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/linearMian"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/common_50_dp"
+        android:background="?attr/fulllayoutbg"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <ImageView
+        android:id="@+id/hedder_theame"
+        android:layout_width="match_parent"
+        android:src="?attr/metal_headder"
+        android:scaleType="fitXY"
+        android:layout_height="70dp">
+
+    </ImageView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+               >
+
+                <RelativeLayout
+                    android:id="@+id/orderanalysis_lout"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:layout_marginTop="65dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/orderimg"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/newicon_orderanalysis"
+                        android:layout_alignParentRight="true"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_orderanalysis"
+                        android:layout_width="230dp"
+                        android:layout_height="50dp"
+                        app:cardCornerRadius="@dimen/common_20_dp"
+                        app:cardBackgroundColor="?attr/cardbackground"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="15dp"
+                        android:elevation="@dimen/common_10_dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignStart="@+id/card_orderanalysis"
+                            android:layout_alignTop="@+id/card_orderanalysis"
+                            android:gravity="center"
+                            android:text="@string/order_analysis"
+                            android:textColor="?attr/filter_short_text_color"
+                            android:textSize="17dp"
+                            android:textStyle="bold" />
+
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/productanalysis_lout"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:layout_below="@+id/orderanalysis_lout"
+                    >
+
+                    <ImageView
+                        android:id="@+id/productimg"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/newicon_productanalysis"
+                        android:layout_alignParentLeft="true"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_productanalysis"
+                        android:layout_width="230dp"
+                        android:layout_height="50dp"
+                        app:cardCornerRadius="@dimen/common_20_dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="15dp"
+                        app:cardBackgroundColor="?attr/cardbackground"
+                        android:elevation="@dimen/common_10_dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignStart="@+id/card_orderanalysis"
+                            android:layout_alignTop="@+id/card_orderanalysis"
+                            android:gravity="center"
+                            android:text="@string/Product_Analysis"
+                            android:textColor="?attr/filter_short_text_color"
+                            android:textSize="17dp"
+                            android:textStyle="bold" />
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/customeranalysis_lout"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:layout_below="@+id/productanalysis_lout"
+                    >
+
+                    <ImageView
+                        android:id="@+id/customerimg"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/newicon_customeranalysis"
+                        android:layout_alignParentRight="true"
+                        />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_customeranalysis"
+                        android:layout_width="230dp"
+                        android:layout_height="50dp"
+                        app:cardCornerRadius="@dimen/common_20_dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="15dp"
+                        app:cardBackgroundColor="?attr/cardbackground"
+                        android:elevation="@dimen/common_10_dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignStart="@+id/card_orderanalysis"
+                            android:layout_alignTop="@+id/card_orderanalysis"
+                            android:gravity="center"
+                            android:text="@string/Customer_Analysis"
+                            android:textColor="?attr/filter_short_text_color"
+                            android:textSize="17dp"
+                            android:textStyle="bold" />
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

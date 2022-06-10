@@ -1,0 +1,255 @@
+<androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    card_view:cardBackgroundColor="?attr/cardbackground"
+    android:layout_height="130dp"
+    card_view:cardCornerRadius="4dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/Productnamerpmrp"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/grey_secondry"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="14dp"
+            android:layout_below="@+id/pidp"
+            android:layout_toRightOf="@+id/pidp"
+            android:layout_toEndOf="@+id/pidp" />
+
+        <TextView
+            android:id="@+id/mrpvnew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Productnamerpmrp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_alignParentLeft="true"
+            android:text="@string/PAMRP"
+            android:textSize="11dp" />
+
+        <EditText
+            android:id="@+id/productquantityp"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:focusable="true"
+            android:clickable="true"
+            android:background="@drawable/squareedittext"
+            android:hint="@string/ENTER_QUANTITY"
+            android:inputType="number"
+            android:maxLength="9"
+            android:imeOptions="actionDone"
+            android:padding="5dp"
+            android:text=""
+            android:textSize="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+
+            android:layout_below="@id/Productnamerpmrp"
+
+            />
+
+
+
+        <TextView
+            android:id="@+id/totalpricep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/productquantityp"
+            android:hint="@string/PRICE"
+            android:textSize="12dp"
+            android:layout_alignBottom="@+id/productquantityp" />
+
+        <TextView
+            android:id="@+id/scheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/OScheme"
+            android:textSize="12dp"
+            android:layout_below="@+id/Productnamerpmrp"
+            android:layout_alignLeft="@+id/totalpricep"
+            android:layout_alignStart="@+id/totalpricep" />
+
+        <TextView
+            android:id="@+id/pidp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.36"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:text=""
+            android:textSize="17dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/mrpv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.40"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:text=""
+            android:textSize="17dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/rpv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.40"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:text=""
+            android:textSize="17dp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/productquantityp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:visibility="gone"
+            android:text="" />
+
+        <LinearLayout
+            android:id="@+id/v2layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mrpvnew"
+            android:weightSum="2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edit_comment"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:background="@android:drawable/editbox_background"
+                android:ems="10"
+                android:hint="@string/Comments"
+                android:inputType="text"
+                android:text=""
+                android:layout_marginRight="0dp"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/edit_detail1"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background"
+                android:layout_marginLeft="0dp"
+                android:imeOptions="actionNext"
+                android:ems="10"
+                android:hint="@string/Detail"
+                android:inputType="text"
+                android:text=""
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/v3layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v2layout"
+            android:layout_centerHorizontal="true"
+            android:weightSum="2"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edit_detail2"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background"
+                android:ems="10"
+                android:imeOptions="actionNext"
+                android:hint="@string/Detail2"
+                android:inputType="text"
+                android:text=""
+                android:layout_marginRight="0dp"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/edit_detail3"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background"
+                android:layout_marginLeft="0dp"
+                android:ems="10"
+                android:imeOptions="actionNext"
+                android:hint="@string/Detail3"
+                android:inputType="text"
+                android:text=""
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/v4layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v3layout"
+            android:layout_centerHorizontal="true"
+            android:weightSum="2"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edit_detail4"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background"
+                android:ems="10"
+                android:imeOptions="actionNext"
+                android:hint="@string/Detail4"
+                android:inputType="text"
+                android:text=""
+                android:layout_marginRight="0dp"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/edit_detail5"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background"
+                android:layout_marginLeft="0dp"
+                android:ems="10"
+                android:hint="@string/Details5"
+                android:inputType="text"
+                android:text=""
+                android:textSize="15dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/common_5_dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/optiontwo_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/typetwo_que"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cust_feed_satisfy_cust_service"
+            android:textSize="15sp">
+
+        </TextView>
+
+        <RadioGroup
+            android:id="@+id/card1radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_typetwo_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+
+                android:text="@string/Yes">
+
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/radio_typetwo_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+
+                android:text="@string/No">
+
+            </RadioButton>
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/optionfouremogi_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_10_dp"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/typefouremoji_que"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cust_feed_satisfy_behav_tech"
+            android:textSize="15sp">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/typefour_option1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/excellent">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/typefour_option1_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Excellent"
+                    android:textSize="14dp"
+                    >
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/typefour_option2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/good">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/typefour_option2_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Good"
+                    android:textSize="14dp"
+                    >
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/typefour_option3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/averaged">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/typefour_option3_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/Average"
+                    android:textSize="14dp"
+                    >
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/typefour_option4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/poor">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/typefour_option4_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/Poor"
+                    android:textSize="14dp"
+                   >
+
+                </TextView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/typeone_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_10_dp"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/typeone_que"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/How_meny_tech_visited"
+            android:textSize="15sp">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/minus_btn"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/common_5_dp"
+                android:layout_marginRight="@dimen/common_10_dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/minus"
+                android:tint="#007AFF">
+
+            </ImageView>
+
+            <EditText
+                android:id="@+id/typeone_editvalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#c3c3c3"
+                android:cursorVisible="true"
+                android:fontFamily="@font/work_sans"
+                android:inputType="number"
+                android:textColor="#557390"
+                android:textSize="14sp">
+
+            </EditText>
+
+            <ImageView
+                android:id="@+id/plus_btn"
+                android:layout_width="@dimen/common_20_dp"
+                android:layout_height="@dimen/common_20_dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/common_5_dp"
+                android:layout_marginRight="@dimen/common_10_dp"
+                android:src="@drawable/plus">
+
+            </ImageView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/noraml_edtext_layout"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/common_10_dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/noraml_edtext_question_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Pending_issues_if_any"
+            android:textSize="15sp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/noraml_edtext_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#c3c3c3"
+            android:cursorVisible="true"
+            android:fontFamily="@font/work_sans"
+            android:textColor="#557390"
+            android:textSize="14sp">
+        </EditText>
+    </LinearLayout>
+
+</LinearLayout>

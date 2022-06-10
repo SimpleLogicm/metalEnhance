@@ -1,0 +1,195 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <!--<TextView-->
+        <!--android:id="@+id/txtWelcomeUser"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:text="admin"-->
+        <!--android:textColor="#FFFFFF"-->
+        <!--android:background="#BDBDBD"-->
+        <!--android:gravity="center"-->
+        <!--android:textSize="15sp"  >-->
+        <!--</TextView>-->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical" >
+
+            <Spinner
+                android:id="@+id/expenses"
+                android:layout_width="250dp"
+                android:layout_height="70dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:inputType="textPassword"
+                android:paddingTop="20dp" />
+
+            <EditText
+                android:id="@+id/exp_date"
+                android:layout_width="wrap_content"
+                android:editable="false"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/expenses"
+                android:layout_alignRight="@+id/expenses"
+                android:layout_below="@+id/expenses"
+                android:layout_marginTop="10dp"
+                android:visibility="invisible"
+                android:ems="10"
+                android:hint="@string/Date_label"
+                />
+
+            <EditText
+                android:id="@+id/exp_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/exp_date"
+                android:layout_alignRight="@+id/exp_date"
+                android:layout_below="@+id/exp_date"
+                android:layout_marginTop="10dp"
+                android:visibility="invisible"
+                android:ems="10"
+                android:hint="@string/Cost"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/exp_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/exp_discr"
+                android:layout_alignRight="@+id/exp_discr"
+                android:layout_below="@+id/exp_discr"
+                android:layout_marginTop="10dp"
+
+                android:ems="10"
+                android:hint="@string/From"
+                android:visibility="gone"
+
+                />
+
+            <EditText
+                android:id="@+id/exp_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/exp_from"
+                android:layout_alignRight="@+id/exp_from"
+                android:layout_below="@+id/exp_from"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:ems="10"
+                android:hint="@string/To"
+                />
+
+            <EditText
+                android:id="@+id/exp_mot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/exp_to"
+                android:layout_alignRight="@+id/exp_to"
+                android:layout_below="@+id/exp_to"
+                android:layout_marginTop="10dp"
+                android:hint="@string/Mode_of_Travel"
+                android:visibility="gone"
+                android:ems="10" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/exp_discr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/exp_cost"
+                android:layout_alignRight="@+id/exp_cost"
+                android:layout_below="@+id/exp_cost"
+                android:layout_marginTop="10dp"
+                android:inputType="textEmailAddress|textMultiLine"
+                android:visibility="invisible"
+                android:ems="10"
+                android:hint="@string/Description" />
+
+            <Button
+                android:id="@+id/exp_submit"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/exp_mot"
+                android:layout_below="@+id/exp_mot"
+                android:background="#545454"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:text="@string/Submit"
+                android:textColor="#ffffff" />
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:layout_marginLeft="50dp"
+                android:id="@+id/takepic_lout"
+                android:orientation="horizontal"
+                android:layout_below="@+id/exp_submit"
+                >
+
+            <ImageView
+                android:id="@+id/expence_cam"
+                android:layout_width="60dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:background="@drawable/cam_iconn"
+                android:layout_alignParentBottom="true"
+                android:backgroundTint="#be233b"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <!--<ImageView-->
+                    <!--android:id="@+id/crossimg"-->
+                    <!--android:layout_width="23dp"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:src="@drawable/cross"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_alignParentRight="true">-->
+                    <!--</ImageView>-->
+
+                    <ImageView
+                        android:id="@+id/img_show"
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitCenter">
+                    </ImageView>
+
+                    <ImageView
+                        android:id="@+id/crossimg"
+                        android:layout_width="23dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="right"
+                        android:src="@drawable/cross" />
+                </FrameLayout>
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>

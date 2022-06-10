@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="?attr/cardbackground"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="3dp"
+        app:cardElevation="@dimen/common_5_dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="10"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="9"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Store_Name"
+                    android:textColor="?attr/hint_text_color"
+                    android:fontFamily="@font/work_sans"
+                    android:textSize="12sp"
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/s_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textColor="?attr/contents_values_onorder_option"
+                    style="@style/signuptext"
+                    android:textSize="16sp"
+                    >
+                </TextView>
+
+
+                <TextView
+                    android:id="@+id/s_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_marginTop="5dp"
+                    android:textColor="?attr/filter_short_text_color"
+                    android:fontFamily="@font/work_sans"
+                    android:textSize="13sp"
+                    >
+
+                </TextView>
+
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/btn_neworder"
+                android:layout_width="@dimen/common_0_dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/viewordermenu"
+                android:layout_weight="1">
+
+            </ImageView>
+
+        </LinearLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

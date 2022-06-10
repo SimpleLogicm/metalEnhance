@@ -1,0 +1,22 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.sharish:ShimmerRecyclerView:v1.3@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/aba02a77473b84dae0ac597489bf4302/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/aba02a77473b84dae0ac597489bf4302/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/aba02a77473b84dae0ac597489bf4302/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6d69cafdb8be5c33afb4b071c16e90c0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6d69cafdb8be5c33afb4b071c16e90c0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6d69cafdb8be5c33afb4b071c16e90c0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b605f6fa1a3e23c633a72a604f333c0c/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b605f6fa1a3e23c633a72a604f333c0c/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b605f6fa1a3e23c633a72a604f333c0c/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e32fa1b4f2c169ddf677f619153e1341/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e32fa1b4f2c169ddf677f619153e1341/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e32fa1b4f2c169ddf677f619153e1341/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.sharish/ShimmerRecyclerView/v1.3/136bfc429d4389879f6a40bc2ec374ea3c0223e0/ShimmerRecyclerView-v1.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

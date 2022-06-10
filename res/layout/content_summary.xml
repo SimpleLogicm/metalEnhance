@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="?attr/fulllayoutbg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/hedder_theame"
+        android:layout_width="match_parent"
+        android:src="?attr/metal_headder"
+        android:scaleType="fitXY"
+        android:layout_marginTop="@dimen/common_50_dp"
+        android:layout_height="70dp">
+
+    </ImageView>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="@dimen/common_10_dp"
+            >
+
+            <RelativeLayout
+                android:id="@+id/tab_lout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_30_dp"
+                android:layout_marginRight="@dimen/common_30_dp"
+                >
+
+                <TextView
+                    android:id="@+id/summary_btn"
+                    android:layout_width="120dp"
+                    android:layout_height="30dp"
+                    android:text="Summary"
+                    android:textColor="?attr/filter_short_text_color"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginRight="@dimen/common_10_dp"
+                    android:background="@drawable/buttonshape1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="@dimen/common_10_dp"/>
+
+
+                <TextView
+                    android:id="@+id/activities_btn"
+                    android:layout_width="126dp"
+                    android:layout_height="30dp"
+                    android:text="Activities"
+                    android:textColor="#9d9d9d"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/common_10_dp"/>
+
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/calendar_lout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="10dp"
+                app:cardBackgroundColor="?attr/cardbackground"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/bankcardId1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Calendar"
+                    android:gravity="center"
+                    android:textColor="#111111"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/common_15_dp"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/common_5_dp"
+                    />
+
+                   <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/month"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="#EBEBEB"
+                        android:gravity="center"
+                        android:textColor="#111111"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.view.calender.horizontal.umar.horizontalcalendarview.HorizontalCalendarView
+                        android:id="@+id/horizontalcalendarview"
+                        android:layout_width="match_parent"
+                        android:layout_below="@+id/month"
+                        android:layout_height="70dp">
+
+                    </com.view.calender.horizontal.umar.horizontalcalendarview.HorizontalCalendarView>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+                <RelativeLayout
+                    android:id="@+id/bankcardId1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/tab_lout"
+                    android:padding="10dp"
+                    >
+
+                    <androidx.cardview.widget.CardView
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/card_shopvisited"
+                        android:layout_width="135dp"
+                        android:layout_height="120dp"
+                        card_view:cardBackgroundColor="?attr/cardbackground"
+                        card_view:cardCornerRadius="60dp"
+                        card_view:contentPadding="10dp"
+                        card_view:cardElevation="4dp"
+                        android:layout_alignParentLeft="true"
+                        card_view:cardMaxElevation="6dp">
+
+                        <ImageView
+                            android:id="@+id/img_shopv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/shop_visited" />
+
+                        <TextView
+                            android:id="@+id/tv_shopvisited"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="46dp"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="?attr/filter_short_text_color"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/txt_shopvisited"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginTop="72dp"
+                            android:gravity="center"
+                            android:text="Shop Visited"
+                            android:textStyle="bold"
+                            android:textColor="?attr/filter_short_text_color"
+                            android:textSize="13dp" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/card_ordertaken"
+                        android:layout_width="135dp"
+                        android:layout_height="120dp"
+                        card_view:cardBackgroundColor="?attr/cardbackground"
+                        card_view:cardCornerRadius="60dp"
+                        card_view:contentPadding="10dp"
+                        card_view:cardElevation="4dp"
+                        android:layout_alignParentRight="true"
+                        card_view:cardMaxElevation="6dp">
+
+                        <ImageView
+                            android:id="@+id/order"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/order_taken" />
+
+                        <TextView
+                            android:id="@+id/tv_ordertaken"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/common_50_dp"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="?attr/filter_short_text_color"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginTop="72dp"
+                            android:gravity="center"
+                            android:text="Order Taken"
+                            android:textStyle="bold"
+                            android:textColor="?attr/filter_short_text_color"
+                            android:textSize="14dp" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+            <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+                android:id="@+id/summary_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/calendar_lout"
+                app:shimmer_demo_angle="0"
+                app:shimmer_demo_child_count="10"
+                app:shimmer_demo_grid_child_count="2"
+                app:shimmer_demo_layout_manager_type="linear_vertical" />
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

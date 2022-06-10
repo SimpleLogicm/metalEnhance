@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\akshay.gholap\\AndroidStudioProjects\\MetalEnhance\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-land-v13\\values-sw600dp-land-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\akshay.gholap\\.gradle\\caches\\transforms-2\\files-2.1\\16cdd29a330c9ee995b6f12cb20cb7e8\\res\\values-sw600dp-land-v13\\values-sw600dp-land-v13.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,101,153",
+                        "endColumns": "45,51,51",
+                        "endOffsets": "96,148,200"
+                    },
+                    "to": {
+                        "startLines": "15,16,17",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "794,840,892",
+                        "endColumns": "45,51,51",
+                        "endOffsets": "835,887,939"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\akshay.gholap\\.gradle\\caches\\transforms-2\\files-2.1\\e311d363698a315d6d57d2813964daa3\\res\\values-sw600dp-land-v13\\values-sw600dp-land-v13.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,107,161,224,286,347,409,460,511,565,619,680,732",
+                        "endColumns": "51,53,62,61,60,61,50,50,53,53,60,51,61",
+                        "endOffsets": "102,156,219,281,342,404,455,506,560,614,675,727,789"
+                    }
+                }
+            ]
+        }
+    ]
+}

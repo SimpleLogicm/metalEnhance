@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="?attr/fulllayoutbg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/hedder_theame"
+        android:layout_marginTop="@dimen/common_50_dp"
+        android:layout_width="match_parent"
+        android:src="@drawable/light_hedder"
+        android:scaleType="fitXY"
+        android:layout_height="70dp">
+
+    </ImageView>
+
+    <RelativeLayout
+        android:id="@+id/viewtarget_lout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/tab_lout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+         >
+
+            <TextView
+                android:id="@+id/btn_daycoverage"
+                android:layout_width="126dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="@dimen/common_10_dp"
+                android:layout_marginTop="@dimen/common_10_dp"
+                android:layout_marginEnd="@dimen/common_10_dp"
+                android:gravity="center|left"
+                android:text="Day Coverage"
+                android:textColor="#C5C5C5"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="126dp"
+                android:layout_height="30dp"
+                android:text="View Target"
+                android:textColor="#1D4B7D"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@drawable/buttonshape1"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/common_10_dp"/>
+
+            <TextView
+                android:id="@+id/btn_dashboard"
+                android:layout_width="126dp"
+                android:layout_height="30dp"
+                android:text="@string/DashBoard"
+                android:textColor="#C5C5C5"
+                android:textStyle="bold"
+                android:gravity="center|right"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/common_10_dp"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/target_lout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/tab_lout"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btn_monthly"
+                android:layout_width="70dp"
+                app:cardBackgroundColor="?attr/cardbackground"
+                android:layout_height="35dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="@dimen/common_15_dp"
+                app:cardElevation="@dimen/common_4_dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/work_sans"
+                    android:padding="@dimen/common_10_dp"
+                    android:gravity="center"
+                    android:text="@string/Monthly"
+                    android:textStyle="bold"
+                    android:textColor="?attr/visit_schedule_historytext"
+                    android:textSize="12sp">
+
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btn_quarterly"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="@dimen/common_10_dp"
+                app:cardCornerRadius="@dimen/common_15_dp"
+                app:cardBackgroundColor="?attr/cardbackground"
+                android:background="@drawable/leavem_bg"
+                app:cardElevation="@dimen/common_4_dp">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/work_sans"
+                    android:padding="@dimen/common_10_dp"
+                    android:text="@string/Quarterly"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="?attr/visit_schedule_historytext"
+                    android:textSize="12sp">
+
+                </TextView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btn_halfyearly"
+                android:layout_width="90dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="@dimen/common_10_dp"
+                app:cardBackgroundColor="?attr/cardbackground"
+                app:cardCornerRadius="@dimen/common_15_dp"
+                app:cardElevation="@dimen/common_4_dp">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/work_sans"
+                    android:padding="@dimen/common_10_dp"
+                    android:text="@string/Half_Yearly"
+                    android:textStyle="bold"
+                    android:textColor="?attr/visit_schedule_historytext"
+                    android:textSize="12sp">
+
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btn_yearly"
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                app:cardBackgroundColor="?attr/cardbackground"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="@dimen/common_10_dp"
+                app:cardCornerRadius="@dimen/common_15_dp"
+                app:cardElevation="@dimen/common_4_dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/work_sans"
+                    android:padding="@dimen/common_10_dp"
+                    android:text="@string/Yearly"
+                    android:textStyle="bold"
+                    android:textColor="?attr/visit_schedule_historytext"
+                    android:textSize="12sp">
+
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <com.harrywhewell.scrolldatepicker.MonthScrollDatePicker
+            android:id="@+id/month_date_picker"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:background="@color/white"
+            android:layout_below="@+id/target_lout"
+          />
+
+
+  <androidx.cardview.widget.CardView
+    android:id="@+id/card_viewdate"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="14dp"
+      app:cardBackgroundColor="?attr/cardbackground"
+    android:layout_marginTop="5dp"
+    android:layout_below="@+id/month_date_picker"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <EditText
+            android:id="@+id/et_fromviewtargetdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="-2dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/calendar_icon"
+            android:drawableTint="?attr/filter_short_text_color"
+
+            android:editable="false"
+            android:focusable="false"
+            android:hint="From Date"
+            android:textColorHint="?attr/hint_text_color"
+            android:padding="@dimen/common_5_dp"
+            android:textColor="?attr/visit_schedule_historytext"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/To"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/common_15_dp"
+            android:textColor="?attr/filter_short_text_color"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/target_month_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:hint="To Date"
+            android:drawableLeft="@drawable/calendar_icon"
+            android:drawableTint="?attr/filter_short_text_color"
+            android:background="@android:color/transparent"
+            android:textColorHint="?attr/hint_text_color"
+            android:textColor="?attr/visit_schedule_historytext"
+            android:textSize="14dp"
+            android:padding="@dimen/common_5_dp"
+            android:focusable="false"
+            android:editable="false"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_viewtarget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="?attr/cardbackground"
+            android:layout_below="@+id/card_viewdate"
+            android:layout_marginTop="5dp"
+            card_view:cardCornerRadius="14dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp">
+
+                <TextView
+                    android:id="@+id/txt_target"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:textStyle="bold"
+                    android:textColor="?attr/hint_text_color"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="@dimen/common_10_dp"
+                    android:text="@string/Targett"/>
+
+                <TextView
+                    android:id="@+id/tv_target"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_target"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/common_20_dp"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="?attr/filter_short_text_color"
+                    android:textSize="11dp"
+                    android:text="0" />
+
+                <TextView
+                    android:id="@+id/txt_achieved"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textStyle="bold"
+                    android:textColor="?attr/hint_text_color"
+                    android:textSize="12dp"
+                    android:text="@string/Achieved"/>
+
+                <TextView
+                    android:id="@+id/tv_achieved"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/txt_achieved"
+                    android:layout_marginTop="@dimen/common_5_dp"
+                    android:textStyle="bold"
+                    android:textColor="?attr/filter_short_text_color"
+                    android:textSize="11dp"
+                    android:text="0"/>
+
+                <TextView
+                    android:id="@+id/txt_percentage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/common_20_dp"
+                    android:textStyle="bold"
+                    android:textColor="?attr/hint_text_color"
+                    android:textSize="12dp"
+                    android:text="@string/Percentage"/>
+
+                <TextView
+                    android:id="@+id/tv_percentage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_percentage"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/common_5_dp"
+                    android:layout_marginRight="@dimen/common_20_dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:paddingRight="@dimen/common_20_dp"
+                    android:textColor="?attr/filter_short_text_color"
+                    android:textSize="11dp"
+                    android:text="0%" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+            android:id="@+id/viewtarget_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_viewtarget"
+            app:shimmer_demo_angle="0"
+            app:shimmer_demo_child_count="10"
+            app:shimmer_demo_grid_child_count="2"
+            android:layout_above="@+id/back_viewtarget"
+            app:shimmer_demo_layout_manager_type="linear_vertical" />
+
+        <Button
+            android:id="@+id/back_viewtarget"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Back"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="14dp"
+            android:background="@drawable/metal_button"
+            android:layout_marginLeft="@dimen/common_30_dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"/>
+
+        <Button
+            android:id="@+id/more_viewtarget"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="More"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:background="@drawable/metal_button"
+            android:textSize="14dp"
+            android:layout_marginRight="@dimen/common_30_dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

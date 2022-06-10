@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="@dimen/spacing">
+
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="@color/white"
+        android:id="@+id/chart_cards"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/common_10_dp"
+        app:cardCornerRadius="@dimen/common_10_dp"
+        app:cardElevation="@dimen/common_15_dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="@dimen/common_10_dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+           >
+
+      <TextView
+            android:id="@+id/username"
+            style="?android:textAppearanceMedium"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:textStyle="bold"/>
+    <TextView
+            android:id="@+id/message"
+            style="?android:textAppearanceMedium"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:paddingLeft="@dimen/spacing"
+            android:paddingRight="@dimen/spacing"
+            android:singleLine="false"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ProgressBar
+        android:id="@+id/c_progress"
+        android:layout_below="@+id/chart_cards"
+        android:visibility="gone"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_marginLeft="@dimen/common_10_dp"
+        android:layout_marginRight="@dimen/common_10_dp"
+        android:background="@color/black_overlay"
+        android:backgroundTint="@color/primarycolor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true" />
+
+</RelativeLayout>

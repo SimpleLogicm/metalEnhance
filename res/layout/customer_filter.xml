@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="320dp"
+    android:layout_height="380dp"
+    android:background="?attr/cardbackground"
+    android:layout_gravity="center"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="215dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:text="@string/Filter"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/close_filter"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:id="@+id/close_filter"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/close_filter"
+            android:layout_marginRight="6dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <Spinner
+        android:id="@+id/dcus_category"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColor="?attr/New_orderoption_menueoptions_textcolor"
+        style="@style/mySpinnerItemStyle"
+        android:layout_gravity="center"
+        android:layout_weight="0.13" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cashradioGroup"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_alignTop="@+id/textViewSelection"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_weight="0.07">
+
+        <RadioButton
+            android:id="@+id/radio_showall"
+            android:layout_width="match_parent"
+            android:textColor="?attr/filter_short_text_color"
+            android:layout_height="wrap_content"
+            android:text="@string/Show_All" />
+
+        <RadioButton
+            android:id="@+id/radio_overdue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="?attr/filter_short_text_color"
+            android:text="@string/Show_Overdue" />
+
+        <RadioButton
+            android:id="@+id/radio_outstanding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="?attr/filter_short_text_color"
+            android:text="@string/Show_Outstanding" />
+
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/sortby_beat"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:textColorHint="?attr/hint_text_color"
+        android:textColor="?attr/New_orderoption_menueoptions_textcolor"
+        style="@style/mySpinnerItemStyle"
+        android:layout_weight="0.13" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+
+        >
+
+        <Button
+            android:id="@+id/filter_submit"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/metal_button"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="@dimen/button_left_padding"
+            android:paddingTop="@dimen/button_top_padding"
+            android:paddingRight="@dimen/button_right_padding"
+            android:paddingBottom="@dimen/button_bottom_padding"
+            android:text="@string/Apply"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="17dp" />
+
+        <Button
+            android:id="@+id/filter_clear"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/metal_button"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="@dimen/button_left_padding"
+            android:paddingTop="@dimen/button_top_padding"
+            android:paddingRight="@dimen/button_right_padding"
+            android:paddingBottom="@dimen/button_bottom_padding"
+            android:text="@string/Clear"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="17dp" />
+    </LinearLayout>
+
+</LinearLayout>
